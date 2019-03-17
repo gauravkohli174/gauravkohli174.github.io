@@ -1,0 +1,204 @@
+\hypertarget{structmpg123__id3v2}{}\section{mpg123\+\_\+id3v2 Struct Reference}
+\label{structmpg123__id3v2}\index{mpg123\_id3v2@{mpg123\_id3v2}}
+
+
+{\ttfamily \#include $<$mpg123.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \mbox{\hyperlink{structmpg123__id3v2_ab64e67e2d2bc5cc0b45e9598a8d386d6}{version}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_a287e2a93e889c4a9b60b634a4dee4f13}{title}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_a5d269222d5c917356f337e999a38c1f3}{artist}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_adb45f4408f3e650dc70282060d631336}{album}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_a6b2125b4b38019370646be4dc4a9ad23}{year}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_a1655bf8bfc836ab94660bf981373f3cb}{genre}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_a33f276ee0202d9bb8609b90a2dc84e41}{comment}}
+\item 
+\mbox{\hyperlink{structmpg123__text}{mpg123\+\_\+text}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_ab848dd213b0c7c352ccf4db299eb47fb}{comment\+\_\+list}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structmpg123__id3v2_aa6b0ae610df4b4f5ed7f848ed88c86c9}{comments}}
+\item 
+\mbox{\hyperlink{structmpg123__text}{mpg123\+\_\+text}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_a2974751dc4b5bc34819d0acb1b90e944}{text}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structmpg123__id3v2_a1ea43150e210d554f297bc317d5fb8ea}{texts}}
+\item 
+\mbox{\hyperlink{structmpg123__text}{mpg123\+\_\+text}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_af11a6a5218b0616811349ee2efa8ece5}{extra}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structmpg123__id3v2_afefe85eb6aea14e5463b83d4e8b9ef96}{extras}}
+\item 
+\mbox{\hyperlink{structmpg123__picture}{mpg123\+\_\+picture}} $\ast$ \mbox{\hyperlink{structmpg123__id3v2_ad2539ee2a294163a20ef2f67bc241d76}{picture}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structmpg123__id3v2_ac13f50ac1a8d70b8be6580a71efc89b5}{pictures}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure for storing I\+D\+V3v2 tags. This structure is not a direct binary mapping with the file contents. The I\+D3v2 text frames are allowed to contain multiple strings. So check for null bytes until you reach the \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} fill. All text is encoded in U\+T\+F-\/8. 
+
+Definition at line 1196 of file mpg123.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmpg123__id3v2_adb45f4408f3e650dc70282060d631336}\label{structmpg123__id3v2_adb45f4408f3e650dc70282060d631336}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!album@{album}}
+\index{album@{album}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{album}{album}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}}$\ast$ mpg123\+\_\+id3v2\+::album}
+
+Album string (pointer into text\+\_\+list). 
+
+Definition at line 1201 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a5d269222d5c917356f337e999a38c1f3}\label{structmpg123__id3v2_a5d269222d5c917356f337e999a38c1f3}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!artist@{artist}}
+\index{artist@{artist}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{artist}{artist}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}}$\ast$ mpg123\+\_\+id3v2\+::artist}
+
+Artist string (pointer into text\+\_\+list). 
+
+Definition at line 1200 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a33f276ee0202d9bb8609b90a2dc84e41}\label{structmpg123__id3v2_a33f276ee0202d9bb8609b90a2dc84e41}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!comment@{comment}}
+\index{comment@{comment}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{comment}{comment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}}$\ast$ mpg123\+\_\+id3v2\+::comment}
+
+Pointer to last encountered comment text with empty description. 
+
+Definition at line 1204 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_ab848dd213b0c7c352ccf4db299eb47fb}\label{structmpg123__id3v2_ab848dd213b0c7c352ccf4db299eb47fb}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!comment\_list@{comment\_list}}
+\index{comment\_list@{comment\_list}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{comment\_list}{comment\_list}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__text}{mpg123\+\_\+text}}$\ast$ mpg123\+\_\+id3v2\+::comment\+\_\+list}
+
+Array of comments. 
+
+Definition at line 1207 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_aa6b0ae610df4b4f5ed7f848ed88c86c9}\label{structmpg123__id3v2_aa6b0ae610df4b4f5ed7f848ed88c86c9}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!comments@{comments}}
+\index{comments@{comments}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{comments}{comments}}
+{\footnotesize\ttfamily size\+\_\+t mpg123\+\_\+id3v2\+::comments}
+
+Number of comments. 
+
+Definition at line 1208 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_af11a6a5218b0616811349ee2efa8ece5}\label{structmpg123__id3v2_af11a6a5218b0616811349ee2efa8ece5}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!extra@{extra}}
+\index{extra@{extra}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{extra}{extra}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__text}{mpg123\+\_\+text}}$\ast$ mpg123\+\_\+id3v2\+::extra}
+
+The array of extra (T\+X\+XX) fields. 
+
+Definition at line 1211 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_afefe85eb6aea14e5463b83d4e8b9ef96}\label{structmpg123__id3v2_afefe85eb6aea14e5463b83d4e8b9ef96}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!extras@{extras}}
+\index{extras@{extras}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{extras}{extras}}
+{\footnotesize\ttfamily size\+\_\+t mpg123\+\_\+id3v2\+::extras}
+
+Number of extra text (T\+X\+XX) fields. 
+
+Definition at line 1212 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a1655bf8bfc836ab94660bf981373f3cb}\label{structmpg123__id3v2_a1655bf8bfc836ab94660bf981373f3cb}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!genre@{genre}}
+\index{genre@{genre}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{genre}{genre}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}}$\ast$ mpg123\+\_\+id3v2\+::genre}
+
+Genre String (pointer into text\+\_\+list). The genre string(s) may very well need postprocessing, esp. for I\+D3v2.\+3. 
+
+Definition at line 1203 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_ad2539ee2a294163a20ef2f67bc241d76}\label{structmpg123__id3v2_ad2539ee2a294163a20ef2f67bc241d76}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!picture@{picture}}
+\index{picture@{picture}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{picture}{picture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__picture}{mpg123\+\_\+picture}}$\ast$ mpg123\+\_\+id3v2\+::picture}
+
+Array of I\+D3v2 pictures fields (A\+P\+IC). 
+
+Definition at line 1213 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_ac13f50ac1a8d70b8be6580a71efc89b5}\label{structmpg123__id3v2_ac13f50ac1a8d70b8be6580a71efc89b5}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!pictures@{pictures}}
+\index{pictures@{pictures}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{pictures}{pictures}}
+{\footnotesize\ttfamily size\+\_\+t mpg123\+\_\+id3v2\+::pictures}
+
+Number of picture (A\+P\+IC) fields. 
+
+Definition at line 1214 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a2974751dc4b5bc34819d0acb1b90e944}\label{structmpg123__id3v2_a2974751dc4b5bc34819d0acb1b90e944}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!text@{text}}
+\index{text@{text}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__text}{mpg123\+\_\+text}}$\ast$ mpg123\+\_\+id3v2\+::text}
+
+Array of I\+D3v2 text fields (including U\+S\+LT) 
+
+Definition at line 1209 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a1ea43150e210d554f297bc317d5fb8ea}\label{structmpg123__id3v2_a1ea43150e210d554f297bc317d5fb8ea}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!texts@{texts}}
+\index{texts@{texts}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{texts}{texts}}
+{\footnotesize\ttfamily size\+\_\+t mpg123\+\_\+id3v2\+::texts}
+
+Numer of text fields. 
+
+Definition at line 1210 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a287e2a93e889c4a9b60b634a4dee4f13}\label{structmpg123__id3v2_a287e2a93e889c4a9b60b634a4dee4f13}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!title@{title}}
+\index{title@{title}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{title}{title}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}}$\ast$ mpg123\+\_\+id3v2\+::title}
+
+Title string (pointer into text\+\_\+list). 
+
+Definition at line 1199 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_ab64e67e2d2bc5cc0b45e9598a8d386d6}\label{structmpg123__id3v2_ab64e67e2d2bc5cc0b45e9598a8d386d6}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!version@{version}}
+\index{version@{version}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily unsigned char mpg123\+\_\+id3v2\+::version}
+
+3 or 4 for I\+D3v2.\+3 or I\+D3v2.\+4. 
+
+Definition at line 1198 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__id3v2_a6b2125b4b38019370646be4dc4a9ad23}\label{structmpg123__id3v2_a6b2125b4b38019370646be4dc4a9ad23}} 
+\index{mpg123\_id3v2@{mpg123\_id3v2}!year@{year}}
+\index{year@{year}!mpg123\_id3v2@{mpg123\_id3v2}}
+\subsubsection{\texorpdfstring{year}{year}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}}$\ast$ mpg123\+\_\+id3v2\+::year}
+
+The year as a string (pointer into text\+\_\+list). 
+
+Definition at line 1202 of file mpg123.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/mpg123.\+framework/\+Versions/\+A/\+Headers/\mbox{\hyperlink{mpg123_8h}{mpg123.\+h}}\end{DoxyCompactItemize}

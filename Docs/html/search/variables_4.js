@@ -1,5 +1,29 @@
 var searchData=
 [
-  ['paddlesurface',['paddleSurface',['../class_resource_manager.html#a2f4d1c887f2f0670249286d46ec13cb0',1,'ResourceManager']]],
-  ['paddletexture',['paddleTexture',['../class_resource_manager.html#a6b70129ac4c6962f75eac7b95728a782',1,'ResourceManager']]]
+  ['e_5fo_5fs',['e_o_s',['../structogg__stream__state.html#a366e94e72849e0e880d53a22bb9ee646',1,'ogg_stream_state::e_o_s()'],['../structogg__packet.html#aa367e7c5425c5f65cbd126b82dfc72e8',1,'ogg_packet::e_o_s()']]],
+  ['edit',['edit',['../union_s_d_l___event.html#a9a7e3b67b2654d4c5fc509676c6a7183',1,'SDL_Event']]],
+  ['effect',['Effect',['../struct___mod_plug_note.html#a7453d151dce06c580eed11f7199161fd',1,'_ModPlugNote']]],
+  ['emphasis',['emphasis',['../structmpg123__frameinfo.html#a7b3a682d1c80446b4a01b9f6b6f8b470',1,'mpg123_frameinfo']]],
+  ['emulate_5fjpeg_5fsize',['emulate_jpeg_size',['../struct_web_p_config.html#a9f67a711a11505b326a16976252c05e0',1,'WebPConfig']]],
+  ['encoding',['encoding',['../structmpg123__fmt.html#a7c9ec01e750a071c97cea442617e802e',1,'mpg123_fmt::encoding()'],['../struct_f_t___char_map_rec__.html#a88ee6f726ef11a8e6cc793d59ff5557e',1,'FT_CharMapRec_::encoding()']]],
+  ['encoding_5fid',['encoding_id',['../struct_f_t___char_map_rec__.html#af10dd43eee8dc93e7d6191c663ae831a',1,'FT_CharMapRec_::encoding_id()'],['../struct_f_t___sfnt_name__.html#a01f4573605eab3f4d2e4b9b50b0de98f',1,'FT_SfntName_::encoding_id()']]],
+  ['end',['end',['../struct_s_d_l___haptic_ramp.html#a16dd3ee307795248e21ee45ba8fb4c6c',1,'SDL_HapticRamp::end()'],['../struct_ogg_vorbis___file.html#ae56eb8bc78d2fc27c79d145a7c80a681',1,'OggVorbis_File::end()']]],
+  ['endbit',['endbit',['../structoggpack__buffer.html#a5a2ecb260025f73201e58dbd621c9f8b',1,'oggpack_buffer']]],
+  ['endbyte',['endbyte',['../structoggpack__buffer.html#a416200dd77da3603dce3913826d74207',1,'oggpack_buffer']]],
+  ['entropy_5fcoding_5fmethod',['entropy_coding_method',['../struct_f_l_a_c_____subframe___fixed.html#a0f17f8f756cd2c8acc0262ef14c37088',1,'FLAC__Subframe_Fixed::entropy_coding_method()'],['../struct_f_l_a_c_____subframe___l_p_c.html#adb1401b2f8af05132420145a99f68c6e',1,'FLAC__Subframe_LPC::entropy_coding_method()']]],
+  ['entry',['entry',['../struct_f_l_a_c_____stream_metadata___vorbis_comment___entry.html#a78944f78822b92e7a4e5f15f118f6132',1,'FLAC__StreamMetadata_VorbisComment_Entry']]],
+  ['eof',['eof',['../struct_f_l_a_c_____i_o_callbacks.html#a4810838b77667dc02415c854b2103e66',1,'FLAC__IOCallbacks']]],
+  ['eofflag',['eofflag',['../structvorbis__dsp__state.html#af48b32e7555d54a5d18a24385f1296d0',1,'vorbis_dsp_state::eofflag()'],['../structvorbis__block.html#a7bc1252bc17a2cd1ee2a4154fdd2617b',1,'vorbis_block::eofflag()']]],
+  ['error',['error',['../struct_s_d_l___dollar_gesture_event.html#a30aaa8fe0df93615e6692aa20e9c13eb',1,'SDL_DollarGestureEvent']]],
+  ['error_5fcode',['error_code',['../struct_web_p_picture.html#a9bea0d4fcc23a950e4d40f980b7a4b45',1,'WebPPicture']]],
+  ['event',['event',['../struct_s_d_l___display_event.html#a4850a90c06e18146d6a2ac235cdd7336',1,'SDL_DisplayEvent::event()'],['../struct_s_d_l___window_event.html#a485cd1f07f0f22fdb9f4c4bf214011dc',1,'SDL_WindowEvent::event()']]],
+  ['exact',['exact',['../struct_web_p_config.html#a0f2a9d29de904bedd37c9edd9dec6a34',1,'WebPConfig']]],
+  ['executable',['EXECUTABLE',['../namespacebuild.html#ad848a55f54f2234a8c862b0c3597ac1b',1,'build']]],
+  ['expansion_5ffactor',['expansion_factor',['../struct_p_s___private_rec__.html#a45cf6e07c4c26f029e66998e6cad9fa0',1,'PS_PrivateRec_::expansion_factor()'],['../struct_c_i_d___face_dict_rec__.html#ae601bb5bc25e9a5f3da8e7c12fef6c92',1,'CID_FaceDictRec_::expansion_factor()']]],
+  ['extensions',['extensions',['../struct_f_t___face_rec__.html#a8b24f993e38da597d3e0273267890f49',1,'FT_FaceRec_']]],
+  ['external_5fleading',['external_leading',['../struct_f_t___win_f_n_t___header_rec__.html#a84e93c435a7a243f6a4afa96b5d34747',1,'FT_WinFNT_HeaderRec_']]],
+  ['extra',['extra',['../structmpg123__id3v2.html#af11a6a5218b0616811349ee2efa8ece5',1,'mpg123_id3v2']]],
+  ['extra_5finfo',['extra_info',['../struct_web_p_picture.html#a869dd7bfe02026edbc6855ea662edf48',1,'WebPPicture']]],
+  ['extra_5finfo_5ftype',['extra_info_type',['../struct_web_p_picture.html#a66e5d4a176d281c0ac3a9fa4d1cdb1ae',1,'WebPPicture']]],
+  ['extras',['extras',['../structmpg123__id3v2.html#afefe85eb6aea14e5463b83d4e8b9ef96',1,'mpg123_id3v2']]]
 ];

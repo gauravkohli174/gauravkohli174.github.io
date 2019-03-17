@@ -1,0 +1,400 @@
+\hypertarget{modplug_8h}{}\section{lib/\+S\+D\+L2\+\_\+mixer.framework/\+Versions/\+A/\+Frameworks/modplug.framework/\+Versions/\+A/\+Headers/modplug.h File Reference}
+\label{modplug_8h}\index{lib/SDL2\_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers/modplug.h@{lib/SDL2\_mixer.framework/Versions/A/Frameworks/modplug.framework/Versions/A/Headers/modplug.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct___mod_plug_note}{\+\_\+\+Mod\+Plug\+Note}}
+\item 
+struct \mbox{\hyperlink{struct___mod_plug___settings}{\+\_\+\+Mod\+Plug\+\_\+\+Settings}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}}
+\item 
+\#define \mbox{\hyperlink{modplug_8h_a93fe8ebd4e3d5382e3df15ae711a8bf5}{M\+O\+D\+P\+L\+U\+G\+\_\+\+N\+O\+\_\+\+F\+I\+L\+E\+S\+A\+VE}}~/$\ast$ experimental yet.  must match stdafx.\+h. $\ast$/
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \+\_\+\+Mod\+Plug\+File \mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}}
+\item 
+typedef struct \mbox{\hyperlink{struct___mod_plug_note}{\+\_\+\+Mod\+Plug\+Note}} \mbox{\hyperlink{modplug_8h_a8658ebebbc834be890ab47e443898531}{Mod\+Plug\+Note}}
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{modplug_8h_afe47432f14168cd265ccab39b1722587}{Mod\+Plug\+Mixer\+Proc}}) (int $\ast$, unsigned long, unsigned long)
+\item 
+typedef struct \mbox{\hyperlink{struct___mod_plug___settings}{\+\_\+\+Mod\+Plug\+\_\+\+Settings}} \mbox{\hyperlink{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}{Mod\+Plug\+\_\+\+Settings}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205a}{\+\_\+\+Mod\+Plug\+\_\+\+Flags}} \{ \newline
+\mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205aae842890f3d52f049c14a76534a8c7b93}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+NG}} = 1 $<$$<$ 0, 
+\mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa67022393fc4d47d1a1d3b45fa62c3403}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+O\+I\+S\+E\+\_\+\+R\+E\+D\+U\+C\+T\+I\+ON}} = 1 $<$$<$ 1, 
+\mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa7cefc1a4ecd451c592c26a67db2f6383}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+V\+E\+RB}} = 1 $<$$<$ 2, 
+\mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205aae25f196c5bdb418c89bd38efe4c30122}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+E\+G\+A\+B\+A\+SS}} = 1 $<$$<$ 3, 
+\newline
+\mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa253730b628b894b05406401b09785740}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+S\+U\+R\+R\+O\+U\+ND}} = 1 $<$$<$ 4
+ \}
+\item 
+enum \mbox{\hyperlink{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbe}{\+\_\+\+Mod\+Plug\+\_\+\+Resampling\+Mode}} \{ \mbox{\hyperlink{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea67e3d6c5d579f746c3e6c39bd87f7708}{M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+N\+E\+A\+R\+E\+ST}} = 0, 
+\mbox{\hyperlink{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea2a4ec70cb5b36225b860d6d55a9cc1e3}{M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+L\+I\+N\+E\+AR}} = 1, 
+\mbox{\hyperlink{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea9fc58f798f9555ebe508696134fe454f}{M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+S\+P\+L\+I\+NE}} = 2, 
+\mbox{\hyperlink{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea31db030516ac0c088ec21fc8854921e0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+F\+IR}} = 3
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$ \mbox{\hyperlink{modplug_8h_acaece88e83e9f52b4fc3e21795b400b7}{Mod\+Plug\+\_\+\+Load}} (const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, int \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_a6c974bcb0e46a8cede287d5fe56c5ffb}{Mod\+Plug\+\_\+\+Unload}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_ab48da4e94a15fe4c7df7da3747de7bf8}{Mod\+Plug\+\_\+\+Read}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer}}, int \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} const char $\ast$ \mbox{\hyperlink{modplug_8h_a506d062d67b5a1c0a1647206aca90b76}{Mod\+Plug\+\_\+\+Get\+Name}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_a740fd7f8db8b173255e242add5f4ed90}{Mod\+Plug\+\_\+\+Get\+Length}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_a1fb321c9484e40cec3df31b8b8ab9709}{Mod\+Plug\+\_\+\+Seek}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, int millisecond)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_ad8fea2158fb332cb93d88d5ac35930ae}{Mod\+Plug\+\_\+\+Get\+Settings}} (\mbox{\hyperlink{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}{Mod\+Plug\+\_\+\+Settings}} $\ast$settings)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_a79dfb780110e4f5373c2e47fc7fdf4e4}{Mod\+Plug\+\_\+\+Set\+Settings}} (const \mbox{\hyperlink{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}{Mod\+Plug\+\_\+\+Settings}} $\ast$settings)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_a5bf58565371130689b91f08443229dd4}{Mod\+Plug\+\_\+\+Get\+Master\+Volume}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_ad94d05c7a27191fa445b5160be80f2f0}{Mod\+Plug\+\_\+\+Set\+Master\+Volume}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, unsigned int cvol)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_ab6589637c2e54afc453e622b4bd434e6}{Mod\+Plug\+\_\+\+Get\+Current\+Speed}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_a1b66a3096fd171d0cbdcb0349b2f3f8b}{Mod\+Plug\+\_\+\+Get\+Current\+Tempo}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_a9e51ae4906a0355cf9934ea0524b171f}{Mod\+Plug\+\_\+\+Get\+Current\+Order}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_a178dc6a0f5c03d17fc63d61f18cf53c6}{Mod\+Plug\+\_\+\+Get\+Current\+Pattern}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_af3647deb42cd67a23925b0f8b3831a61}{Mod\+Plug\+\_\+\+Get\+Current\+Row}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_a615eedcc749bc439da25faffd7f30ab4}{Mod\+Plug\+\_\+\+Get\+Playing\+Channels}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_ab44c91942fe32e0ddcd0a69dd8d000ed}{Mod\+Plug\+\_\+\+Seek\+Order}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, int \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac64a59f91026a137ab3ce387f6c7e4a7}{order}})
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int \mbox{\hyperlink{modplug_8h_aac2f1bf6c880be9c48a4326439347b36}{Mod\+Plug\+\_\+\+Get\+Module\+Type}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} char $\ast$ \mbox{\hyperlink{modplug_8h_af7324cec84c4033689cda028333a6474}{Mod\+Plug\+\_\+\+Get\+Message}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_a8e12fe2476d6b2b01a91040f3564a278}{Mod\+Plug\+\_\+\+Num\+Instruments}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_af5e673f2ee264677b648f816c2490369}{Mod\+Plug\+\_\+\+Num\+Samples}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_aa9efe30951618937acaa745ed73ddc85}{Mod\+Plug\+\_\+\+Num\+Patterns}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_a92196061180fbf0e5a7471d3951aabc7}{Mod\+Plug\+\_\+\+Num\+Channels}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_afd989353bd97e946b041e7e3761398d3}{Mod\+Plug\+\_\+\+Sample\+Name}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, unsigned int qual, char $\ast$buff)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int \mbox{\hyperlink{modplug_8h_a16b08ef23a40530eb772aac198333b16}{Mod\+Plug\+\_\+\+Instrument\+Name}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, unsigned int qual, char $\ast$buff)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{modplug_8h_a8658ebebbc834be890ab47e443898531}{Mod\+Plug\+Note}} $\ast$ \mbox{\hyperlink{modplug_8h_af600330ce46ab115fa4ed2225ada8b18}{Mod\+Plug\+\_\+\+Get\+Pattern}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, int \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ae07fe9c2f834d1a7c56e51a90c551eff}{pattern}}, unsigned int $\ast$numrows)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_a87fcc07aa5f8a91f0fc3220161b57375}{Mod\+Plug\+\_\+\+Init\+Mixer\+Callback}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file, \mbox{\hyperlink{modplug_8h_afe47432f14168cd265ccab39b1722587}{Mod\+Plug\+Mixer\+Proc}} proc)
+\item 
+\mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{modplug_8h_a05a6cc7e8bf9e10975dd0f25a5068379}{Mod\+Plug\+\_\+\+Unload\+Mixer\+Callback}} (\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$file)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}\label{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}} 
+\index{modplug.h@{modplug.h}!MODPLUG\_EXPORT@{MODPLUG\_EXPORT}}
+\index{MODPLUG\_EXPORT@{MODPLUG\_EXPORT}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{MODPLUG\_EXPORT}{MODPLUG\_EXPORT}}
+{\footnotesize\ttfamily \#define M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}
+
+
+
+Definition at line 25 of file modplug.\+h.
+
+\mbox{\Hypertarget{modplug_8h_a93fe8ebd4e3d5382e3df15ae711a8bf5}\label{modplug_8h_a93fe8ebd4e3d5382e3df15ae711a8bf5}} 
+\index{modplug.h@{modplug.h}!MODPLUG\_NO\_FILESAVE@{MODPLUG\_NO\_FILESAVE}}
+\index{MODPLUG\_NO\_FILESAVE@{MODPLUG\_NO\_FILESAVE}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{MODPLUG\_NO\_FILESAVE}{MODPLUG\_NO\_FILESAVE}}
+{\footnotesize\ttfamily \#define M\+O\+D\+P\+L\+U\+G\+\_\+\+N\+O\+\_\+\+F\+I\+L\+E\+S\+A\+VE~/$\ast$ experimental yet.  must match stdafx.\+h. $\ast$/}
+
+
+
+Definition at line 133 of file modplug.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}\label{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}} 
+\index{modplug.h@{modplug.h}!ModPlug\_Settings@{ModPlug\_Settings}}
+\index{ModPlug\_Settings@{ModPlug\_Settings}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_Settings}{ModPlug\_Settings}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct___mod_plug___settings}{\+\_\+\+Mod\+Plug\+\_\+\+Settings}}  \mbox{\hyperlink{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}{Mod\+Plug\+\_\+\+Settings}}}
+
+\mbox{\Hypertarget{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}\label{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}} 
+\index{modplug.h@{modplug.h}!ModPlugFile@{ModPlugFile}}
+\index{ModPlugFile@{ModPlugFile}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlugFile}{ModPlugFile}}
+{\footnotesize\ttfamily typedef struct \+\_\+\+Mod\+Plug\+File \mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}}}
+
+
+
+Definition at line 29 of file modplug.\+h.
+
+\mbox{\Hypertarget{modplug_8h_afe47432f14168cd265ccab39b1722587}\label{modplug_8h_afe47432f14168cd265ccab39b1722587}} 
+\index{modplug.h@{modplug.h}!ModPlugMixerProc@{ModPlugMixerProc}}
+\index{ModPlugMixerProc@{ModPlugMixerProc}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlugMixerProc}{ModPlugMixerProc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ Mod\+Plug\+Mixer\+Proc) (int $\ast$, unsigned long, unsigned long)}
+
+
+
+Definition at line 41 of file modplug.\+h.
+
+\mbox{\Hypertarget{modplug_8h_a8658ebebbc834be890ab47e443898531}\label{modplug_8h_a8658ebebbc834be890ab47e443898531}} 
+\index{modplug.h@{modplug.h}!ModPlugNote@{ModPlugNote}}
+\index{ModPlugNote@{ModPlugNote}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlugNote}{ModPlugNote}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct___mod_plug_note}{\+\_\+\+Mod\+Plug\+Note}} \mbox{\hyperlink{modplug_8h_a8658ebebbc834be890ab47e443898531}{Mod\+Plug\+Note}}}
+
+
+
+Definition at line 39 of file modplug.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{modplug_8h_a3e39048e3a9ce7c7a25016512645205a}\label{modplug_8h_a3e39048e3a9ce7c7a25016512645205a}} 
+\index{modplug.h@{modplug.h}!\_ModPlug\_Flags@{\_ModPlug\_Flags}}
+\index{\_ModPlug\_Flags@{\_ModPlug\_Flags}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{\_ModPlug\_Flags}{\_ModPlug\_Flags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{modplug_8h_a3e39048e3a9ce7c7a25016512645205a}{\+\_\+\+Mod\+Plug\+\_\+\+Flags}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_ENABLE\_OVERSAMPLING@{MODPLUG\_ENABLE\_OVERSAMPLING}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_ENABLE\_OVERSAMPLING@{MODPLUG\_ENABLE\_OVERSAMPLING}}}\mbox{\Hypertarget{modplug_8h_a3e39048e3a9ce7c7a25016512645205aae842890f3d52f049c14a76534a8c7b93}\label{modplug_8h_a3e39048e3a9ce7c7a25016512645205aae842890f3d52f049c14a76534a8c7b93}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+O\+V\+E\+R\+S\+A\+M\+P\+L\+I\+NG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_ENABLE\_NOISE\_REDUCTION@{MODPLUG\_ENABLE\_NOISE\_REDUCTION}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_ENABLE\_NOISE\_REDUCTION@{MODPLUG\_ENABLE\_NOISE\_REDUCTION}}}\mbox{\Hypertarget{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa67022393fc4d47d1a1d3b45fa62c3403}\label{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa67022393fc4d47d1a1d3b45fa62c3403}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+N\+O\+I\+S\+E\+\_\+\+R\+E\+D\+U\+C\+T\+I\+ON&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_ENABLE\_REVERB@{MODPLUG\_ENABLE\_REVERB}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_ENABLE\_REVERB@{MODPLUG\_ENABLE\_REVERB}}}\mbox{\Hypertarget{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa7cefc1a4ecd451c592c26a67db2f6383}\label{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa7cefc1a4ecd451c592c26a67db2f6383}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+R\+E\+V\+E\+RB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_ENABLE\_MEGABASS@{MODPLUG\_ENABLE\_MEGABASS}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_ENABLE\_MEGABASS@{MODPLUG\_ENABLE\_MEGABASS}}}\mbox{\Hypertarget{modplug_8h_a3e39048e3a9ce7c7a25016512645205aae25f196c5bdb418c89bd38efe4c30122}\label{modplug_8h_a3e39048e3a9ce7c7a25016512645205aae25f196c5bdb418c89bd38efe4c30122}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+E\+G\+A\+B\+A\+SS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_ENABLE\_SURROUND@{MODPLUG\_ENABLE\_SURROUND}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_ENABLE\_SURROUND@{MODPLUG\_ENABLE\_SURROUND}}}\mbox{\Hypertarget{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa253730b628b894b05406401b09785740}\label{modplug_8h_a3e39048e3a9ce7c7a25016512645205aa253730b628b894b05406401b09785740}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+S\+U\+R\+R\+O\+U\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 70 of file modplug.\+h.
+
+\mbox{\Hypertarget{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbe}\label{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbe}} 
+\index{modplug.h@{modplug.h}!\_ModPlug\_ResamplingMode@{\_ModPlug\_ResamplingMode}}
+\index{\_ModPlug\_ResamplingMode@{\_ModPlug\_ResamplingMode}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{\_ModPlug\_ResamplingMode}{\_ModPlug\_ResamplingMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbe}{\+\_\+\+Mod\+Plug\+\_\+\+Resampling\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_RESAMPLE\_NEAREST@{MODPLUG\_RESAMPLE\_NEAREST}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_RESAMPLE\_NEAREST@{MODPLUG\_RESAMPLE\_NEAREST}}}\mbox{\Hypertarget{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea67e3d6c5d579f746c3e6c39bd87f7708}\label{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea67e3d6c5d579f746c3e6c39bd87f7708}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+N\+E\+A\+R\+E\+ST&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_RESAMPLE\_LINEAR@{MODPLUG\_RESAMPLE\_LINEAR}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_RESAMPLE\_LINEAR@{MODPLUG\_RESAMPLE\_LINEAR}}}\mbox{\Hypertarget{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea2a4ec70cb5b36225b860d6d55a9cc1e3}\label{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea2a4ec70cb5b36225b860d6d55a9cc1e3}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+L\+I\+N\+E\+AR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_RESAMPLE\_SPLINE@{MODPLUG\_RESAMPLE\_SPLINE}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_RESAMPLE\_SPLINE@{MODPLUG\_RESAMPLE\_SPLINE}}}\mbox{\Hypertarget{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea9fc58f798f9555ebe508696134fe454f}\label{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea9fc58f798f9555ebe508696134fe454f}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+S\+P\+L\+I\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MODPLUG\_RESAMPLE\_FIR@{MODPLUG\_RESAMPLE\_FIR}!modplug.h@{modplug.h}}\index{modplug.h@{modplug.h}!MODPLUG\_RESAMPLE\_FIR@{MODPLUG\_RESAMPLE\_FIR}}}\mbox{\Hypertarget{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea31db030516ac0c088ec21fc8854921e0}\label{modplug_8h_a4a3b8e7e38e893a43eb42b469baa3bbea31db030516ac0c088ec21fc8854921e0}} 
+M\+O\+D\+P\+L\+U\+G\+\_\+\+R\+E\+S\+A\+M\+P\+L\+E\+\_\+\+F\+IR&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 79 of file modplug.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{modplug_8h_a9e51ae4906a0355cf9934ea0524b171f}\label{modplug_8h_a9e51ae4906a0355cf9934ea0524b171f}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetCurrentOrder@{ModPlug\_GetCurrentOrder}}
+\index{ModPlug\_GetCurrentOrder@{ModPlug\_GetCurrentOrder}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetCurrentOrder()}{ModPlug\_GetCurrentOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Current\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a178dc6a0f5c03d17fc63d61f18cf53c6}\label{modplug_8h_a178dc6a0f5c03d17fc63d61f18cf53c6}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetCurrentPattern@{ModPlug\_GetCurrentPattern}}
+\index{ModPlug\_GetCurrentPattern@{ModPlug\_GetCurrentPattern}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetCurrentPattern()}{ModPlug\_GetCurrentPattern()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Current\+Pattern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_af3647deb42cd67a23925b0f8b3831a61}\label{modplug_8h_af3647deb42cd67a23925b0f8b3831a61}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetCurrentRow@{ModPlug\_GetCurrentRow}}
+\index{ModPlug\_GetCurrentRow@{ModPlug\_GetCurrentRow}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetCurrentRow()}{ModPlug\_GetCurrentRow()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Current\+Row (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_ab6589637c2e54afc453e622b4bd434e6}\label{modplug_8h_ab6589637c2e54afc453e622b4bd434e6}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetCurrentSpeed@{ModPlug\_GetCurrentSpeed}}
+\index{ModPlug\_GetCurrentSpeed@{ModPlug\_GetCurrentSpeed}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetCurrentSpeed()}{ModPlug\_GetCurrentSpeed()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Current\+Speed (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a1b66a3096fd171d0cbdcb0349b2f3f8b}\label{modplug_8h_a1b66a3096fd171d0cbdcb0349b2f3f8b}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetCurrentTempo@{ModPlug\_GetCurrentTempo}}
+\index{ModPlug\_GetCurrentTempo@{ModPlug\_GetCurrentTempo}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetCurrentTempo()}{ModPlug\_GetCurrentTempo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Current\+Tempo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a740fd7f8db8b173255e242add5f4ed90}\label{modplug_8h_a740fd7f8db8b173255e242add5f4ed90}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetLength@{ModPlug\_GetLength}}
+\index{ModPlug\_GetLength@{ModPlug\_GetLength}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetLength()}{ModPlug\_GetLength()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a5bf58565371130689b91f08443229dd4}\label{modplug_8h_a5bf58565371130689b91f08443229dd4}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetMasterVolume@{ModPlug\_GetMasterVolume}}
+\index{ModPlug\_GetMasterVolume@{ModPlug\_GetMasterVolume}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetMasterVolume()}{ModPlug\_GetMasterVolume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Get\+Master\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_af7324cec84c4033689cda028333a6474}\label{modplug_8h_af7324cec84c4033689cda028333a6474}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetMessage@{ModPlug\_GetMessage}}
+\index{ModPlug\_GetMessage@{ModPlug\_GetMessage}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetMessage()}{ModPlug\_GetMessage()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} char$\ast$ Mod\+Plug\+\_\+\+Get\+Message (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_aac2f1bf6c880be9c48a4326439347b36}\label{modplug_8h_aac2f1bf6c880be9c48a4326439347b36}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetModuleType@{ModPlug\_GetModuleType}}
+\index{ModPlug\_GetModuleType@{ModPlug\_GetModuleType}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetModuleType()}{ModPlug\_GetModuleType()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Module\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a506d062d67b5a1c0a1647206aca90b76}\label{modplug_8h_a506d062d67b5a1c0a1647206aca90b76}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetName@{ModPlug\_GetName}}
+\index{ModPlug\_GetName@{ModPlug\_GetName}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetName()}{ModPlug\_GetName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} const char$\ast$ Mod\+Plug\+\_\+\+Get\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_af600330ce46ab115fa4ed2225ada8b18}\label{modplug_8h_af600330ce46ab115fa4ed2225ada8b18}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetPattern@{ModPlug\_GetPattern}}
+\index{ModPlug\_GetPattern@{ModPlug\_GetPattern}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetPattern()}{ModPlug\_GetPattern()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{modplug_8h_a8658ebebbc834be890ab47e443898531}{Mod\+Plug\+Note}}$\ast$ Mod\+Plug\+\_\+\+Get\+Pattern (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{int}]{pattern,  }\item[{unsigned int $\ast$}]{numrows }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a615eedcc749bc439da25faffd7f30ab4}\label{modplug_8h_a615eedcc749bc439da25faffd7f30ab4}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetPlayingChannels@{ModPlug\_GetPlayingChannels}}
+\index{ModPlug\_GetPlayingChannels@{ModPlug\_GetPlayingChannels}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetPlayingChannels()}{ModPlug\_GetPlayingChannels()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Get\+Playing\+Channels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_ad8fea2158fb332cb93d88d5ac35930ae}\label{modplug_8h_ad8fea2158fb332cb93d88d5ac35930ae}} 
+\index{modplug.h@{modplug.h}!ModPlug\_GetSettings@{ModPlug\_GetSettings}}
+\index{ModPlug\_GetSettings@{ModPlug\_GetSettings}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_GetSettings()}{ModPlug\_GetSettings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Get\+Settings (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}{Mod\+Plug\+\_\+\+Settings}} $\ast$}]{settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a87fcc07aa5f8a91f0fc3220161b57375}\label{modplug_8h_a87fcc07aa5f8a91f0fc3220161b57375}} 
+\index{modplug.h@{modplug.h}!ModPlug\_InitMixerCallback@{ModPlug\_InitMixerCallback}}
+\index{ModPlug\_InitMixerCallback@{ModPlug\_InitMixerCallback}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_InitMixerCallback()}{ModPlug\_InitMixerCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Init\+Mixer\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{\mbox{\hyperlink{modplug_8h_afe47432f14168cd265ccab39b1722587}{Mod\+Plug\+Mixer\+Proc}}}]{proc }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a16b08ef23a40530eb772aac198333b16}\label{modplug_8h_a16b08ef23a40530eb772aac198333b16}} 
+\index{modplug.h@{modplug.h}!ModPlug\_InstrumentName@{ModPlug\_InstrumentName}}
+\index{ModPlug\_InstrumentName@{ModPlug\_InstrumentName}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_InstrumentName()}{ModPlug\_InstrumentName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Instrument\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{unsigned int}]{qual,  }\item[{char $\ast$}]{buff }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_acaece88e83e9f52b4fc3e21795b400b7}\label{modplug_8h_acaece88e83e9f52b4fc3e21795b400b7}} 
+\index{modplug.h@{modplug.h}!ModPlug\_Load@{ModPlug\_Load}}
+\index{ModPlug\_Load@{ModPlug\_Load}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_Load()}{ModPlug\_Load()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}}$\ast$ Mod\+Plug\+\_\+\+Load (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{data,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a92196061180fbf0e5a7471d3951aabc7}\label{modplug_8h_a92196061180fbf0e5a7471d3951aabc7}} 
+\index{modplug.h@{modplug.h}!ModPlug\_NumChannels@{ModPlug\_NumChannels}}
+\index{ModPlug\_NumChannels@{ModPlug\_NumChannels}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_NumChannels()}{ModPlug\_NumChannels()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Num\+Channels (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a8e12fe2476d6b2b01a91040f3564a278}\label{modplug_8h_a8e12fe2476d6b2b01a91040f3564a278}} 
+\index{modplug.h@{modplug.h}!ModPlug\_NumInstruments@{ModPlug\_NumInstruments}}
+\index{ModPlug\_NumInstruments@{ModPlug\_NumInstruments}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_NumInstruments()}{ModPlug\_NumInstruments()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Num\+Instruments (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_aa9efe30951618937acaa745ed73ddc85}\label{modplug_8h_aa9efe30951618937acaa745ed73ddc85}} 
+\index{modplug.h@{modplug.h}!ModPlug\_NumPatterns@{ModPlug\_NumPatterns}}
+\index{ModPlug\_NumPatterns@{ModPlug\_NumPatterns}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_NumPatterns()}{ModPlug\_NumPatterns()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Num\+Patterns (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_af5e673f2ee264677b648f816c2490369}\label{modplug_8h_af5e673f2ee264677b648f816c2490369}} 
+\index{modplug.h@{modplug.h}!ModPlug\_NumSamples@{ModPlug\_NumSamples}}
+\index{ModPlug\_NumSamples@{ModPlug\_NumSamples}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_NumSamples()}{ModPlug\_NumSamples()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Num\+Samples (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_ab48da4e94a15fe4c7df7da3747de7bf8}\label{modplug_8h_ab48da4e94a15fe4c7df7da3747de7bf8}} 
+\index{modplug.h@{modplug.h}!ModPlug\_Read@{ModPlug\_Read}}
+\index{ModPlug\_Read@{ModPlug\_Read}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_Read()}{ModPlug\_Read()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} int Mod\+Plug\+\_\+\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$}]{buffer,  }\item[{int}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_afd989353bd97e946b041e7e3761398d3}\label{modplug_8h_afd989353bd97e946b041e7e3761398d3}} 
+\index{modplug.h@{modplug.h}!ModPlug\_SampleName@{ModPlug\_SampleName}}
+\index{ModPlug\_SampleName@{ModPlug\_SampleName}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_SampleName()}{ModPlug\_SampleName()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} unsigned int Mod\+Plug\+\_\+\+Sample\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{unsigned int}]{qual,  }\item[{char $\ast$}]{buff }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a1fb321c9484e40cec3df31b8b8ab9709}\label{modplug_8h_a1fb321c9484e40cec3df31b8b8ab9709}} 
+\index{modplug.h@{modplug.h}!ModPlug\_Seek@{ModPlug\_Seek}}
+\index{ModPlug\_Seek@{ModPlug\_Seek}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_Seek()}{ModPlug\_Seek()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Seek (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{int}]{millisecond }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_ab44c91942fe32e0ddcd0a69dd8d000ed}\label{modplug_8h_ab44c91942fe32e0ddcd0a69dd8d000ed}} 
+\index{modplug.h@{modplug.h}!ModPlug\_SeekOrder@{ModPlug\_SeekOrder}}
+\index{ModPlug\_SeekOrder@{ModPlug\_SeekOrder}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_SeekOrder()}{ModPlug\_SeekOrder()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Seek\+Order (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{int}]{order }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_ad94d05c7a27191fa445b5160be80f2f0}\label{modplug_8h_ad94d05c7a27191fa445b5160be80f2f0}} 
+\index{modplug.h@{modplug.h}!ModPlug\_SetMasterVolume@{ModPlug\_SetMasterVolume}}
+\index{ModPlug\_SetMasterVolume@{ModPlug\_SetMasterVolume}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_SetMasterVolume()}{ModPlug\_SetMasterVolume()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Set\+Master\+Volume (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file,  }\item[{unsigned int}]{cvol }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a79dfb780110e4f5373c2e47fc7fdf4e4}\label{modplug_8h_a79dfb780110e4f5373c2e47fc7fdf4e4}} 
+\index{modplug.h@{modplug.h}!ModPlug\_SetSettings@{ModPlug\_SetSettings}}
+\index{ModPlug\_SetSettings@{ModPlug\_SetSettings}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_SetSettings()}{ModPlug\_SetSettings()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Set\+Settings (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{modplug_8h_a15c8c7d37bfb6cf2dd16a6adf9bd4a12}{Mod\+Plug\+\_\+\+Settings}} $\ast$}]{settings }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a6c974bcb0e46a8cede287d5fe56c5ffb}\label{modplug_8h_a6c974bcb0e46a8cede287d5fe56c5ffb}} 
+\index{modplug.h@{modplug.h}!ModPlug\_Unload@{ModPlug\_Unload}}
+\index{ModPlug\_Unload@{ModPlug\_Unload}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_Unload()}{ModPlug\_Unload()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Unload (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{modplug_8h_a05a6cc7e8bf9e10975dd0f25a5068379}\label{modplug_8h_a05a6cc7e8bf9e10975dd0f25a5068379}} 
+\index{modplug.h@{modplug.h}!ModPlug\_UnloadMixerCallback@{ModPlug\_UnloadMixerCallback}}
+\index{ModPlug\_UnloadMixerCallback@{ModPlug\_UnloadMixerCallback}!modplug.h@{modplug.h}}
+\subsubsection{\texorpdfstring{ModPlug\_UnloadMixerCallback()}{ModPlug\_UnloadMixerCallback()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{modplug_8h_ac25ed9792cbda4ef474d146634ccdaa0}{M\+O\+D\+P\+L\+U\+G\+\_\+\+E\+X\+P\+O\+RT}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Mod\+Plug\+\_\+\+Unload\+Mixer\+Callback (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{modplug_8h_a19763ba880c49aa05aa22bd5a520615e}{Mod\+Plug\+File}} $\ast$}]{file }\end{DoxyParamCaption})}
+

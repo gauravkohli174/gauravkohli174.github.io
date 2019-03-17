@@ -1,0 +1,118 @@
+\hypertarget{ftsystem_8h}{}\section{lib/\+S\+D\+L2\+\_\+ttf.framework/\+Versions/\+A/\+Frameworks/\+Free\+Type.framework/\+Versions/\+A/\+Headers/freetype/ftsystem.h File Reference}
+\label{ftsystem_8h}\index{lib/SDL2\_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsystem.h@{lib/SDL2\_ttf.framework/Versions/A/Frameworks/FreeType.framework/Versions/A/Headers/freetype/ftsystem.h}}
+{\ttfamily \#include $<$ft2build.\+h$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_f_t___memory_rec__}{F\+T\+\_\+\+Memory\+Rec\+\_\+}}
+\item 
+union \mbox{\hyperlink{union_f_t___stream_desc__}{F\+T\+\_\+\+Stream\+Desc\+\_\+}}
+\item 
+struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct \mbox{\hyperlink{struct_f_t___memory_rec__}{F\+T\+\_\+\+Memory\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$($\ast$ \mbox{\hyperlink{ftsystem_8h_ae36240d207415b573f5b84416b426540}{F\+T\+\_\+\+Alloc\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{ftsystem_8h_abbf66b34e6c3a7f9564cbe3d6fa6c6fb}{F\+T\+\_\+\+Free\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$block)
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$($\ast$ \mbox{\hyperlink{ftsystem_8h_a264ca9013613b2454d64987bf768ac93}{F\+T\+\_\+\+Realloc\+\_\+\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long cur\+\_\+size, long new\+\_\+size, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$block)
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}} $\ast$ \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}
+\item 
+typedef union \mbox{\hyperlink{union_f_t___stream_desc__}{F\+T\+\_\+\+Stream\+Desc\+\_\+}} \mbox{\hyperlink{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}{F\+T\+\_\+\+Stream\+Desc}}
+\item 
+typedef unsigned long($\ast$ \mbox{\hyperlink{ftsystem_8h_a1909d9c00ba62592c047a9868e5a6b0b}{F\+T\+\_\+\+Stream\+\_\+\+Io\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}}, unsigned long \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac915cd848f42b26af51745f204a3b9af}{offset}}, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer}}, unsigned long \mbox{\hyperlink{_s_d_l__opengl_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count}})
+\item 
+typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ \mbox{\hyperlink{ftsystem_8h_a9ab6151513724c69e5493d520d43135f}{F\+T\+\_\+\+Stream\+\_\+\+Close\+Func}}) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}})
+\item 
+typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}} \mbox{\hyperlink{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}{F\+T\+\_\+\+Stream\+Rec}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{ftsystem_8h_ae36240d207415b573f5b84416b426540}\label{ftsystem_8h_ae36240d207415b573f5b84416b426540}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Alloc\_Func@{FT\_Alloc\_Func}}
+\index{FT\_Alloc\_Func@{FT\_Alloc\_Func}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Alloc\_Func}{FT\_Alloc\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$($\ast$ F\+T\+\_\+\+Alloc\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}})}
+
+
+
+Definition at line 89 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_abbf66b34e6c3a7f9564cbe3d6fa6c6fb}\label{ftsystem_8h_abbf66b34e6c3a7f9564cbe3d6fa6c6fb}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Free\_Func@{FT\_Free\_Func}}
+\index{FT\_Free\_Func@{FT\_Free\_Func}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Free\_Func}{FT\_Free\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ F\+T\+\_\+\+Free\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$block)}
+
+
+
+Definition at line 110 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}\label{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Memory@{FT\_Memory}}
+\index{FT\_Memory@{FT\_Memory}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Memory}{FT\_Memory}}
+{\footnotesize\ttfamily typedef typedef\+F\+T\+\_\+\+B\+E\+G\+I\+N\+\_\+\+H\+E\+A\+D\+ER struct \mbox{\hyperlink{struct_f_t___memory_rec__}{F\+T\+\_\+\+Memory\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}}}
+
+
+
+Definition at line 66 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_a264ca9013613b2454d64987bf768ac93}\label{ftsystem_8h_a264ca9013613b2454d64987bf768ac93}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Realloc\_Func@{FT\_Realloc\_Func}}
+\index{FT\_Realloc\_Func@{FT\_Realloc\_Func}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Realloc\_Func}{FT\_Realloc\_Func}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}$\ast$($\ast$ F\+T\+\_\+\+Realloc\+\_\+\+Func) (\mbox{\hyperlink{ftsystem_8h_a67ec7ea35cde99a89a65e9f827a9ad3a}{F\+T\+\_\+\+Memory}} memory, long cur\+\_\+size, long new\+\_\+size, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$block)}
+
+
+
+Definition at line 143 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}\label{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Stream@{FT\_Stream}}
+\index{FT\_Stream@{FT\_Stream}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Stream}{FT\_Stream}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}}$\ast$ \mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}}}
+
+
+
+Definition at line 200 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_a9ab6151513724c69e5493d520d43135f}\label{ftsystem_8h_a9ab6151513724c69e5493d520d43135f}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Stream\_CloseFunc@{FT\_Stream\_CloseFunc}}
+\index{FT\_Stream\_CloseFunc@{FT\_Stream\_CloseFunc}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Stream\_CloseFunc}{FT\_Stream\_CloseFunc}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}($\ast$ F\+T\+\_\+\+Stream\+\_\+\+Close\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}})}
+
+
+
+Definition at line 272 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_a1909d9c00ba62592c047a9868e5a6b0b}\label{ftsystem_8h_a1909d9c00ba62592c047a9868e5a6b0b}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_Stream\_IoFunc@{FT\_Stream\_IoFunc}}
+\index{FT\_Stream\_IoFunc@{FT\_Stream\_IoFunc}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_Stream\_IoFunc}{FT\_Stream\_IoFunc}}
+{\footnotesize\ttfamily typedef unsigned long($\ast$ F\+T\+\_\+\+Stream\+\_\+\+Io\+Func) (\mbox{\hyperlink{ftsystem_8h_a788b32c932932f7411a8dfa7f6c794bf}{F\+T\+\_\+\+Stream}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a10d3bc96cdfc1d478f52c13d5ffd9316}{stream}}, unsigned long \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac915cd848f42b26af51745f204a3b9af}{offset}}, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a76461e97a098d2c9ae20ac193d3825ae}{buffer}}, unsigned long \mbox{\hyperlink{_s_d_l__opengl_8h_a619bc20e8198de3bd3f3d7fc34de66b2}{count}})}
+
+
+
+Definition at line 252 of file ftsystem.\+h.
+
+\mbox{\Hypertarget{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}\label{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_StreamDesc@{FT\_StreamDesc}}
+\index{FT\_StreamDesc@{FT\_StreamDesc}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_StreamDesc}{FT\_StreamDesc}}
+{\footnotesize\ttfamily typedef union \mbox{\hyperlink{union_f_t___stream_desc__}{F\+T\+\_\+\+Stream\+Desc\+\_\+}}  \mbox{\hyperlink{ftsystem_8h_ad7ddff377e42bfb38bec17f11fa75911}{F\+T\+\_\+\+Stream\+Desc}}}
+
+\mbox{\Hypertarget{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}\label{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}} 
+\index{ftsystem.h@{ftsystem.h}!FT\_StreamRec@{FT\_StreamRec}}
+\index{FT\_StreamRec@{FT\_StreamRec}!ftsystem.h@{ftsystem.h}}
+\subsubsection{\texorpdfstring{FT\_StreamRec}{FT\_StreamRec}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_f_t___stream_rec__}{F\+T\+\_\+\+Stream\+Rec\+\_\+}}  \mbox{\hyperlink{ftsystem_8h_a38b836063e15694c4ad023d279a11bd8}{F\+T\+\_\+\+Stream\+Rec}}}
+

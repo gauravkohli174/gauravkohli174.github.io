@@ -1,0 +1,70 @@
+\hypertarget{opus__multistream_8h}{}\section{lib/\+S\+D\+L2\+\_\+mixer.framework/\+Versions/\+A/\+Frameworks/\+Opus.framework/\+Versions/\+A/\+Headers/opus\+\_\+multistream.h File Reference}
+\label{opus__multistream_8h}\index{lib/SDL2\_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus\_multistream.h@{lib/SDL2\_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus\_multistream.h}}
+
+
+Opus reference implementation multistream A\+PI.  
+
+
+{\ttfamily \#include \char`\"{}opus.\+h\char`\"{}}\newline
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__opus__multistream__ctls_ga4e67607eb691c4314a5de90d8c58aff0}{O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})
+\item 
+\#define \mbox{\hyperlink{group__opus__multistream__ctls_gaf0843831519b4d9b9d73391afef04a53}{O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+D\+E\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} \mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}}
+\item 
+typedef struct \mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} \mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{Indent}\textbf{ Multistream encoder functions}\par
+\begin{DoxyCompactItemize}
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__multistream_ga598e82225e53af23017e0c96f4eaf3b4}{opus\+\_\+multistream\+\_\+encoder\+\_\+get\+\_\+size}} (int streams, int coupled\+\_\+streams)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__multistream_ga21bf3d342217f28822f676b17bd21144}{opus\+\_\+multistream\+\_\+surround\+\_\+encoder\+\_\+get\+\_\+size}} (int channels, int mapping\+\_\+family)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$ \mbox{\hyperlink{group__opus__multistream_ga984c19f4faa4db82370eb907f8eaf452}{opus\+\_\+multistream\+\_\+encoder\+\_\+create}} (\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int streams, int coupled\+\_\+streams, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}}, int application, int $\ast$error) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(5)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$ \mbox{\hyperlink{group__opus__multistream_ga1358d7af19572d163ec982447aa20ee9}{opus\+\_\+multistream\+\_\+surround\+\_\+encoder\+\_\+create}} (\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int mapping\+\_\+family, int $\ast$streams, int $\ast$coupled\+\_\+streams, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}}, int application, int $\ast$error) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(5)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__multistream_gaf9045180b3a93d7cc3d1197859b767a8}{opus\+\_\+multistream\+\_\+encoder\+\_\+init}} (\mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$st, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int streams, int coupled\+\_\+streams, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}}, int application) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(6)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__multistream_ga786d90cfe8f8b8f371b0137ac76b1559}{opus\+\_\+multistream\+\_\+surround\+\_\+encoder\+\_\+init}} (\mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$st, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int mapping\+\_\+family, int $\ast$streams, int $\ast$coupled\+\_\+streams, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}}, int application) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(6)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__multistream_ga5276a2212541e65624f52e906d3dff42}{opus\+\_\+multistream\+\_\+encode}} (\mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$st, const \mbox{\hyperlink{opus__types_8h_acc9ed7cf60479eb81f9648c6ec27dc26}{opus\+\_\+int16}} $\ast$pcm, int frame\+\_\+size, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} max\+\_\+data\+\_\+bytes) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__multistream_gabc78b732d2e7b6ceb27c63888255ef56}{opus\+\_\+multistream\+\_\+encode\+\_\+float}} (\mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$st, const float $\ast$pcm, int frame\+\_\+size, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} max\+\_\+data\+\_\+bytes) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{group__opus__multistream_ga24b8a4ceb20a142069084cb1edd28a30}{opus\+\_\+multistream\+\_\+encoder\+\_\+destroy}} (\mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$st)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__multistream_ga0f8756c84c7c62a38f99fb5cd6ed68af}{opus\+\_\+multistream\+\_\+encoder\+\_\+ctl}} (\mbox{\hyperlink{group__opus__multistream_gae5826674d142fc873ebc1d781c507dd7}{Opus\+M\+S\+Encoder}} $\ast$st, int request,...) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Multistream decoder functions}\par
+\begin{DoxyCompactItemize}
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__multistream_gad4e534e2ee78039fff01cd0c6f7c1dd1}{opus\+\_\+multistream\+\_\+decoder\+\_\+get\+\_\+size}} (int streams, int coupled\+\_\+streams)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} $\ast$ \mbox{\hyperlink{group__opus__multistream_ga0dc5378a3d4c65498cf530e450b56aa1}{opus\+\_\+multistream\+\_\+decoder\+\_\+create}} (\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int streams, int coupled\+\_\+streams, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}}, int $\ast$error) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(5)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__multistream_gac9680d4205a5ea95785e747f0d2e393b}{opus\+\_\+multistream\+\_\+decoder\+\_\+init}} (\mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} $\ast$st, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int streams, int coupled\+\_\+streams, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa4f194e5160ccbb5a8e83ab6ef4676d2}{mapping}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(6)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__multistream_ga2db65790cd7e0890a031b2eb17452d7b}{opus\+\_\+multistream\+\_\+decode}} (\mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} $\ast$st, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, \mbox{\hyperlink{opus__types_8h_acc9ed7cf60479eb81f9648c6ec27dc26}{opus\+\_\+int16}} $\ast$pcm, int frame\+\_\+size, int decode\+\_\+fec) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__multistream_ga32b004586f69b063a447e123e6a2c151}{opus\+\_\+multistream\+\_\+decode\+\_\+float}} (\mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} $\ast$st, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, float $\ast$pcm, int frame\+\_\+size, int decode\+\_\+fec) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__multistream_ga3c6402c3bb276d7a152d9934ce948431}{opus\+\_\+multistream\+\_\+decoder\+\_\+ctl}} (\mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} $\ast$st, int request,...) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{group__opus__multistream_ga314b439b06efd9463caa5039c1198f6c}{opus\+\_\+multistream\+\_\+decoder\+\_\+destroy}} (\mbox{\hyperlink{group__opus__multistream_gad3497495deb9a8ace82e76cd4f93e0e4}{Opus\+M\+S\+Decoder}} $\ast$st)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\subsection{Detailed Description}
+Opus reference implementation multistream A\+PI. 
+

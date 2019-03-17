@@ -1,0 +1,318 @@
+\hypertarget{group__opus__repacketizer}{}\section{Repacketizer}
+\label{group__opus__repacketizer}\index{Repacketizer@{Repacketizer}}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}{opus\+\_\+repacketizer\+\_\+get\+\_\+size}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$ \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$ \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{group__opus__repacketizer_gab03f22d1139a42e450761ad99ca3d882}{opus\+\_\+repacketizer\+\_\+destroy}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\+\_\+repacketizer\+\_\+out\+\_\+range}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp, int begin, int \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}}, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} maxlen) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}{opus\+\_\+repacketizer\+\_\+get\+\_\+nb\+\_\+frames}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} maxlen) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The repacketizer can be used to merge multiple Opus packets into a single packet or alternatively to split Opus packets that have previously been merged. Splitting valid Opus packets is always guaranteed to succeed, whereas merging valid packets only succeeds if all frames have the same mode, bandwidth, and frame size, and when the total duration of the merged packet is no more than 120 ms. The repacketizer currently only operates on elementary Opus streams. It will not manipualte multistream packets successfully, except in the degenerate case where they consist of data from a single stream.
+
+The repacketizing process starts with creating a repacketizer state, either by calling \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create()}} or by allocating the memory yourself, e.\+g., 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{OpusRepacketizer}} *rp;}
+\DoxyCodeLine{rp = (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{OpusRepacketizer}}*)malloc(\mbox{\hyperlink{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}{opus\_repacketizer\_get\_size}}());}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (rp != \mbox{\hyperlink{begin__code_8h_a070d2ce7b6bb7e5c05602aa8c308d0c4}{NULL}})}
+\DoxyCodeLine{    \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\_repacketizer\_init}}(rp);}
+\end{DoxyCode}
+
+
+Then the application should submit packets with \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}}, extract new packets with \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out()}} or \mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\+\_\+repacketizer\+\_\+out\+\_\+range()}}, and then reset the state for the next set of input packets via \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}}.
+
+For example, to split a sequence of packets into individual frames\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}};}
+\DoxyCodeLine{\textcolor{keywordtype}{int} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}};}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (get\_next\_packet(\&\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \&\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}))}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} out[1276];}
+\DoxyCodeLine{  \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\_int32}} out\_len;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} nb\_frames;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} err;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} i;}
+\DoxyCodeLine{  err = \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\_repacketizer\_cat}}(rp, \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}});}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (err != \mbox{\hyperlink{group__opus__errorcodes_gaa44cf8a185e1b5cb940ef63eb4f02d21}{OPUS\_OK}})}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    release\_packet(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}});}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  nb\_frames = \mbox{\hyperlink{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}{opus\_repacketizer\_get\_nb\_frames}}(rp);}
+\DoxyCodeLine{  \textcolor{keywordflow}{for} (i = 0; i < nb\_frames; i++)}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    out\_len = \mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\_repacketizer\_out\_range}}(rp, i, i+1, out, \textcolor{keyword}{sizeof}(out));}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (out\_len < 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{       release\_packet(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}});}
+\DoxyCodeLine{       \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})out\_len;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    output\_next\_packet(out, out\_len);}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\_repacketizer\_init}}(rp);}
+\DoxyCodeLine{  release\_packet(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+Alternatively, to combine a sequence of frames into packets that each contain up to {\ttfamily T\+A\+R\+G\+E\+T\+\_\+\+D\+U\+R\+A\+T\+I\+O\+N\+\_\+\+MS} milliseconds of data\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{// The maximum number of packets with duration TARGET\_DURATION\_MS occurs}}
+\DoxyCodeLine{\textcolor{comment}{// when the frame size is 2.5 ms, for a total of (TARGET\_DURATION\_MS*2/5)}}
+\DoxyCodeLine{\textcolor{comment}{// packets.}}
+\DoxyCodeLine{\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} *\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[(TARGET\_DURATION\_MS*2/5)+1];}
+\DoxyCodeLine{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\_int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}[(TARGET\_DURATION\_MS*2/5)+1];}
+\DoxyCodeLine{\textcolor{keywordtype}{int} nb\_packets;}
+\DoxyCodeLine{\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char} out[1277*(TARGET\_DURATION\_MS*2/2)];}
+\DoxyCodeLine{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\_int32}} out\_len;}
+\DoxyCodeLine{\textcolor{keywordtype}{int} prev\_toc;}
+\DoxyCodeLine{nb\_packets = 0;}
+\DoxyCodeLine{\textcolor{keywordflow}{while} (get\_next\_packet(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}+nb\_packets, \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}+nb\_packets))}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} nb\_frames;}
+\DoxyCodeLine{  \textcolor{keywordtype}{int} err;}
+\DoxyCodeLine{  nb\_frames = \mbox{\hyperlink{group__opus__decoder_ga932edb5fbae85cf452650ef390f52849}{opus\_packet\_get\_nb\_frames}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[nb\_packets], \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}[nb\_packets]);}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (nb\_frames < 1)}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    release\_packets(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, nb\_packets+1);}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} nb\_frames;}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  nb\_frames += \mbox{\hyperlink{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}{opus\_repacketizer\_get\_nb\_frames}}(rp);}
+\DoxyCodeLine{  \textcolor{comment}{// If adding the next packet would exceed our target, or it has an}}
+\DoxyCodeLine{  \textcolor{comment}{// incompatible TOC sequence, output the packets we already have before}}
+\DoxyCodeLine{  \textcolor{comment}{// submitting it.}}
+\DoxyCodeLine{  \textcolor{comment}{// N.B., The nb\_packets > 0 check ensures we've submitted at least one}}
+\DoxyCodeLine{  \textcolor{comment}{// packet since the last call to opus\_repacketizer\_init(). Otherwise a}}
+\DoxyCodeLine{  \textcolor{comment}{// single packet longer than TARGET\_DURATION\_MS would cause us to try to}}
+\DoxyCodeLine{  \textcolor{comment}{// output an (invalid) empty packet. It also ensures that prev\_toc has}}
+\DoxyCodeLine{  \textcolor{comment}{// been set to a valid value. Additionally, len[nb\_packets] > 0 is}}
+\DoxyCodeLine{  \textcolor{comment}{// guaranteed by the call to opus\_packet\_get\_nb\_frames() above, so the}}
+\DoxyCodeLine{  \textcolor{comment}{// reference to data[nb\_packets][0] should be valid.}}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (nb\_packets > 0 \&\& (}
+\DoxyCodeLine{      ((prev\_toc \& 0xFC) != (\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[nb\_packets][0] \& 0xFC)) ||}
+\DoxyCodeLine{      \mbox{\hyperlink{group__opus__decoder_ga885564fa670e308100dfda89d3cdea10}{opus\_packet\_get\_samples\_per\_frame}}(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[nb\_packets], 48000)*nb\_frames >}
+\DoxyCodeLine{      TARGET\_DURATION\_MS*48))}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    out\_len = \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\_repacketizer\_out}}(rp, out, \textcolor{keyword}{sizeof}(out));}
+\DoxyCodeLine{    \textcolor{keywordflow}{if} (out\_len < 0)}
+\DoxyCodeLine{    \{}
+\DoxyCodeLine{       release\_packets(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, nb\_packets+1);}
+\DoxyCodeLine{       \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})out\_len;}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{    output\_next\_packet(out, out\_len);}
+\DoxyCodeLine{    \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\_repacketizer\_init}}(rp);}
+\DoxyCodeLine{    release\_packets(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, nb\_packets);}
+\DoxyCodeLine{    \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[0] = \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[nb\_packets];}
+\DoxyCodeLine{    \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}[0] = \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}[nb\_packets];}
+\DoxyCodeLine{    nb\_packets = 0;}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  err = \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\_repacketizer\_cat}}(rp, \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[nb\_packets], \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}[nb\_packets]);}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (err != \mbox{\hyperlink{group__opus__errorcodes_gaa44cf8a185e1b5cb940ef63eb4f02d21}{OPUS\_OK}})}
+\DoxyCodeLine{  \{}
+\DoxyCodeLine{    release\_packets(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, nb\_packets+1);}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} err;}
+\DoxyCodeLine{  \}}
+\DoxyCodeLine{  prev\_toc = \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}[nb\_packets][0];}
+\DoxyCodeLine{  nb\_packets++;}
+\DoxyCodeLine{\}}
+\DoxyCodeLine{\textcolor{comment}{// Output the final, partial packet.}}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (nb\_packets > 0)}
+\DoxyCodeLine{\{}
+\DoxyCodeLine{  out\_len = \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\_repacketizer\_out}}(rp, out, \textcolor{keyword}{sizeof}(out));}
+\DoxyCodeLine{  release\_packets(\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, nb\_packets);}
+\DoxyCodeLine{  \textcolor{keywordflow}{if} (out\_len < 0)}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})out\_len;}
+\DoxyCodeLine{  output\_next\_packet(out, out\_len);}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+An alternate way of merging packets is to simply call \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}} unconditionally until it fails. At that point, the merged packet can be obtained with \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out()}} and the input packet for which \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}} needs to be re-\/added to a newly reinitialized repacketizer state. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}\label{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}} 
+\index{Repacketizer@{Repacketizer}!OpusRepacketizer@{OpusRepacketizer}}
+\index{OpusRepacketizer@{OpusRepacketizer}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{OpusRepacketizer}{OpusRepacketizer}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}}}
+
+
+
+Definition at line 737 of file opus.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}\label{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_cat@{opus\_repacketizer\_cat}}
+\index{opus\_repacketizer\_cat@{opus\_repacketizer\_cat}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_cat()}{opus\_repacketizer\_cat()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int opus\+\_\+repacketizer\+\_\+cat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$}]{rp,  }\item[{const unsigned char $\ast$}]{data,  }\item[{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}}}]{len }\end{DoxyParamCaption})}
+
+Add a packet to the current repacketizer state. This packet must match the configuration of any packets already submitted for repacketization since the last call to \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}}. This means that it must have the same coding mode, audio bandwidth, frame size, and channel count. This can be checked in advance by examining the top 6 bits of the first byte of the packet, and ensuring they match the top 6 bits of the first byte of any previously submitted packet. The total duration of audio in the repacketizer state also must not exceed 120 ms, the maximum duration of a single packet, after adding this packet.
+
+The contents of the current repacketizer state can be extracted into new packets using \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out()}} or \mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\+\_\+repacketizer\+\_\+out\+\_\+range()}}.
+
+In order to add a packet with a different configuration or to add more audio beyond 120 ms, you must clear the repacketizer state by calling \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}}. If a packet is too large to add to the current repacketizer state, no part of it is added, even if it contains multiple frames, some of which might fit. If you wish to be able to add parts of such packets, you should first use another repacketizer to split the packet into pieces and add them individually. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\+\_\+repacketizer\+\_\+out\+\_\+range}} 
+
+\mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out}} 
+
+\mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+ & {\em rp} & {\ttfamily Opus\+Repacketizer$\ast$}\+: The repacketizer state to which to add the packet. \\
+\hline
+\mbox{\texttt{ in}}  & {\em data} & {\ttfamily const unsigned char$\ast$}\+: The packet data. The application must ensure this pointer remains valid until the next call to \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}} or \mbox{\hyperlink{group__opus__repacketizer_gab03f22d1139a42e450761ad99ca3d882}{opus\+\_\+repacketizer\+\_\+destroy()}}. \\
+\hline
+ & {\em len} & {\ttfamily opus\+\_\+int32}\+: The number of bytes in the packet data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An error code indicating whether or not the operation succeeded. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{\hyperlink{group__opus__errorcodes_gaa44cf8a185e1b5cb940ef63eb4f02d21}{O\+P\+U\+S\+\_\+\+OK}}} & The packet\textquotesingle{}s contents have been added to the repacketizer state. \\
+\hline
+{\em \mbox{\hyperlink{group__opus__errorcodes_ga46fc9dd493fb8e291bd8e838f0988bb7}{O\+P\+U\+S\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+A\+C\+K\+ET}}} & The packet did not have a valid T\+OC sequence, the packet\textquotesingle{}s T\+OC sequence was not compatible with previously submitted packets (because the coding mode, audio bandwidth, frame size, or channel count did not match), or adding this packet would increase the total amount of audio stored in the repacketizer state to more than 120 ms. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}\label{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_create@{opus\_repacketizer\_create}}
+\index{opus\_repacketizer\_create@{opus\_repacketizer\_create}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_create()}{opus\_repacketizer\_create()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}}$\ast$ opus\+\_\+repacketizer\+\_\+create (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+Allocates memory and initializes the new repacketizer with \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}}. \mbox{\Hypertarget{group__opus__repacketizer_gab03f22d1139a42e450761ad99ca3d882}\label{group__opus__repacketizer_gab03f22d1139a42e450761ad99ca3d882}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_destroy@{opus\_repacketizer\_destroy}}
+\index{opus\_repacketizer\_destroy@{opus\_repacketizer\_destroy}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_destroy()}{opus\_repacketizer\_destroy()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} opus\+\_\+repacketizer\+\_\+destroy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$}]{rp }\end{DoxyParamCaption})}
+
+Frees an {\ttfamily Opus\+Repacketizer} allocated by \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create()}}. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em rp} & {\ttfamily Opus\+Repacketizer$\ast$}\+: State to be freed. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}\label{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_get\_nb\_frames@{opus\_repacketizer\_get\_nb\_frames}}
+\index{opus\_repacketizer\_get\_nb\_frames@{opus\_repacketizer\_get\_nb\_frames}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_get\_nb\_frames()}{opus\_repacketizer\_get\_nb\_frames()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int opus\+\_\+repacketizer\+\_\+get\+\_\+nb\+\_\+frames (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$}]{rp }\end{DoxyParamCaption})}
+
+Return the total number of frames contained in packet data submitted to the repacketizer state so far via \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}} since the last call to \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}} or \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create()}}. This defines the valid range of packets that can be extracted with \mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\+\_\+repacketizer\+\_\+out\+\_\+range()}} or \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out()}}. 
+\begin{DoxyParams}{Parameters}
+{\em rp} & {\ttfamily Opus\+Repacketizer$\ast$}\+: The repacketizer state containing the frames. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total number of frames contained in the packet data submitted to the repacketizer state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}\label{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_get\_size@{opus\_repacketizer\_get\_size}}
+\index{opus\_repacketizer\_get\_size@{opus\_repacketizer\_get\_size}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_get\_size()}{opus\_repacketizer\_get\_size()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int opus\+\_\+repacketizer\+\_\+get\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+
+Gets the size of an {\ttfamily Opus\+Repacketizer} structure. \begin{DoxyReturn}{Returns}
+The size in bytes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}\label{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_init@{opus\_repacketizer\_init}}
+\index{opus\_repacketizer\_init@{opus\_repacketizer\_init}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_init()}{opus\_repacketizer\_init()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}}$\ast$ opus\+\_\+repacketizer\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$}]{rp }\end{DoxyParamCaption})}
+
+(Re)initializes a previously allocated repacketizer state. The state must be at least the size returned by \mbox{\hyperlink{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}{opus\+\_\+repacketizer\+\_\+get\+\_\+size()}}. This can be used for applications which use their own allocator instead of malloc(). It must also be called to reset the queue of packets waiting to be repacketized, which is necessary if the maximum packet duration of 120 ms is reached or if you wish to submit packets with a different Opus configuration (coding mode, audio bandwidth, frame size, or channel count). Failure to do so will prevent a new packet from being added with \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}}. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create}} 
+
+\mbox{\hyperlink{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}{opus\+\_\+repacketizer\+\_\+get\+\_\+size}} 
+
+\mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em rp} & {\ttfamily Opus\+Repacketizer$\ast$}\+: The repacketizer state to (re)initialize. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the same repacketizer state that was passed in. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}\label{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_out@{opus\_repacketizer\_out}}
+\index{opus\_repacketizer\_out@{opus\_repacketizer\_out}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_out()}{opus\_repacketizer\_out()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} opus\+\_\+repacketizer\+\_\+out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$}]{rp,  }\item[{unsigned char $\ast$}]{data,  }\item[{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}}}]{maxlen }\end{DoxyParamCaption})}
+
+Construct a new packet from data previously submitted to the repacketizer state via \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}}. This is a convenience routine that returns all the data submitted so far in a single packet. It is equivalent to calling 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\_repacketizer\_out\_range}}(rp, 0, \mbox{\hyperlink{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}{opus\_repacketizer\_get\_nb\_frames}}(rp),}
+\DoxyCodeLine{                            \mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, maxlen)}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em rp} & {\ttfamily Opus\+Repacketizer$\ast$}\+: The repacketizer state from which to construct the new packet. \\
+\hline
+\mbox{\texttt{ out}}  & {\em data} & {\ttfamily const unsigned char$\ast$}\+: The buffer in which to store the output packet. \\
+\hline
+ & {\em maxlen} & {\ttfamily opus\+\_\+int32}\+: The maximum number of bytes to store in the output buffer. In order to guarantee success, this should be at least {\ttfamily 1277$\ast$opus\+\_\+repacketizer\+\_\+get\+\_\+nb\+\_\+frames(rp)}. However, {\ttfamily 1$\ast$opus\+\_\+repacketizer\+\_\+get\+\_\+nb\+\_\+frames(rp)} plus the size of all packet data submitted to the repacketizer since the last call to \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}} or \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create()}} is also sufficient, and possibly much smaller. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total size of the output packet on success, or an error code on failure. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{\hyperlink{group__opus__errorcodes_gacd897c05563ec04a67d8e92ba29f3d4f}{O\+P\+U\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+LL}}} & {\itshape maxlen} was insufficient to contain the complete output packet. \\
+\hline
+\end{DoxyRetVals}
+\mbox{\Hypertarget{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}\label{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}} 
+\index{Repacketizer@{Repacketizer}!opus\_repacketizer\_out\_range@{opus\_repacketizer\_out\_range}}
+\index{opus\_repacketizer\_out\_range@{opus\_repacketizer\_out\_range}!Repacketizer@{Repacketizer}}
+\subsubsection{\texorpdfstring{opus\_repacketizer\_out\_range()}{opus\_repacketizer\_out\_range()}}
+{\footnotesize\ttfamily O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} opus\+\_\+repacketizer\+\_\+out\+\_\+range (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$}]{rp,  }\item[{int}]{begin,  }\item[{int}]{end,  }\item[{unsigned char $\ast$}]{data,  }\item[{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}}}]{maxlen }\end{DoxyParamCaption})}
+
+Construct a new packet from data previously submitted to the repacketizer state via \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat()}}. 
+\begin{DoxyParams}[1]{Parameters}
+ & {\em rp} & {\ttfamily Opus\+Repacketizer$\ast$}\+: The repacketizer state from which to construct the new packet. \\
+\hline
+ & {\em begin} & {\ttfamily int}\+: The index of the first frame in the current repacketizer state to include in the output. \\
+\hline
+ & {\em end} & {\ttfamily int}\+: One past the index of the last frame in the current repacketizer state to include in the output. \\
+\hline
+\mbox{\texttt{ out}}  & {\em data} & {\ttfamily const unsigned char$\ast$}\+: The buffer in which to store the output packet. \\
+\hline
+ & {\em maxlen} & {\ttfamily opus\+\_\+int32}\+: The maximum number of bytes to store in the output buffer. In order to guarantee success, this should be at least {\ttfamily 1276} for a single frame, or for multiple frames, {\ttfamily 1277$\ast$(end-\/begin)}. However, {\ttfamily 1$\ast$(end-\/begin)} plus the size of all packet data submitted to the repacketizer since the last call to \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init()}} or \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create()}} is also sufficient, and possibly much smaller. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total size of the output packet on success, or an error code on failure. 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{Return values}
+{\em \mbox{\hyperlink{group__opus__errorcodes_gaf2d43e479455a1a3b6874e5faf4e827d}{O\+P\+U\+S\+\_\+\+B\+A\+D\+\_\+\+A\+RG}}} & {\ttfamily \mbox{[}begin,end)} was an invalid range of frames (begin $<$ 0, begin $>$= end, or end $>$ \mbox{\hyperlink{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}{opus\+\_\+repacketizer\+\_\+get\+\_\+nb\+\_\+frames()}}). \\
+\hline
+{\em \mbox{\hyperlink{group__opus__errorcodes_gacd897c05563ec04a67d8e92ba29f3d4f}{O\+P\+U\+S\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+LL}}} & {\itshape maxlen} was insufficient to contain the complete output packet. \\
+\hline
+\end{DoxyRetVals}

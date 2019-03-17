@@ -1,0 +1,84 @@
+\hypertarget{struct_f_l_a_c_____stream_metadata___cue_sheet}{}\section{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet Struct Reference}
+\label{struct_f_l_a_c_____stream_metadata___cue_sheet}\index{FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet_a776e6057ac7939fba52edecd44ec45bc}{media\+\_\+catalog\+\_\+number}} \mbox{[}129\mbox{]}
+\item 
+\mbox{\hyperlink{ordinals_8h_aa78c8c70a3eb8a58af7436f278acde8e}{F\+L\+A\+C\+\_\+\+\_\+uint64}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet_a43fdc0a538ef2c3e0926ee22814baf40}{lead\+\_\+in}}
+\item 
+\mbox{\hyperlink{ordinals_8h_a95103469f1cbd78b8cf250194985b34e}{F\+L\+A\+C\+\_\+\+\_\+bool}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet_a6af66f921aefc6f779fbc0ab6daeab8a}{is\+\_\+cd}}
+\item 
+unsigned \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet_a6924f26a8e8fa9023f23539b959fe2ae}{num\+\_\+tracks}}
+\item 
+\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet___track}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+\_\+\+Track}} $\ast$ \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet_a5c0c3440b01b773684d56aeb1e424fab}{tracks}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+L\+AC C\+U\+E\+S\+H\+E\+ET structure. (See the \href{../format.html\#metadata_block_cuesheet}{\texttt{ format specification}} for the full description of each field.) 
+
+Definition at line 703 of file format.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___cue_sheet_a6af66f921aefc6f779fbc0ab6daeab8a}\label{struct_f_l_a_c_____stream_metadata___cue_sheet_a6af66f921aefc6f779fbc0ab6daeab8a}} 
+\index{FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}!is\_cd@{is\_cd}}
+\index{is\_cd@{is\_cd}!FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}}
+\subsubsection{\texorpdfstring{is\_cd}{is\_cd}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ordinals_8h_a95103469f1cbd78b8cf250194985b34e}{F\+L\+A\+C\+\_\+\+\_\+bool}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+::is\+\_\+cd}
+
+{\ttfamily true} if C\+U\+E\+S\+H\+E\+ET corresponds to a Compact Disc, else {\ttfamily false}. 
+
+Definition at line 713 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___cue_sheet_a43fdc0a538ef2c3e0926ee22814baf40}\label{struct_f_l_a_c_____stream_metadata___cue_sheet_a43fdc0a538ef2c3e0926ee22814baf40}} 
+\index{FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}!lead\_in@{lead\_in}}
+\index{lead\_in@{lead\_in}!FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}}
+\subsubsection{\texorpdfstring{lead\_in}{lead\_in}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ordinals_8h_aa78c8c70a3eb8a58af7436f278acde8e}{F\+L\+A\+C\+\_\+\+\_\+uint64}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+::lead\+\_\+in}
+
+The number of lead-\/in samples. 
+
+Definition at line 710 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___cue_sheet_a776e6057ac7939fba52edecd44ec45bc}\label{struct_f_l_a_c_____stream_metadata___cue_sheet_a776e6057ac7939fba52edecd44ec45bc}} 
+\index{FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}!media\_catalog\_number@{media\_catalog\_number}}
+\index{media\_catalog\_number@{media\_catalog\_number}!FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}}
+\subsubsection{\texorpdfstring{media\_catalog\_number}{media\_catalog\_number}}
+{\footnotesize\ttfamily char F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+::media\+\_\+catalog\+\_\+number\mbox{[}129\mbox{]}}
+
+Media catalog number, in A\+S\+C\+II printable characters 0x20-\/0x7e. In general, the media catalog number may be 0 to 128 bytes long; any unused characters should be right-\/padded with N\+UL characters. 
+
+Definition at line 704 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___cue_sheet_a6924f26a8e8fa9023f23539b959fe2ae}\label{struct_f_l_a_c_____stream_metadata___cue_sheet_a6924f26a8e8fa9023f23539b959fe2ae}} 
+\index{FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}!num\_tracks@{num\_tracks}}
+\index{num\_tracks@{num\_tracks}!FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}}
+\subsubsection{\texorpdfstring{num\_tracks}{num\_tracks}}
+{\footnotesize\ttfamily unsigned F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+::num\+\_\+tracks}
+
+The number of tracks. 
+
+Definition at line 716 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___cue_sheet_a5c0c3440b01b773684d56aeb1e424fab}\label{struct_f_l_a_c_____stream_metadata___cue_sheet_a5c0c3440b01b773684d56aeb1e424fab}} 
+\index{FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}!tracks@{tracks}}
+\index{tracks@{tracks}!FLAC\_\_StreamMetadata\_CueSheet@{FLAC\_\_StreamMetadata\_CueSheet}}
+\subsubsection{\texorpdfstring{tracks}{tracks}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet___track}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+\_\+\+Track}}$\ast$ F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet\+::tracks}
+
+N\+U\+LL if num\+\_\+tracks == 0, else pointer to array of tracks. 
+
+Definition at line 719 of file format.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/\+F\+L\+A\+C.\+framework/\+Versions/\+A/\+Headers/\+F\+L\+A\+C/\mbox{\hyperlink{format_8h}{format.\+h}}\end{DoxyCompactItemize}

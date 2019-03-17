@@ -1,0 +1,54 @@
+\hypertarget{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry}{}\section{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Vorbis\+Comment\+\_\+\+Entry Struct Reference}
+\label{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry}\index{FLAC\_\_StreamMetadata\_VorbisComment\_Entry@{FLAC\_\_StreamMetadata\_VorbisComment\_Entry}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ordinals_8h_a9c4005ea7ef8d564b0cc993cdd0e4e5e}{F\+L\+A\+C\+\_\+\+\_\+uint32}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_aa375f16819aaa4f7e08d8009167cb19e}{length}}
+\item 
+\mbox{\hyperlink{ordinals_8h_a5eb569b12d5b047cdacada4d57924ee3}{F\+L\+A\+C\+\_\+\+\_\+byte}} $\ast$ \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_a78944f78822b92e7a4e5f15f118f6132}{entry}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Vorbis comment entry structure used in V\+O\+R\+B\+I\+S\+\_\+\+C\+O\+M\+M\+E\+NT blocks. (c.\+f. \href{../format.html\#metadata_block_vorbis_comment}{\texttt{ format specification}})
+
+For convenience, the A\+P\+Is maintain a trailing N\+UL character at the end of {\itshape entry} which is not counted toward {\itshape length}, i.\+e. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{strlen(\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_a78944f78822b92e7a4e5f15f118f6132}{entry}}) == \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ab9c919755bde3b34349e23a32b4e0fa7}{length}} }
+\end{DoxyCode}
+ 
+
+Definition at line 624 of file format.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_a78944f78822b92e7a4e5f15f118f6132}\label{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_a78944f78822b92e7a4e5f15f118f6132}} 
+\index{FLAC\_\_StreamMetadata\_VorbisComment\_Entry@{FLAC\_\_StreamMetadata\_VorbisComment\_Entry}!entry@{entry}}
+\index{entry@{entry}!FLAC\_\_StreamMetadata\_VorbisComment\_Entry@{FLAC\_\_StreamMetadata\_VorbisComment\_Entry}}
+\subsubsection{\texorpdfstring{entry}{entry}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ordinals_8h_a5eb569b12d5b047cdacada4d57924ee3}{F\+L\+A\+C\+\_\+\+\_\+byte}}$\ast$ F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Vorbis\+Comment\+\_\+\+Entry\+::entry}
+
+
+
+Definition at line 626 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_aa375f16819aaa4f7e08d8009167cb19e}\label{struct_f_l_a_c_____stream_metadata___vorbis_comment___entry_aa375f16819aaa4f7e08d8009167cb19e}} 
+\index{FLAC\_\_StreamMetadata\_VorbisComment\_Entry@{FLAC\_\_StreamMetadata\_VorbisComment\_Entry}!length@{length}}
+\index{length@{length}!FLAC\_\_StreamMetadata\_VorbisComment\_Entry@{FLAC\_\_StreamMetadata\_VorbisComment\_Entry}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ordinals_8h_a9c4005ea7ef8d564b0cc993cdd0e4e5e}{F\+L\+A\+C\+\_\+\+\_\+uint32}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Vorbis\+Comment\+\_\+\+Entry\+::length}
+
+
+
+Definition at line 625 of file format.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/\+F\+L\+A\+C.\+framework/\+Versions/\+A/\+Headers/\+F\+L\+A\+C/\mbox{\hyperlink{format_8h}{format.\+h}}\end{DoxyCompactItemize}

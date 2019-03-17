@@ -1,0 +1,72 @@
+\hypertarget{structmpg123__text}{}\section{mpg123\+\_\+text Struct Reference}
+\label{structmpg123__text}\index{mpg123\_text@{mpg123\_text}}
+
+
+{\ttfamily \#include $<$mpg123.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{structmpg123__text_a19f010dbd07ec10efa80d909768372e6}{lang}} \mbox{[}3\mbox{]}
+\item 
+char \mbox{\hyperlink{structmpg123__text_a8a75ed97a1d8a019a3944935c1339fdb}{id}} \mbox{[}4\mbox{]}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} \mbox{\hyperlink{structmpg123__text_afc19e602b7a696d8a0ed03ae6b86f1bf}{description}}
+\item 
+\mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} \mbox{\hyperlink{structmpg123__text_a574b9464a996281f629858c0216eae18}{text}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Sub data structure for I\+D3v2, for storing various text fields (including comments). This is for I\+D3v2 C\+O\+MM, T\+X\+XX and all the other text fields. Only C\+O\+MM and T\+X\+XX have a description, only C\+O\+MM and U\+S\+LT have a language. You should consult the I\+D3v2 specification for the use of the various text fields (\char`\"{}frames\char`\"{} in I\+D3v2 documentation, I use \char`\"{}fields\char`\"{} here to separate from M\+P\+EG frames). 
+
+Definition at line 1144 of file mpg123.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmpg123__text_afc19e602b7a696d8a0ed03ae6b86f1bf}\label{structmpg123__text_afc19e602b7a696d8a0ed03ae6b86f1bf}} 
+\index{mpg123\_text@{mpg123\_text}!description@{description}}
+\index{description@{description}!mpg123\_text@{mpg123\_text}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} mpg123\+\_\+text\+::description}
+
+Empty for the generic comment... 
+
+Definition at line 1148 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__text_a8a75ed97a1d8a019a3944935c1339fdb}\label{structmpg123__text_a8a75ed97a1d8a019a3944935c1339fdb}} 
+\index{mpg123\_text@{mpg123\_text}!id@{id}}
+\index{id@{id}!mpg123\_text@{mpg123\_text}}
+\subsubsection{\texorpdfstring{id}{id}}
+{\footnotesize\ttfamily char mpg123\+\_\+text\+::id\mbox{[}4\mbox{]}}
+
+The I\+D3v2 text field id, like T\+A\+LB, T\+P\+E2, ... (4 characters, no string termination). 
+
+Definition at line 1147 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__text_a19f010dbd07ec10efa80d909768372e6}\label{structmpg123__text_a19f010dbd07ec10efa80d909768372e6}} 
+\index{mpg123\_text@{mpg123\_text}!lang@{lang}}
+\index{lang@{lang}!mpg123\_text@{mpg123\_text}}
+\subsubsection{\texorpdfstring{lang}{lang}}
+{\footnotesize\ttfamily char mpg123\+\_\+text\+::lang\mbox{[}3\mbox{]}}
+
+Three-\/letter language code (not terminated). 
+
+Definition at line 1146 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__text_a574b9464a996281f629858c0216eae18}\label{structmpg123__text_a574b9464a996281f629858c0216eae18}} 
+\index{mpg123\_text@{mpg123\_text}!text@{text}}
+\index{text@{text}!mpg123\_text@{mpg123\_text}}
+\subsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structmpg123__string}{mpg123\+\_\+string}} mpg123\+\_\+text\+::text}
+
+... 
+
+Definition at line 1149 of file mpg123.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/mpg123.\+framework/\+Versions/\+A/\+Headers/\mbox{\hyperlink{mpg123_8h}{mpg123.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,192 @@
+\hypertarget{group__error__codes}{}\section{Error Codes}
+\label{group__error__codes}\index{Error Codes@{Error Codes}}
+\subsection*{List of possible error codes}
+\label{_amgrpacecf4314d910b089a039a9e23f42c77}%
+Many of the functions in this library return a negative error code when a function fails. This list provides a brief explanation of the common errors. See each individual function for more details on what a specific error code means in that context. \begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga4fd28e64a5cbe5e0ba163916199611a5}{O\+P\+\_\+\+F\+A\+L\+SE}}~(-\/1)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga3fdffc8ee880969d99fc862d53c0efd2}{O\+P\+\_\+\+E\+OF}}~(-\/2)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga2ac03d35986d3505305d468dd2138b72}{O\+P\+\_\+\+H\+O\+LE}}~(-\/3)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga3ad48a4f99b1bed72acec552296dfc08}{O\+P\+\_\+\+E\+R\+E\+AD}}~(-\/128)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga2ddb887c0bb55c74ea6be391fabcba59}{O\+P\+\_\+\+E\+F\+A\+U\+LT}}~(-\/129)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gaeea27378f826033ca23584d8403665d3}{O\+P\+\_\+\+E\+I\+M\+PL}}~(-\/130)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gae0879acafe9cc0ab72462d291fdb6fb6}{O\+P\+\_\+\+E\+I\+N\+V\+AL}}~(-\/131)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gafca3ae244d24e10b2851c77379453220}{O\+P\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+AT}}~(-\/132)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga534f1b45c8733a2928434e482b38869f}{O\+P\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+ER}}~(-\/133)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gaa9ae4494f623f3c0609f0b4bd99b8f32}{O\+P\+\_\+\+E\+V\+E\+R\+S\+I\+ON}}~(-\/134)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_ga3a2a6cb4837030d240f326e17dda3c0e}{O\+P\+\_\+\+E\+N\+O\+T\+A\+U\+D\+IO}}~(-\/135)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gaa3fa0a3e6facc4f47924271e65bb21ff}{O\+P\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+ET}}~(-\/136)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gaf7b58a439a471366e9eb5b8f2a8cd041}{O\+P\+\_\+\+E\+B\+A\+D\+L\+I\+NK}}~(-\/137)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gadd54f4d82cfabedb5963331fbe0bc99c}{O\+P\+\_\+\+E\+N\+O\+S\+E\+EK}}~(-\/138)
+\item 
+\#define \mbox{\hyperlink{group__error__codes_gaf82657fc888f1dcf2e0d8f066b8a6cc7}{O\+P\+\_\+\+E\+B\+A\+D\+T\+I\+M\+E\+S\+T\+A\+MP}}~(-\/139)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__error__codes_ga534f1b45c8733a2928434e482b38869f}\label{group__error__codes_ga534f1b45c8733a2928434e482b38869f}} 
+\index{Error Codes@{Error Codes}!OP\_EBADHEADER@{OP\_EBADHEADER}}
+\index{OP\_EBADHEADER@{OP\_EBADHEADER}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EBADHEADER}{OP\_EBADHEADER}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+B\+A\+D\+H\+E\+A\+D\+ER~(-\/133)}
+
+A required header packet was not properly formatted, contained illegal values, or was missing altogether. 
+
+Definition at line 185 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gaf7b58a439a471366e9eb5b8f2a8cd041}\label{group__error__codes_gaf7b58a439a471366e9eb5b8f2a8cd041}} 
+\index{Error Codes@{Error Codes}!OP\_EBADLINK@{OP\_EBADLINK}}
+\index{OP\_EBADLINK@{OP\_EBADLINK}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EBADLINK}{OP\_EBADLINK}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+B\+A\+D\+L\+I\+NK~(-\/137)}
+
+We failed to find data we had seen before, or the bitstream structure was sufficiently malformed that seeking to the target destination was impossible. 
+
+Definition at line 197 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gaa3fa0a3e6facc4f47924271e65bb21ff}\label{group__error__codes_gaa3fa0a3e6facc4f47924271e65bb21ff}} 
+\index{Error Codes@{Error Codes}!OP\_EBADPACKET@{OP\_EBADPACKET}}
+\index{OP\_EBADPACKET@{OP\_EBADPACKET}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EBADPACKET}{OP\_EBADPACKET}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+B\+A\+D\+P\+A\+C\+K\+ET~(-\/136)}
+
+An audio packet failed to decode properly. This is usually caused by a multistream Ogg packet where the durations of the individual Opus packets contained in it are not all the same. 
+
+Definition at line 193 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gaf82657fc888f1dcf2e0d8f066b8a6cc7}\label{group__error__codes_gaf82657fc888f1dcf2e0d8f066b8a6cc7}} 
+\index{Error Codes@{Error Codes}!OP\_EBADTIMESTAMP@{OP\_EBADTIMESTAMP}}
+\index{OP\_EBADTIMESTAMP@{OP\_EBADTIMESTAMP}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EBADTIMESTAMP}{OP\_EBADTIMESTAMP}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+B\+A\+D\+T\+I\+M\+E\+S\+T\+A\+MP~(-\/139)}
+
+The first or last granule position of a link failed basic validity checks. 
+
+Definition at line 201 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_ga2ddb887c0bb55c74ea6be391fabcba59}\label{group__error__codes_ga2ddb887c0bb55c74ea6be391fabcba59}} 
+\index{Error Codes@{Error Codes}!OP\_EFAULT@{OP\_EFAULT}}
+\index{OP\_EFAULT@{OP\_EFAULT}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EFAULT}{OP\_EFAULT}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+F\+A\+U\+LT~(-\/129)}
+
+A {\ttfamily N\+U\+LL} pointer was passed where one was unexpected, or an internal memory allocation failed, or an internal library error was encountered. 
+
+Definition at line 172 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gaeea27378f826033ca23584d8403665d3}\label{group__error__codes_gaeea27378f826033ca23584d8403665d3}} 
+\index{Error Codes@{Error Codes}!OP\_EIMPL@{OP\_EIMPL}}
+\index{OP\_EIMPL@{OP\_EIMPL}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EIMPL}{OP\_EIMPL}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+I\+M\+PL~(-\/130)}
+
+The stream used a feature that is not implemented, such as an unsupported channel family. 
+
+Definition at line 175 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gae0879acafe9cc0ab72462d291fdb6fb6}\label{group__error__codes_gae0879acafe9cc0ab72462d291fdb6fb6}} 
+\index{Error Codes@{Error Codes}!OP\_EINVAL@{OP\_EINVAL}}
+\index{OP\_EINVAL@{OP\_EINVAL}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EINVAL}{OP\_EINVAL}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+I\+N\+V\+AL~(-\/131)}
+
+One or more parameters to a function were invalid. 
+
+Definition at line 177 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gadd54f4d82cfabedb5963331fbe0bc99c}\label{group__error__codes_gadd54f4d82cfabedb5963331fbe0bc99c}} 
+\index{Error Codes@{Error Codes}!OP\_ENOSEEK@{OP\_ENOSEEK}}
+\index{OP\_ENOSEEK@{OP\_ENOSEEK}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_ENOSEEK}{OP\_ENOSEEK}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+N\+O\+S\+E\+EK~(-\/138)}
+
+An operation that requires seeking was requested on an unseekable stream. 
+
+Definition at line 199 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_ga3a2a6cb4837030d240f326e17dda3c0e}\label{group__error__codes_ga3a2a6cb4837030d240f326e17dda3c0e}} 
+\index{Error Codes@{Error Codes}!OP\_ENOTAUDIO@{OP\_ENOTAUDIO}}
+\index{OP\_ENOTAUDIO@{OP\_ENOTAUDIO}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_ENOTAUDIO}{OP\_ENOTAUDIO}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+N\+O\+T\+A\+U\+D\+IO~(-\/135)}
+
+
+
+Definition at line 189 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gafca3ae244d24e10b2851c77379453220}\label{group__error__codes_gafca3ae244d24e10b2851c77379453220}} 
+\index{Error Codes@{Error Codes}!OP\_ENOTFORMAT@{OP\_ENOTFORMAT}}
+\index{OP\_ENOTFORMAT@{OP\_ENOTFORMAT}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_ENOTFORMAT}{OP\_ENOTFORMAT}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+N\+O\+T\+F\+O\+R\+M\+AT~(-\/132)}
+
+A purported Ogg Opus stream did not begin with an Ogg page, a purported header packet did not start with one of the required strings, \char`\"{}\+Opus\+Head\char`\"{} or \char`\"{}\+Opus\+Tags\char`\"{}, or a link in a chained file was encountered that did not contain any logical Opus streams. 
+
+Definition at line 182 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_ga3fdffc8ee880969d99fc862d53c0efd2}\label{group__error__codes_ga3fdffc8ee880969d99fc862d53c0efd2}} 
+\index{Error Codes@{Error Codes}!OP\_EOF@{OP\_EOF}}
+\index{OP\_EOF@{OP\_EOF}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EOF}{OP\_EOF}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+OF~(-\/2)}
+
+
+
+Definition at line 162 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_ga3ad48a4f99b1bed72acec552296dfc08}\label{group__error__codes_ga3ad48a4f99b1bed72acec552296dfc08}} 
+\index{Error Codes@{Error Codes}!OP\_EREAD@{OP\_EREAD}}
+\index{OP\_EREAD@{OP\_EREAD}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EREAD}{OP\_EREAD}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+R\+E\+AD~(-\/128)}
+
+An underlying read, seek, or tell operation failed when it should have succeeded. 
+
+Definition at line 168 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_gaa9ae4494f623f3c0609f0b4bd99b8f32}\label{group__error__codes_gaa9ae4494f623f3c0609f0b4bd99b8f32}} 
+\index{Error Codes@{Error Codes}!OP\_EVERSION@{OP\_EVERSION}}
+\index{OP\_EVERSION@{OP\_EVERSION}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_EVERSION}{OP\_EVERSION}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+E\+V\+E\+R\+S\+I\+ON~(-\/134)}
+
+The ID header contained an unrecognized version number. 
+
+Definition at line 187 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_ga4fd28e64a5cbe5e0ba163916199611a5}\label{group__error__codes_ga4fd28e64a5cbe5e0ba163916199611a5}} 
+\index{Error Codes@{Error Codes}!OP\_FALSE@{OP\_FALSE}}
+\index{OP\_FALSE@{OP\_FALSE}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_FALSE}{OP\_FALSE}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+F\+A\+L\+SE~(-\/1)}
+
+A request did not succeed. 
+
+Definition at line 160 of file opusfile.\+h.
+
+\mbox{\Hypertarget{group__error__codes_ga2ac03d35986d3505305d468dd2138b72}\label{group__error__codes_ga2ac03d35986d3505305d468dd2138b72}} 
+\index{Error Codes@{Error Codes}!OP\_HOLE@{OP\_HOLE}}
+\index{OP\_HOLE@{OP\_HOLE}!Error Codes@{Error Codes}}
+\subsubsection{\texorpdfstring{OP\_HOLE}{OP\_HOLE}}
+{\footnotesize\ttfamily \#define O\+P\+\_\+\+H\+O\+LE~(-\/3)}
+
+There was a hole in the page sequence numbers (e.\+g., a page was corrupt or missing). 
+
+Definition at line 165 of file opusfile.\+h.
+

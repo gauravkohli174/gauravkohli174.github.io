@@ -1,0 +1,55 @@
+\hypertarget{group__opus__decoderctls}{}\section{Decoder related C\+T\+Ls}
+\label{group__opus__decoderctls}\index{Decoder related CTLs@{Decoder related CTLs}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__opus__decoderctls_ga8ddb6fa694efa2c7e95ef51addc70dac}{O\+P\+U\+S\+\_\+\+S\+E\+T\+\_\+\+G\+A\+IN}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{group__opus__decoderctls_ga00ca8b4bd753a837f143ebd8ed63d247}{O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+G\+A\+IN}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__opus__genericctls}{Generic C\+T\+Ls}}, \mbox{\hyperlink{group__opus__encoderctls}{Encoder related C\+T\+Ls}}, \mbox{\hyperlink{group__opus__decoder}{Opus Decoder}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__opus__decoderctls_ga00ca8b4bd753a837f143ebd8ed63d247}\label{group__opus__decoderctls_ga00ca8b4bd753a837f143ebd8ed63d247}} 
+\index{Decoder related CTLs@{Decoder related CTLs}!OPUS\_GET\_GAIN@{OPUS\_GET\_GAIN}}
+\index{OPUS\_GET\_GAIN@{OPUS\_GET\_GAIN}!Decoder related CTLs@{Decoder related CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_GET\_GAIN}{OPUS\_GET\_GAIN}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+G\+A\+IN(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+Gets the decoder\textquotesingle{}s configured gain adjustment. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__opus__decoderctls_ga8ddb6fa694efa2c7e95ef51addc70dac}{O\+P\+U\+S\+\_\+\+S\+E\+T\+\_\+\+G\+A\+IN}}
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em x} & {\ttfamily opus\+\_\+int32 $\ast$}\+: Amount to scale P\+CM signal by in Q8 dB units. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 629 of file opus\+\_\+defines.\+h.
+
+\mbox{\Hypertarget{group__opus__decoderctls_ga8ddb6fa694efa2c7e95ef51addc70dac}\label{group__opus__decoderctls_ga8ddb6fa694efa2c7e95ef51addc70dac}} 
+\index{Decoder related CTLs@{Decoder related CTLs}!OPUS\_SET\_GAIN@{OPUS\_SET\_GAIN}}
+\index{OPUS\_SET\_GAIN@{OPUS\_SET\_GAIN}!Decoder related CTLs@{Decoder related CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_SET\_GAIN}{OPUS\_SET\_GAIN}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+S\+E\+T\+\_\+\+G\+A\+IN(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+Configures decoder gain adjustment. Scales the decoded output by a factor specified in Q8 dB units. This has a maximum range of -\/32768 to 32767 inclusive, and returns O\+P\+U\+S\+\_\+\+B\+A\+D\+\_\+\+A\+RG otherwise. The default is zero indicating no adjustment. This setting survives decoder reset.
+
+gain = pow(10, x/(20.\+0$\ast$256))
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & {\ttfamily opus\+\_\+int32}\+: Amount to scale P\+CM signal by in Q8 dB units. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 624 of file opus\+\_\+defines.\+h.
+

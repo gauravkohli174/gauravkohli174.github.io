@@ -1,0 +1,347 @@
+\hypertarget{class_resource_manager}{}\section{Resource\+Manager Class Reference}
+\label{class_resource_manager}\index{ResourceManager@{ResourceManager}}
+
+
+This class stores all resources that must be loaded and holds them for other classes to use.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Manager.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_resource_manager_a53bf358b029e050a285725bc70a8550a}{start\+Up}} ()
+\begin{DoxyCompactList}\small\item\em This sets up the basic resources the game needs to run. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_resource_manager_ab8d9779f5f957610d272525cc32a775e}{shut\+Down}} ()
+\begin{DoxyCompactList}\small\item\em This cleans up the resources loaded by the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} after the game has been quit out of. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_resource_manager_ad1cad583428596c69f9190acb291b02a}{create\+Textures}} (\mbox{\hyperlink{_s_d_l__render_8h_aaf0bf7d020754fc614fe06552ea4d5d4}{S\+D\+L\+\_\+\+Renderer}} $\ast$ren)
+\begin{DoxyCompactList}\small\item\em This creates textures from loaded surfaces, this is separate so the game can pass its renderer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_resource_manager_a7c4cd552ec084d3cf40906e46a2d3629}{add\+Image\+To\+Map}} (int key, \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_a8ad81492d410ff2ac11f754f4042150f}{value}})
+\begin{DoxyCompactList}\small\item\em This adds an image to our Resource Manager\textquotesingle{}s map. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_aa4d2ecc550067337c2056d42dafca39a}{get\+Image\+From\+Map}} (int key)
+\begin{DoxyCompactList}\small\item\em This gets an image from Resource Manager\textquotesingle{}s map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ \mbox{\hyperlink{class_resource_manager_a41943f7fb045ad54f1e24da7c6046502}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em This gets the instance of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} or creates it if it doesn\textquotesingle{}t exist, there can only be one \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_a838f1019a12db7404424df66f9bad362}{background\+Image\+Surface}}
+\begin{DoxyCompactList}\small\item\em The image used for background image in the main menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}} $\ast$ \mbox{\hyperlink{class_resource_manager_a33a1a84148c7ae43ac20894c59f52ebf}{background\+Image\+Texture}}
+\begin{DoxyCompactList}\small\item\em This is the background texture from the background image after given the appropriate renderer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_a6755a6444754c714776e51bc0fc22fa7}{tile\+Surface}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em The images used for tiles, there are 3 varieties so the tiles have some variety. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}} $\ast$ \mbox{\hyperlink{class_resource_manager_a8bc1363c8eac146c6e86e1b7a8a7ae7d}{tile\+Textures}} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em These are the textures created from tile\+Surfaces after given the appropriate renderer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_a7dea3b6c85cc513e432c37b3be589ba2}{main\+Character\+Surface}}
+\begin{DoxyCompactList}\small\item\em The image used for the main character. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}} $\ast$ \mbox{\hyperlink{class_resource_manager_a671fa64fc93e8fad27e25fdcfddbc982}{main\+Character\+Texture}}
+\begin{DoxyCompactList}\small\item\em This is the texture created from main\+Character\+Surface after given the game\textquotesingle{}s renderer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_a824fd3c239a6ecca4b1cf770c73c1d3a}{background\+Surface}}
+\begin{DoxyCompactList}\small\item\em The image used for the background of blue sky. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_aa581160d976db2ad4cd19527a2111923}{space\+Background\+Surface}}
+\begin{DoxyCompactList}\small\item\em The image used for the background of space. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ \mbox{\hyperlink{class_resource_manager_ab31bfc864d9e4972909db9d0064c1835}{west\+Village\+Surface}}
+\begin{DoxyCompactList}\small\item\em The image used for the background of West Village. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}} $\ast$ \mbox{\hyperlink{class_resource_manager_ae8f8a6573b843ad8394bb44a8839bcc4}{background\+Texture}}
+\begin{DoxyCompactList}\small\item\em This is the texture created from background\+Surface after given the game\textquotesingle{}s renderer. \end{DoxyCompactList}\item 
+std\+::map$<$ int, \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ $>$ \mbox{\hyperlink{class_resource_manager_a9b85004d89011021ad4b35de520e22d3}{image\+Map}}
+\begin{DoxyCompactList}\small\item\em This is a map of strings used for retrieving the images used in the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__ttf_8h_ac3b14e1c2946c0cf19776fe568d9abcf}{T\+T\+F\+\_\+\+Font}} $\ast$ \mbox{\hyperlink{class_resource_manager_a178a34ee6625bc871e701ff1df56d3ac}{font}}
+\begin{DoxyCompactList}\small\item\em The font used for all text in the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__mixer_8h_a1d58ae8fa29e1c03df23baeffb32b14c}{Mix\+\_\+\+Music}} $\ast$ \mbox{\hyperlink{class_resource_manager_a0ff25c7a84100edb4f62a24cd0226149}{background\+Music}}
+\begin{DoxyCompactList}\small\item\em The music played during the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class stores all resources that must be loaded and holds them for other classes to use. 
+
+Definition at line 21 of file Resource\+Manager.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_resource_manager_a7c4cd552ec084d3cf40906e46a2d3629}\label{class_resource_manager_a7c4cd552ec084d3cf40906e46a2d3629}} 
+\index{ResourceManager@{ResourceManager}!addImageToMap@{addImageToMap}}
+\index{addImageToMap@{addImageToMap}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{addImageToMap()}{addImageToMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Resource\+Manager\+::add\+Image\+To\+Map (\begin{DoxyParamCaption}\item[{int}]{key,  }\item[{\mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+This adds an image to our Resource Manager\textquotesingle{}s map. 
+
+Add image to map. 
+
+Definition at line 27 of file Resource\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_resource_manager_ad1cad583428596c69f9190acb291b02a}\label{class_resource_manager_ad1cad583428596c69f9190acb291b02a}} 
+\index{ResourceManager@{ResourceManager}!createTextures@{createTextures}}
+\index{createTextures@{createTextures}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{createTextures()}{createTextures()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Resource\+Manager\+::create\+Textures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__render_8h_aaf0bf7d020754fc614fe06552ea4d5d4}{S\+D\+L\+\_\+\+Renderer}} $\ast$}]{ren }\end{DoxyParamCaption})}
+
+
+
+This creates textures from loaded surfaces, this is separate so the game can pass its renderer. 
+
+create textures for the resource manager. 
+
+Definition at line 118 of file Resource\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_resource_manager_aa4d2ecc550067337c2056d42dafca39a}\label{class_resource_manager_aa4d2ecc550067337c2056d42dafca39a}} 
+\index{ResourceManager@{ResourceManager}!getImageFromMap@{getImageFromMap}}
+\index{getImageFromMap@{getImageFromMap}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{getImageFromMap()}{getImageFromMap()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}} $\ast$ Resource\+Manager\+::get\+Image\+From\+Map (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+This gets an image from Resource Manager\textquotesingle{}s map. 
+
+Get image from map. 
+
+Definition at line 22 of file Resource\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_resource_manager_a41943f7fb045ad54f1e24da7c6046502}\label{class_resource_manager_a41943f7fb045ad54f1e24da7c6046502}} 
+\index{ResourceManager@{ResourceManager}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{getInstance()}{getInstance()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} $\ast$ Resource\+Manager\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+This gets the instance of the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} or creates it if it doesn\textquotesingle{}t exist, there can only be one \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} instance. 
+
+get instance of resource manager. 
+
+Definition at line 33 of file Resource\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_resource_manager_ab8d9779f5f957610d272525cc32a775e}\label{class_resource_manager_ab8d9779f5f957610d272525cc32a775e}} 
+\index{ResourceManager@{ResourceManager}!shutDown@{shutDown}}
+\index{shutDown@{shutDown}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{shutDown()}{shutDown()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::shut\+Down (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This cleans up the resources loaded by the \mbox{\hyperlink{class_resource_manager}{Resource\+Manager}} after the game has been quit out of. 
+
+To shut down the resource manager. 
+
+Definition at line 106 of file Resource\+Manager.\+cpp.
+
+\mbox{\Hypertarget{class_resource_manager_a53bf358b029e050a285725bc70a8550a}\label{class_resource_manager_a53bf358b029e050a285725bc70a8550a}} 
+\index{ResourceManager@{ResourceManager}!startUp@{startUp}}
+\index{startUp@{startUp}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{startUp()}{startUp()}}
+{\footnotesize\ttfamily int Resource\+Manager\+::start\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This sets up the basic resources the game needs to run. 
+
+start up resource manager. Upload Tiles to Hash Map
+
+Garfield P\+NG
+
+Background images 
+
+Definition at line 41 of file Resource\+Manager.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_resource_manager_a838f1019a12db7404424df66f9bad362}\label{class_resource_manager_a838f1019a12db7404424df66f9bad362}} 
+\index{ResourceManager@{ResourceManager}!backgroundImageSurface@{backgroundImageSurface}}
+\index{backgroundImageSurface@{backgroundImageSurface}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{backgroundImageSurface}{backgroundImageSurface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$ Resource\+Manager\+::background\+Image\+Surface}
+
+
+
+The image used for background image in the main menu. 
+
+
+
+Definition at line 42 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a33a1a84148c7ae43ac20894c59f52ebf}\label{class_resource_manager_a33a1a84148c7ae43ac20894c59f52ebf}} 
+\index{ResourceManager@{ResourceManager}!backgroundImageTexture@{backgroundImageTexture}}
+\index{backgroundImageTexture@{backgroundImageTexture}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{backgroundImageTexture}{backgroundImageTexture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}}$\ast$ Resource\+Manager\+::background\+Image\+Texture}
+
+
+
+This is the background texture from the background image after given the appropriate renderer. 
+
+
+
+Definition at line 44 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a0ff25c7a84100edb4f62a24cd0226149}\label{class_resource_manager_a0ff25c7a84100edb4f62a24cd0226149}} 
+\index{ResourceManager@{ResourceManager}!backgroundMusic@{backgroundMusic}}
+\index{backgroundMusic@{backgroundMusic}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{backgroundMusic}{backgroundMusic}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__mixer_8h_a1d58ae8fa29e1c03df23baeffb32b14c}{Mix\+\_\+\+Music}}$\ast$ Resource\+Manager\+::background\+Music}
+
+
+
+The music played during the game. 
+
+
+
+Definition at line 66 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a824fd3c239a6ecca4b1cf770c73c1d3a}\label{class_resource_manager_a824fd3c239a6ecca4b1cf770c73c1d3a}} 
+\index{ResourceManager@{ResourceManager}!backgroundSurface@{backgroundSurface}}
+\index{backgroundSurface@{backgroundSurface}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{backgroundSurface}{backgroundSurface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$ Resource\+Manager\+::background\+Surface}
+
+
+
+The image used for the background of blue sky. 
+
+
+
+Definition at line 54 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_ae8f8a6573b843ad8394bb44a8839bcc4}\label{class_resource_manager_ae8f8a6573b843ad8394bb44a8839bcc4}} 
+\index{ResourceManager@{ResourceManager}!backgroundTexture@{backgroundTexture}}
+\index{backgroundTexture@{backgroundTexture}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{backgroundTexture}{backgroundTexture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}}$\ast$ Resource\+Manager\+::background\+Texture}
+
+
+
+This is the texture created from background\+Surface after given the game\textquotesingle{}s renderer. 
+
+
+
+Definition at line 60 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a178a34ee6625bc871e701ff1df56d3ac}\label{class_resource_manager_a178a34ee6625bc871e701ff1df56d3ac}} 
+\index{ResourceManager@{ResourceManager}!font@{font}}
+\index{font@{font}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{font}{font}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__ttf_8h_ac3b14e1c2946c0cf19776fe568d9abcf}{T\+T\+F\+\_\+\+Font}}$\ast$ Resource\+Manager\+::font}
+
+
+
+The font used for all text in the game. 
+
+
+
+Definition at line 64 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a9b85004d89011021ad4b35de520e22d3}\label{class_resource_manager_a9b85004d89011021ad4b35de520e22d3}} 
+\index{ResourceManager@{ResourceManager}!imageMap@{imageMap}}
+\index{imageMap@{imageMap}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{imageMap}{imageMap}}
+{\footnotesize\ttfamily std\+::map$<$int, \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$$>$ Resource\+Manager\+::image\+Map}
+
+
+
+This is a map of strings used for retrieving the images used in the game. 
+
+
+
+Definition at line 62 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a7dea3b6c85cc513e432c37b3be589ba2}\label{class_resource_manager_a7dea3b6c85cc513e432c37b3be589ba2}} 
+\index{ResourceManager@{ResourceManager}!mainCharacterSurface@{mainCharacterSurface}}
+\index{mainCharacterSurface@{mainCharacterSurface}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{mainCharacterSurface}{mainCharacterSurface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$ Resource\+Manager\+::main\+Character\+Surface}
+
+
+
+The image used for the main character. 
+
+
+
+Definition at line 50 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a671fa64fc93e8fad27e25fdcfddbc982}\label{class_resource_manager_a671fa64fc93e8fad27e25fdcfddbc982}} 
+\index{ResourceManager@{ResourceManager}!mainCharacterTexture@{mainCharacterTexture}}
+\index{mainCharacterTexture@{mainCharacterTexture}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{mainCharacterTexture}{mainCharacterTexture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}}$\ast$ Resource\+Manager\+::main\+Character\+Texture}
+
+
+
+This is the texture created from main\+Character\+Surface after given the game\textquotesingle{}s renderer. 
+
+
+
+Definition at line 52 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_aa581160d976db2ad4cd19527a2111923}\label{class_resource_manager_aa581160d976db2ad4cd19527a2111923}} 
+\index{ResourceManager@{ResourceManager}!spaceBackgroundSurface@{spaceBackgroundSurface}}
+\index{spaceBackgroundSurface@{spaceBackgroundSurface}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{spaceBackgroundSurface}{spaceBackgroundSurface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$ Resource\+Manager\+::space\+Background\+Surface}
+
+
+
+The image used for the background of space. 
+
+
+
+Definition at line 56 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a6755a6444754c714776e51bc0fc22fa7}\label{class_resource_manager_a6755a6444754c714776e51bc0fc22fa7}} 
+\index{ResourceManager@{ResourceManager}!tileSurface@{tileSurface}}
+\index{tileSurface@{tileSurface}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{tileSurface}{tileSurface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$ Resource\+Manager\+::tile\+Surface\mbox{[}3\mbox{]}}
+
+
+
+The images used for tiles, there are 3 varieties so the tiles have some variety. 
+
+
+
+Definition at line 46 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_a8bc1363c8eac146c6e86e1b7a8a7ae7d}\label{class_resource_manager_a8bc1363c8eac146c6e86e1b7a8a7ae7d}} 
+\index{ResourceManager@{ResourceManager}!tileTextures@{tileTextures}}
+\index{tileTextures@{tileTextures}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{tileTextures}{tileTextures}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__render_8h_a17850d7f1f5de457727cb3cf66b3a7f5}{S\+D\+L\+\_\+\+Texture}}$\ast$ Resource\+Manager\+::tile\+Textures\mbox{[}3\mbox{]}}
+
+
+
+These are the textures created from tile\+Surfaces after given the appropriate renderer. 
+
+
+
+Definition at line 48 of file Resource\+Manager.\+h.
+
+\mbox{\Hypertarget{class_resource_manager_ab31bfc864d9e4972909db9d0064c1835}\label{class_resource_manager_ab31bfc864d9e4972909db9d0064c1835}} 
+\index{ResourceManager@{ResourceManager}!westVillageSurface@{westVillageSurface}}
+\index{westVillageSurface@{westVillageSurface}!ResourceManager@{ResourceManager}}
+\subsubsection{\texorpdfstring{westVillageSurface}{westVillageSurface}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_s_d_l___surface}{S\+D\+L\+\_\+\+Surface}}$\ast$ Resource\+Manager\+::west\+Village\+Surface}
+
+
+
+The image used for the background of West Village. 
+
+
+
+Definition at line 58 of file Resource\+Manager.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_resource_manager_8h}{Resource\+Manager.\+h}}\item 
+src/\mbox{\hyperlink{_resource_manager_8cpp}{Resource\+Manager.\+cpp}}\end{DoxyCompactItemize}

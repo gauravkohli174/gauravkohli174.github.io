@@ -1,0 +1,72 @@
+\hypertarget{structov__callbacks}{}\section{ov\+\_\+callbacks Struct Reference}
+\label{structov__callbacks}\index{ov\_callbacks@{ov\_callbacks}}
+
+
+{\ttfamily \#include $<$vorbisfile.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t($\ast$ \mbox{\hyperlink{structov__callbacks_a301b93b9f0436e5bde6dbdeb0edeae77}{read\+\_\+func}} )(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ptr, size\+\_\+t \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, size\+\_\+t nmemb, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource)
+\item 
+int($\ast$ \mbox{\hyperlink{structov__callbacks_aa49d8079756c1c26e2ba9b974e463dfa}{seek\+\_\+func}} )(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource, ogg\+\_\+int64\+\_\+t \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac915cd848f42b26af51745f204a3b9af}{offset}}, int whence)
+\item 
+int($\ast$ \mbox{\hyperlink{structov__callbacks_a4d1141e00251a23b27e1de261e8717ec}{close\+\_\+func}} )(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource)
+\item 
+long($\ast$ \mbox{\hyperlink{structov__callbacks_ab078f3f386b7c58e9fab2ede904e0e36}{tell\+\_\+func}} )(\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 39 of file vorbisfile.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structov__callbacks_a4d1141e00251a23b27e1de261e8717ec}\label{structov__callbacks_a4d1141e00251a23b27e1de261e8717ec}} 
+\index{ov\_callbacks@{ov\_callbacks}!close\_func@{close\_func}}
+\index{close\_func@{close\_func}!ov\_callbacks@{ov\_callbacks}}
+\subsubsection{\texorpdfstring{close\_func}{close\_func}}
+{\footnotesize\ttfamily int($\ast$ ov\+\_\+callbacks\+::close\+\_\+func) (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource)}
+
+
+
+Definition at line 42 of file vorbisfile.\+h.
+
+\mbox{\Hypertarget{structov__callbacks_a301b93b9f0436e5bde6dbdeb0edeae77}\label{structov__callbacks_a301b93b9f0436e5bde6dbdeb0edeae77}} 
+\index{ov\_callbacks@{ov\_callbacks}!read\_func@{read\_func}}
+\index{read\_func@{read\_func}!ov\_callbacks@{ov\_callbacks}}
+\subsubsection{\texorpdfstring{read\_func}{read\_func}}
+{\footnotesize\ttfamily size\+\_\+t($\ast$ ov\+\_\+callbacks\+::read\+\_\+func) (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$ptr, size\+\_\+t \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}, size\+\_\+t nmemb, \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource)}
+
+
+
+Definition at line 40 of file vorbisfile.\+h.
+
+\mbox{\Hypertarget{structov__callbacks_aa49d8079756c1c26e2ba9b974e463dfa}\label{structov__callbacks_aa49d8079756c1c26e2ba9b974e463dfa}} 
+\index{ov\_callbacks@{ov\_callbacks}!seek\_func@{seek\_func}}
+\index{seek\_func@{seek\_func}!ov\_callbacks@{ov\_callbacks}}
+\subsubsection{\texorpdfstring{seek\_func}{seek\_func}}
+{\footnotesize\ttfamily int($\ast$ ov\+\_\+callbacks\+::seek\+\_\+func) (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource, ogg\+\_\+int64\+\_\+t \mbox{\hyperlink{_s_d_l__opengl__glext_8h_ac915cd848f42b26af51745f204a3b9af}{offset}}, int whence)}
+
+
+
+Definition at line 41 of file vorbisfile.\+h.
+
+\mbox{\Hypertarget{structov__callbacks_ab078f3f386b7c58e9fab2ede904e0e36}\label{structov__callbacks_ab078f3f386b7c58e9fab2ede904e0e36}} 
+\index{ov\_callbacks@{ov\_callbacks}!tell\_func@{tell\_func}}
+\index{tell\_func@{tell\_func}!ov\_callbacks@{ov\_callbacks}}
+\subsubsection{\texorpdfstring{tell\_func}{tell\_func}}
+{\footnotesize\ttfamily long($\ast$ ov\+\_\+callbacks\+::tell\+\_\+func) (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} $\ast$datasource)}
+
+
+
+Definition at line 43 of file vorbisfile.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/\+Vorbis.\+framework/\+Versions/\+A/\+Headers/\mbox{\hyperlink{vorbisfile_8h}{vorbisfile.\+h}}\end{DoxyCompactItemize}

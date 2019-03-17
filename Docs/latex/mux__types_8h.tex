@@ -1,0 +1,152 @@
+\hypertarget{mux__types_8h}{}\section{lib/\+S\+D\+L2\+\_\+image.framework/\+Versions/\+A/\+Frameworks/webp.framework/\+Versions/\+A/\+Headers/webp/mux\+\_\+types.h File Reference}
+\label{mux__types_8h}\index{lib/SDL2\_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/mux\_types.h@{lib/SDL2\_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/mux\_types.h}}
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}./types.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}} \mbox{\hyperlink{mux__types_8h_a815907bd7e4170a846118055d2d6bfd4}{Web\+P\+Data}}
+\item 
+typedef enum \mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}{Web\+P\+Feature\+Flags}} \mbox{\hyperlink{mux__types_8h_ad0d0ffea49d2ce5c6fdd9c5ce9f8d1d1}{Web\+P\+Feature\+Flags}}
+\item 
+typedef enum \mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}{Web\+P\+Mux\+Anim\+Dispose}} \mbox{\hyperlink{mux__types_8h_a9e17afe3a0eb7c5612ae90a0d69fa880}{Web\+P\+Mux\+Anim\+Dispose}}
+\item 
+typedef enum \mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456}{Web\+P\+Mux\+Anim\+Blend}} \mbox{\hyperlink{mux__types_8h_aefffb91bfbc32fb108686ce734374e59}{Web\+P\+Mux\+Anim\+Blend}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}{Web\+P\+Feature\+Flags}} \{ \newline
+\mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa154647854d019f0064ee7070178ed1f}{A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+F\+L\+AG}} = 0x00000002, 
+\mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa1f1de62fc005e839fdb3cdbea45d811}{X\+M\+P\+\_\+\+F\+L\+AG}} = 0x00000004, 
+\mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa9dd5db9a188e3ca12bf7670b42bb4d73}{E\+X\+I\+F\+\_\+\+F\+L\+AG}} = 0x00000008, 
+\mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa57c52e71ed3da5ede99ee70dabb6d40}{A\+L\+P\+H\+A\+\_\+\+F\+L\+AG}} = 0x00000010, 
+\newline
+\mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa44bccf87d47c3c9f8cff11a2ef0abb3b}{I\+C\+C\+P\+\_\+\+F\+L\+AG}} = 0x00000020, 
+\mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa3dac8811025b4b56d9243acb2baa0d4c}{A\+L\+L\+\_\+\+V\+A\+L\+I\+D\+\_\+\+F\+L\+A\+GS}} = 0x0000003e
+ \}
+\item 
+enum \mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}{Web\+P\+Mux\+Anim\+Dispose}} \{ \mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517fa3051222d5fa73ecfd8d3e98885d51c5f}{W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+D\+I\+S\+P\+O\+S\+E\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517fa0511e7359c90e304c38c5907db12e4f3}{W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+D\+I\+S\+P\+O\+S\+E\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND}}
+ \}
+\item 
+enum \mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456}{Web\+P\+Mux\+Anim\+Blend}} \{ \mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456a38455328f731f0ae8ee9df5378ddd528}{W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+B\+L\+E\+ND}}, 
+\mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456a2c3c0873cfd1884e153c274db2bb9dfb}{W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+N\+O\+\_\+\+B\+L\+E\+ND}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{mux__types_8h_a815907bd7e4170a846118055d2d6bfd4}\label{mux__types_8h_a815907bd7e4170a846118055d2d6bfd4}} 
+\index{mux\_types.h@{mux\_types.h}!WebPData@{WebPData}}
+\index{WebPData@{WebPData}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPData}{WebPData}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}} \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}}}
+
+
+
+Definition at line 30 of file mux\+\_\+types.\+h.
+
+\mbox{\Hypertarget{mux__types_8h_ad0d0ffea49d2ce5c6fdd9c5ce9f8d1d1}\label{mux__types_8h_ad0d0ffea49d2ce5c6fdd9c5ce9f8d1d1}} 
+\index{mux\_types.h@{mux\_types.h}!WebPFeatureFlags@{WebPFeatureFlags}}
+\index{WebPFeatureFlags@{WebPFeatureFlags}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPFeatureFlags}{WebPFeatureFlags}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}{Web\+P\+Feature\+Flags}}  \mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}{Web\+P\+Feature\+Flags}}}
+
+\mbox{\Hypertarget{mux__types_8h_aefffb91bfbc32fb108686ce734374e59}\label{mux__types_8h_aefffb91bfbc32fb108686ce734374e59}} 
+\index{mux\_types.h@{mux\_types.h}!WebPMuxAnimBlend@{WebPMuxAnimBlend}}
+\index{WebPMuxAnimBlend@{WebPMuxAnimBlend}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPMuxAnimBlend}{WebPMuxAnimBlend}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456}{Web\+P\+Mux\+Anim\+Blend}}  \mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456}{Web\+P\+Mux\+Anim\+Blend}}}
+
+\mbox{\Hypertarget{mux__types_8h_a9e17afe3a0eb7c5612ae90a0d69fa880}\label{mux__types_8h_a9e17afe3a0eb7c5612ae90a0d69fa880}} 
+\index{mux\_types.h@{mux\_types.h}!WebPMuxAnimDispose@{WebPMuxAnimDispose}}
+\index{WebPMuxAnimDispose@{WebPMuxAnimDispose}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPMuxAnimDispose}{WebPMuxAnimDispose}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}{Web\+P\+Mux\+Anim\+Dispose}}  \mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}{Web\+P\+Mux\+Anim\+Dispose}}}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}} 
+\index{mux\_types.h@{mux\_types.h}!WebPFeatureFlags@{WebPFeatureFlags}}
+\index{WebPFeatureFlags@{WebPFeatureFlags}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPFeatureFlags}{WebPFeatureFlags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7f}{Web\+P\+Feature\+Flags}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ANIMATION\_FLAG@{ANIMATION\_FLAG}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!ANIMATION\_FLAG@{ANIMATION\_FLAG}}}\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa154647854d019f0064ee7070178ed1f}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa154647854d019f0064ee7070178ed1f}} 
+A\+N\+I\+M\+A\+T\+I\+O\+N\+\_\+\+F\+L\+AG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{XMP\_FLAG@{XMP\_FLAG}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!XMP\_FLAG@{XMP\_FLAG}}}\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa1f1de62fc005e839fdb3cdbea45d811}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa1f1de62fc005e839fdb3cdbea45d811}} 
+X\+M\+P\+\_\+\+F\+L\+AG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EXIF\_FLAG@{EXIF\_FLAG}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!EXIF\_FLAG@{EXIF\_FLAG}}}\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa9dd5db9a188e3ca12bf7670b42bb4d73}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa9dd5db9a188e3ca12bf7670b42bb4d73}} 
+E\+X\+I\+F\+\_\+\+F\+L\+AG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALPHA\_FLAG@{ALPHA\_FLAG}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!ALPHA\_FLAG@{ALPHA\_FLAG}}}\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa57c52e71ed3da5ede99ee70dabb6d40}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7faa57c52e71ed3da5ede99ee70dabb6d40}} 
+A\+L\+P\+H\+A\+\_\+\+F\+L\+AG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ICCP\_FLAG@{ICCP\_FLAG}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!ICCP\_FLAG@{ICCP\_FLAG}}}\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa44bccf87d47c3c9f8cff11a2ef0abb3b}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa44bccf87d47c3c9f8cff11a2ef0abb3b}} 
+I\+C\+C\+P\+\_\+\+F\+L\+AG&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ALL\_VALID\_FLAGS@{ALL\_VALID\_FLAGS}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!ALL\_VALID\_FLAGS@{ALL\_VALID\_FLAGS}}}\mbox{\Hypertarget{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa3dac8811025b4b56d9243acb2baa0d4c}\label{mux__types_8h_a4e5cb3e621355321fb235a4dabb72b7fa3dac8811025b4b56d9243acb2baa0d4c}} 
+A\+L\+L\+\_\+\+V\+A\+L\+I\+D\+\_\+\+F\+L\+A\+GS&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 33 of file mux\+\_\+types.\+h.
+
+\mbox{\Hypertarget{mux__types_8h_aa954e5371fe03449cc23ae851b689456}\label{mux__types_8h_aa954e5371fe03449cc23ae851b689456}} 
+\index{mux\_types.h@{mux\_types.h}!WebPMuxAnimBlend@{WebPMuxAnimBlend}}
+\index{WebPMuxAnimBlend@{WebPMuxAnimBlend}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPMuxAnimBlend}{WebPMuxAnimBlend}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mux__types_8h_aa954e5371fe03449cc23ae851b689456}{Web\+P\+Mux\+Anim\+Blend}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_MUX\_BLEND@{WEBP\_MUX\_BLEND}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!WEBP\_MUX\_BLEND@{WEBP\_MUX\_BLEND}}}\mbox{\Hypertarget{mux__types_8h_aa954e5371fe03449cc23ae851b689456a38455328f731f0ae8ee9df5378ddd528}\label{mux__types_8h_aa954e5371fe03449cc23ae851b689456a38455328f731f0ae8ee9df5378ddd528}} 
+W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+B\+L\+E\+ND&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_MUX\_NO\_BLEND@{WEBP\_MUX\_NO\_BLEND}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!WEBP\_MUX\_NO\_BLEND@{WEBP\_MUX\_NO\_BLEND}}}\mbox{\Hypertarget{mux__types_8h_aa954e5371fe03449cc23ae851b689456a2c3c0873cfd1884e153c274db2bb9dfb}\label{mux__types_8h_aa954e5371fe03449cc23ae851b689456a2c3c0873cfd1884e153c274db2bb9dfb}} 
+W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+N\+O\+\_\+\+B\+L\+E\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 52 of file mux\+\_\+types.\+h.
+
+\mbox{\Hypertarget{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}\label{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}} 
+\index{mux\_types.h@{mux\_types.h}!WebPMuxAnimDispose@{WebPMuxAnimDispose}}
+\index{WebPMuxAnimDispose@{WebPMuxAnimDispose}!mux\_types.h@{mux\_types.h}}
+\subsubsection{\texorpdfstring{WebPMuxAnimDispose}{WebPMuxAnimDispose}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{mux__types_8h_a8ff0ce53be803f477f12121687fd517f}{Web\+P\+Mux\+Anim\+Dispose}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_MUX\_DISPOSE\_NONE@{WEBP\_MUX\_DISPOSE\_NONE}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!WEBP\_MUX\_DISPOSE\_NONE@{WEBP\_MUX\_DISPOSE\_NONE}}}\mbox{\Hypertarget{mux__types_8h_a8ff0ce53be803f477f12121687fd517fa3051222d5fa73ecfd8d3e98885d51c5f}\label{mux__types_8h_a8ff0ce53be803f477f12121687fd517fa3051222d5fa73ecfd8d3e98885d51c5f}} 
+W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+D\+I\+S\+P\+O\+S\+E\+\_\+\+N\+O\+NE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_MUX\_DISPOSE\_BACKGROUND@{WEBP\_MUX\_DISPOSE\_BACKGROUND}!mux\_types.h@{mux\_types.h}}\index{mux\_types.h@{mux\_types.h}!WEBP\_MUX\_DISPOSE\_BACKGROUND@{WEBP\_MUX\_DISPOSE\_BACKGROUND}}}\mbox{\Hypertarget{mux__types_8h_a8ff0ce53be803f477f12121687fd517fa0511e7359c90e304c38c5907db12e4f3}\label{mux__types_8h_a8ff0ce53be803f477f12121687fd517fa0511e7359c90e304c38c5907db12e4f3}} 
+W\+E\+B\+P\+\_\+\+M\+U\+X\+\_\+\+D\+I\+S\+P\+O\+S\+E\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+ND&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 45 of file mux\+\_\+types.\+h.
+

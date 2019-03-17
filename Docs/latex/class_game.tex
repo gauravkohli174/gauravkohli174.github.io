@@ -1,0 +1,508 @@
+\hypertarget{class_game}{}\section{Game Class Reference}
+\label{class_game}\index{Game@{Game}}
+
+
+This class represents the game and all of its states.  
+
+
+
+
+{\ttfamily \#include $<$Game.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_ad59df6562a58a614fda24622d3715b65}{Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game}{Game}} main file. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$\+Game}} ()
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_game}{Game}} Deconstructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_ad1e6a351dffab1beb330bb814b9ba1a6}{init}} (const char $\ast$title, int x\+Coord, int y\+Coord, int \mbox{\hyperlink{_s_d_l__opengl_8h_a9a82cf3caff84cabc4598e2619faac17}{width}}, int \mbox{\hyperlink{_s_d_l__opengl_8h_aa352f2804b9902ac30769c00dde75d5f}{height}}, bool full\+Screen)
+\begin{DoxyCompactList}\small\item\em Initializes the game, creating a window and all other necessary pieces. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_adb5563f62c0c82e3e42ec36501aa5698}{handle\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Handles user input. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a67a8c5c0356c9ad33fac1abc435a3746}{update\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Updates the game by updating the character and surrounding environment dependent on events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a4573580347746dbb7dbe568383682ed3}{render\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Renders the game by rendering the character, obstalces, and background. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a9c9dea0cba2587b634793698e0e2d65c}{render\+Main\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Renders main menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a491f785f3a69e7d9d6539a384f00b28b}{render\+Platformer}} ()
+\begin{DoxyCompactList}\small\item\em Renders main menu. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a0aa4abcb959f9b7c4774fac5cb5f2162}{print\+Current\+Camera}} ()
+\begin{DoxyCompactList}\small\item\em Prints current camera scene. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_aede5f46c8c7bbbaf8459eeec397a11e7}{game\+Loop}} ()
+\begin{DoxyCompactList}\small\item\em The main \mbox{\hyperlink{class_game}{Game}} Loop which calls the render and update and handles events. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_ad4f36a72a2d06696f7973788606f57fc}{clean}} ()
+\begin{DoxyCompactList}\small\item\em Handles cleaning up the game after quitting. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a0ecd12967520b3fa575420d6db016b75}{set\+Center\+Column}} (int adjust)
+\begin{DoxyCompactList}\small\item\em Sets the center column for the camera. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_a8329ab00bbf109137c04a2e9b3d4d483}{get\+Center\+Column}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the center column value in which is being rendered on the screen. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_af40023a23183414d0d15535b9b239c11}{initialize\+Tiles}} ()
+\begin{DoxyCompactList}\small\item\em Initializes the tiles values in the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a86c008fa563e8dd80dab8b35305109a2}{load\+Tile\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Loads the tile data from the tiles.\+dat file into the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a07319c02e980c2ec153312d18061b566}{print\+Tile\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Prints the tile informatiom. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_afb705aeed0fc1c78e264c58fbccf912a}{display\+Stats}} ()
+\begin{DoxyCompactList}\small\item\em Function which displays the game stats. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a189a08079cbe642a324f19d0072faee7}{setup\+Garfield\+Character}} ()
+\begin{DoxyCompactList}\small\item\em set up garfield character. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a73567ddd32989b5fc977b61b4c927c89}{setup\+Spiders}} ()
+\begin{DoxyCompactList}\small\item\em set up spiders as enemies. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a01e43c5cb9e24153bc3dc40bf9523ec1}{setup\+Pooky}} ()
+\begin{DoxyCompactList}\small\item\em set up pooky character. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{class_game_a4c2a7ead717a4c13f1ffddafd11e17c8}{initialize\+Game}} ()
+\begin{DoxyCompactList}\small\item\em The main \mbox{\hyperlink{class_game}{Game}} Loop which calls the render and update and handles events. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_game_adb424734b2454f9ed1e6d6bd44e6dfaf}{is\+Running}}
+\begin{DoxyCompactList}\small\item\em Check if the game is running or paused. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_a7677fecae8054a7eb350c61dd6c0246a}{is\+Main\+Menu}}
+\begin{DoxyCompactList}\small\item\em Check if the game state is the Main Menu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_game_ac847b4177276b33b3159a59f8ba45f88}{is\+Platformer\+Game}} = \mbox{\hyperlink{ordinals_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}
+\begin{DoxyCompactList}\small\item\em Check if the game state is the Platformer \mbox{\hyperlink{class_game}{Game}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_game_a49404aae4faa4a33d98815cd45662ba0}{tiles}} \mbox{[}\mbox{\hyperlink{_game_8h_a821282c3fbd7714d8302538a5a674885}{R\+O\+WS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_game_8h_af6c484f782f36b472fb334e72c392801}{C\+O\+L\+U\+M\+NS}}\mbox{]}
+\item 
+int \mbox{\hyperlink{class_game_a7850257252f36f13b0daa694e43e1de9}{render\+Center\+Column}} = 15
+\item 
+\mbox{\hyperlink{class_main_character}{Main\+Character}} \mbox{\hyperlink{class_game_a037a7a85c51d0d455cfcc3af08542904}{main\+Character}}
+\item 
+\mbox{\hyperlink{class_main_character}{Main\+Character}} \mbox{\hyperlink{class_game_ad513055bd8c23f50f6b5cf30ed3839c0}{spider\+Character}} \mbox{[}3\mbox{]}
+\item 
+\mbox{\hyperlink{class_main_character}{Main\+Character}} \mbox{\hyperlink{class_game_a0f428f334dc8a0189d61e9d4a35a43b6}{pooky}}
+\item 
+int \mbox{\hyperlink{class_game_abe14118bc7cb70c342636c2b2a15554b}{level}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class represents the game and all of its states. 
+
+Definition at line 29 of file Game.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_game_ad59df6562a58a614fda24622d3715b65}\label{class_game_ad59df6562a58a614fda24622d3715b65}} 
+\index{Game@{Game}!Game@{Game}}
+\index{Game@{Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{Game()}{Game()}}
+{\footnotesize\ttfamily Game\+::\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_game}{Game}} main file. 
+
+\mbox{\hyperlink{class_game}{Game}} Constructor 
+
+Definition at line 10 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_ae3d112ca6e0e55150d2fdbc704474530}\label{class_game_ae3d112ca6e0e55150d2fdbc704474530}} 
+\index{Game@{Game}!````~Game@{$\sim$Game}}
+\index{````~Game@{$\sim$Game}!Game@{Game}}
+\subsubsection{\texorpdfstring{$\sim$Game()}{~Game()}}
+{\footnotesize\ttfamily Game\+::$\sim$\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{class_game}{Game}} Deconstructor. 
+
+
+
+Definition at line 21 of file Game.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_game_ad4f36a72a2d06696f7973788606f57fc}\label{class_game_ad4f36a72a2d06696f7973788606f57fc}} 
+\index{Game@{Game}!clean@{clean}}
+\index{clean@{clean}!Game@{Game}}
+\subsubsection{\texorpdfstring{clean()}{clean()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::clean (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles cleaning up the game after quitting. 
+
+Memory Management as game ends / closed. 
+
+Definition at line 425 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_afb705aeed0fc1c78e264c58fbccf912a}\label{class_game_afb705aeed0fc1c78e264c58fbccf912a}} 
+\index{Game@{Game}!displayStats@{displayStats}}
+\index{displayStats@{displayStats}!Game@{Game}}
+\subsubsection{\texorpdfstring{displayStats()}{displayStats()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::display\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Function which displays the game stats. 
+
+
+
+Definition at line 680 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_aede5f46c8c7bbbaf8459eeec397a11e7}\label{class_game_aede5f46c8c7bbbaf8459eeec397a11e7}} 
+\index{Game@{Game}!gameLoop@{gameLoop}}
+\index{gameLoop@{gameLoop}!Game@{Game}}
+\subsubsection{\texorpdfstring{gameLoop()}{gameLoop()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::game\+Loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main \mbox{\hyperlink{class_game}{Game}} Loop which calls the render and update and handles events. 
+
+game loop method. Render using Open\+GL 
+
+Definition at line 188 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a8329ab00bbf109137c04a2e9b3d4d483}\label{class_game_a8329ab00bbf109137c04a2e9b3d4d483}} 
+\index{Game@{Game}!getCenterColumn@{getCenterColumn}}
+\index{getCenterColumn@{getCenterColumn}!Game@{Game}}
+\subsubsection{\texorpdfstring{getCenterColumn()}{getCenterColumn()}}
+{\footnotesize\ttfamily int Game\+::get\+Center\+Column (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the center column value in which is being rendered on the screen. 
+
+
+
+Definition at line 398 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_adb5563f62c0c82e3e42ec36501aa5698}\label{class_game_adb5563f62c0c82e3e42ec36501aa5698}} 
+\index{Game@{Game}!handleEvents@{handleEvents}}
+\index{handleEvents@{handleEvents}!Game@{Game}}
+\subsubsection{\texorpdfstring{handleEvents()}{handleEvents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::handle\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles user input. 
+
+Event Handler for \mbox{\hyperlink{class_game}{Game}}.
+
+Left\+Arrow\+Key -\/ move character left ~\newline
+Right\+Arrow\+Key -\/ move character right ~\newline
+Space -\/ make character jump ~\newline
+Q -\/ quit out of the game ~\newline
+P -\/ Play Platformer \mbox{\hyperlink{class_game}{Game}}~\newline
+S\+D\+L\+\_\+\+Enable\+Key\+Repeat(\+S\+D\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+P\+E\+A\+T\+\_\+\+D\+E\+L\+A\+Y, S\+D\+L\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+R\+E\+P\+E\+A\+T\+\_\+\+I\+N\+T\+E\+R\+V\+A\+L); 
+
+Definition at line 218 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_ad1e6a351dffab1beb330bb814b9ba1a6}\label{class_game_ad1e6a351dffab1beb330bb814b9ba1a6}} 
+\index{Game@{Game}!init@{init}}
+\index{init@{init}!Game@{Game}}
+\subsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::init (\begin{DoxyParamCaption}\item[{const char $\ast$}]{title,  }\item[{int}]{x\+Coord,  }\item[{int}]{y\+Coord,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{bool}]{full\+Screen }\end{DoxyParamCaption})}
+
+
+
+Initializes the game, creating a window and all other necessary pieces. 
+
+Initializes \mbox{\hyperlink{class_game}{Game}} -- S\+D\+L\+\_\+\+Image, Window Creation, Renderer Creation. Loading resources
+
+Setup -\/ Objects 
+
+Definition at line 26 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a4c2a7ead717a4c13f1ffddafd11e17c8}\label{class_game_a4c2a7ead717a4c13f1ffddafd11e17c8}} 
+\index{Game@{Game}!initializeGame@{initializeGame}}
+\index{initializeGame@{initializeGame}!Game@{Game}}
+\subsubsection{\texorpdfstring{initializeGame()}{initializeGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::initialize\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The main \mbox{\hyperlink{class_game}{Game}} Loop which calls the render and update and handles events. 
+
+
+
+Definition at line 76 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_af40023a23183414d0d15535b9b239c11}\label{class_game_af40023a23183414d0d15535b9b239c11}} 
+\index{Game@{Game}!initializeTiles@{initializeTiles}}
+\index{initializeTiles@{initializeTiles}!Game@{Game}}
+\subsubsection{\texorpdfstring{initializeTiles()}{initializeTiles()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::initialize\+Tiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the tiles values in the game. 
+
+Initializes the tiles of the game. 
+
+Definition at line 587 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a86c008fa563e8dd80dab8b35305109a2}\label{class_game_a86c008fa563e8dd80dab8b35305109a2}} 
+\index{Game@{Game}!loadTileData@{loadTileData}}
+\index{loadTileData@{loadTileData}!Game@{Game}}
+\subsubsection{\texorpdfstring{loadTileData()}{loadTileData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::load\+Tile\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the tile data from the tiles.\+dat file into the game. 
+
+Loads the tiles from the tiles.\+dat file. 
+
+Definition at line 596 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a0aa4abcb959f9b7c4774fac5cb5f2162}\label{class_game_a0aa4abcb959f9b7c4774fac5cb5f2162}} 
+\index{Game@{Game}!printCurrentCamera@{printCurrentCamera}}
+\index{printCurrentCamera@{printCurrentCamera}!Game@{Game}}
+\subsubsection{\texorpdfstring{printCurrentCamera()}{printCurrentCamera()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::print\+Current\+Camera (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints current camera scene. 
+
+Prints current camera points that should be rendered. 
+
+Definition at line 403 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a07319c02e980c2ec153312d18061b566}\label{class_game_a07319c02e980c2ec153312d18061b566}} 
+\index{Game@{Game}!printTileData@{printTileData}}
+\index{printTileData@{printTileData}!Game@{Game}}
+\subsubsection{\texorpdfstring{printTileData()}{printTileData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::print\+Tile\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Prints the tile informatiom. 
+
+Prints the tile information for the game. 
+
+Definition at line 641 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a4573580347746dbb7dbe568383682ed3}\label{class_game_a4573580347746dbb7dbe568383682ed3}} 
+\index{Game@{Game}!renderGame@{renderGame}}
+\index{renderGame@{renderGame}!Game@{Game}}
+\subsubsection{\texorpdfstring{renderGame()}{renderGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::render\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders the game by rendering the character, obstalces, and background. 
+
+Renders P\+NG Surface on top of Screen Surface. 
+
+Definition at line 408 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a9c9dea0cba2587b634793698e0e2d65c}\label{class_game_a9c9dea0cba2587b634793698e0e2d65c}} 
+\index{Game@{Game}!renderMainMenu@{renderMainMenu}}
+\index{renderMainMenu@{renderMainMenu}!Game@{Game}}
+\subsubsection{\texorpdfstring{renderMainMenu()}{renderMainMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::render\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders main menu. 
+
+rende main menu for the game. Platformer Message
+
+Press P for Play \mbox{\hyperlink{class_game}{Game}}
+
+Byline
+
+Background Image
+
+Render 
+
+Definition at line 439 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a491f785f3a69e7d9d6539a384f00b28b}\label{class_game_a491f785f3a69e7d9d6539a384f00b28b}} 
+\index{Game@{Game}!renderPlatformer@{renderPlatformer}}
+\index{renderPlatformer@{renderPlatformer}!Game@{Game}}
+\subsubsection{\texorpdfstring{renderPlatformer()}{renderPlatformer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::render\+Platformer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Renders main menu. 
+
+render platformer. Background Image 
+
+Definition at line 500 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a0ecd12967520b3fa575420d6db016b75}\label{class_game_a0ecd12967520b3fa575420d6db016b75}} 
+\index{Game@{Game}!setCenterColumn@{setCenterColumn}}
+\index{setCenterColumn@{setCenterColumn}!Game@{Game}}
+\subsubsection{\texorpdfstring{setCenterColumn()}{setCenterColumn()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::set\+Center\+Column (\begin{DoxyParamCaption}\item[{int}]{adjust }\end{DoxyParamCaption})}
+
+
+
+Sets the center column for the camera. 
+
+Sets the center column for the camera to be. 
+
+Definition at line 387 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a189a08079cbe642a324f19d0072faee7}\label{class_game_a189a08079cbe642a324f19d0072faee7}} 
+\index{Game@{Game}!setupGarfieldCharacter@{setupGarfieldCharacter}}
+\index{setupGarfieldCharacter@{setupGarfieldCharacter}!Game@{Game}}
+\subsubsection{\texorpdfstring{setupGarfieldCharacter()}{setupGarfieldCharacter()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::setup\+Garfield\+Character (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set up garfield character. 
+
+
+
+Definition at line 94 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a01e43c5cb9e24153bc3dc40bf9523ec1}\label{class_game_a01e43c5cb9e24153bc3dc40bf9523ec1}} 
+\index{Game@{Game}!setupPooky@{setupPooky}}
+\index{setupPooky@{setupPooky}!Game@{Game}}
+\subsubsection{\texorpdfstring{setupPooky()}{setupPooky()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::setup\+Pooky (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set up pooky character. 
+
+
+
+Definition at line 174 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a73567ddd32989b5fc977b61b4c927c89}\label{class_game_a73567ddd32989b5fc977b61b4c927c89}} 
+\index{Game@{Game}!setupSpiders@{setupSpiders}}
+\index{setupSpiders@{setupSpiders}!Game@{Game}}
+\subsubsection{\texorpdfstring{setupSpiders()}{setupSpiders()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::setup\+Spiders (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+set up spiders as enemies. 
+
+
+
+Definition at line 154 of file Game.\+cpp.
+
+\mbox{\Hypertarget{class_game_a67a8c5c0356c9ad33fac1abc435a3746}\label{class_game_a67a8c5c0356c9ad33fac1abc435a3746}} 
+\index{Game@{Game}!updateGame@{updateGame}}
+\index{updateGame@{updateGame}!Game@{Game}}
+\subsubsection{\texorpdfstring{updateGame()}{updateGame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Game\+::update\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the game by updating the character and surrounding environment dependent on events. 
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_game_a7677fecae8054a7eb350c61dd6c0246a}\label{class_game_a7677fecae8054a7eb350c61dd6c0246a}} 
+\index{Game@{Game}!isMainMenu@{isMainMenu}}
+\index{isMainMenu@{isMainMenu}!Game@{Game}}
+\subsubsection{\texorpdfstring{isMainMenu}{isMainMenu}}
+{\footnotesize\ttfamily bool Game\+::is\+Main\+Menu}
+
+
+
+Check if the game state is the Main Menu. 
+
+
+
+Definition at line 68 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_ac847b4177276b33b3159a59f8ba45f88}\label{class_game_ac847b4177276b33b3159a59f8ba45f88}} 
+\index{Game@{Game}!isPlatformerGame@{isPlatformerGame}}
+\index{isPlatformerGame@{isPlatformerGame}!Game@{Game}}
+\subsubsection{\texorpdfstring{isPlatformerGame}{isPlatformerGame}}
+{\footnotesize\ttfamily bool Game\+::is\+Platformer\+Game = \mbox{\hyperlink{ordinals_8h_a41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}}}
+
+
+
+Check if the game state is the Platformer \mbox{\hyperlink{class_game}{Game}}. 
+
+
+
+Definition at line 71 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_adb424734b2454f9ed1e6d6bd44e6dfaf}\label{class_game_adb424734b2454f9ed1e6d6bd44e6dfaf}} 
+\index{Game@{Game}!isRunning@{isRunning}}
+\index{isRunning@{isRunning}!Game@{Game}}
+\subsubsection{\texorpdfstring{isRunning}{isRunning}}
+{\footnotesize\ttfamily bool Game\+::is\+Running}
+
+
+
+Check if the game is running or paused. 
+
+
+
+Definition at line 65 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_abe14118bc7cb70c342636c2b2a15554b}\label{class_game_abe14118bc7cb70c342636c2b2a15554b}} 
+\index{Game@{Game}!level@{level}}
+\index{level@{level}!Game@{Game}}
+\subsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily int Game\+::level}
+
+
+
+Definition at line 106 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a037a7a85c51d0d455cfcc3af08542904}\label{class_game_a037a7a85c51d0d455cfcc3af08542904}} 
+\index{Game@{Game}!mainCharacter@{mainCharacter}}
+\index{mainCharacter@{mainCharacter}!Game@{Game}}
+\subsubsection{\texorpdfstring{mainCharacter}{mainCharacter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_main_character}{Main\+Character}} Game\+::main\+Character}
+
+
+
+Definition at line 103 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a0f428f334dc8a0189d61e9d4a35a43b6}\label{class_game_a0f428f334dc8a0189d61e9d4a35a43b6}} 
+\index{Game@{Game}!pooky@{pooky}}
+\index{pooky@{pooky}!Game@{Game}}
+\subsubsection{\texorpdfstring{pooky}{pooky}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_main_character}{Main\+Character}} Game\+::pooky}
+
+
+
+Definition at line 105 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a7850257252f36f13b0daa694e43e1de9}\label{class_game_a7850257252f36f13b0daa694e43e1de9}} 
+\index{Game@{Game}!renderCenterColumn@{renderCenterColumn}}
+\index{renderCenterColumn@{renderCenterColumn}!Game@{Game}}
+\subsubsection{\texorpdfstring{renderCenterColumn}{renderCenterColumn}}
+{\footnotesize\ttfamily int Game\+::render\+Center\+Column = 15}
+
+
+
+Definition at line 102 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_ad513055bd8c23f50f6b5cf30ed3839c0}\label{class_game_ad513055bd8c23f50f6b5cf30ed3839c0}} 
+\index{Game@{Game}!spiderCharacter@{spiderCharacter}}
+\index{spiderCharacter@{spiderCharacter}!Game@{Game}}
+\subsubsection{\texorpdfstring{spiderCharacter}{spiderCharacter}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_main_character}{Main\+Character}} Game\+::spider\+Character\mbox{[}3\mbox{]}}
+
+
+
+Definition at line 104 of file Game.\+h.
+
+\mbox{\Hypertarget{class_game_a49404aae4faa4a33d98815cd45662ba0}\label{class_game_a49404aae4faa4a33d98815cd45662ba0}} 
+\index{Game@{Game}!tiles@{tiles}}
+\index{tiles@{tiles}!Game@{Game}}
+\subsubsection{\texorpdfstring{tiles}{tiles}}
+{\footnotesize\ttfamily int Game\+::tiles\mbox{[}\mbox{\hyperlink{_game_8h_a821282c3fbd7714d8302538a5a674885}{R\+O\+WS}}\mbox{]}\mbox{[}\mbox{\hyperlink{_game_8h_af6c484f782f36b472fb334e72c392801}{C\+O\+L\+U\+M\+NS}}\mbox{]}}
+
+
+
+Definition at line 92 of file Game.\+h.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{_game_8h}{Game.\+h}}\item 
+src/\mbox{\hyperlink{_game_8cpp}{Game.\+cpp}}\end{DoxyCompactItemize}

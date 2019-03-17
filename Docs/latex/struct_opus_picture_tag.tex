@@ -1,0 +1,174 @@
+\hypertarget{struct_opus_picture_tag}{}\section{Opus\+Picture\+Tag Struct Reference}
+\label{struct_opus_picture_tag}\index{OpusPictureTag@{OpusPictureTag}}
+
+
+{\ttfamily \#include $<$opusfile.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{struct_opus_picture_tag_a6e668caeb395b1ec7d438d4a4a9fa845}{type}}
+\item 
+char $\ast$ \mbox{\hyperlink{struct_opus_picture_tag_ace7f4978d815b186f6aebefed938c9e2}{mime\+\_\+type}}
+\item 
+char $\ast$ \mbox{\hyperlink{struct_opus_picture_tag_aa32d8bfcd831aa218b0de6d6af92dc08}{description}}
+\item 
+\mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} \mbox{\hyperlink{struct_opus_picture_tag_a805d4de3372bac983cadbd916350ddd6}{width}}
+\item 
+\mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} \mbox{\hyperlink{struct_opus_picture_tag_a2de29a7eef41d13031c70786665eb638}{height}}
+\item 
+\mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} \mbox{\hyperlink{struct_opus_picture_tag_a9af23c314edf9a995c95a4d28f49eac0}{depth}}
+\item 
+\mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} \mbox{\hyperlink{struct_opus_picture_tag_a6fe2f98151fa32a8e2fd13f9309bd1a2}{colors}}
+\item 
+\mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} \mbox{\hyperlink{struct_opus_picture_tag_aaa458d48cd3c9c86b54614389f5b726d}{data\+\_\+length}}
+\item 
+unsigned char $\ast$ \mbox{\hyperlink{struct_opus_picture_tag_a0514cb1431547c8b3042b9f3bc9b694f}{data}}
+\item 
+int \mbox{\hyperlink{struct_opus_picture_tag_aba2d71a09ecf0999cf5faf7c2276fb37}{format}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The contents of a M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+B\+L\+O\+C\+K\+\_\+\+P\+I\+C\+T\+U\+RE tag. 
+
+Definition at line 331 of file opusfile.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_opus_picture_tag_a6fe2f98151fa32a8e2fd13f9309bd1a2}\label{struct_opus_picture_tag_a6fe2f98151fa32a8e2fd13f9309bd1a2}} 
+\index{OpusPictureTag@{OpusPictureTag}!colors@{colors}}
+\index{colors@{colors}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{colors}{colors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} Opus\+Picture\+Tag\+::colors}
+
+For indexed-\/color pictures (e.\+g., G\+IF), the number of colors used, or 0 for non-\/indexed pictures. 
+
+Definition at line 377 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_a0514cb1431547c8b3042b9f3bc9b694f}\label{struct_opus_picture_tag_a0514cb1431547c8b3042b9f3bc9b694f}} 
+\index{OpusPictureTag@{OpusPictureTag}!data@{data}}
+\index{data@{data}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily unsigned char$\ast$ Opus\+Picture\+Tag\+::data}
+
+The binary picture data. 
+
+Definition at line 381 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_aaa458d48cd3c9c86b54614389f5b726d}\label{struct_opus_picture_tag_aaa458d48cd3c9c86b54614389f5b726d}} 
+\index{OpusPictureTag@{OpusPictureTag}!data\_length@{data\_length}}
+\index{data\_length@{data\_length}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{data\_length}{data\_length}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} Opus\+Picture\+Tag\+::data\+\_\+length}
+
+The length of the picture data in bytes. 
+
+Definition at line 379 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_a9af23c314edf9a995c95a4d28f49eac0}\label{struct_opus_picture_tag_a9af23c314edf9a995c95a4d28f49eac0}} 
+\index{OpusPictureTag@{OpusPictureTag}!depth@{depth}}
+\index{depth@{depth}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{depth}{depth}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} Opus\+Picture\+Tag\+::depth}
+
+The color depth of the picture in bits-\/per-\/pixel ({\itshape not} bits-\/per-\/channel). 
+
+Definition at line 374 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_aa32d8bfcd831aa218b0de6d6af92dc08}\label{struct_opus_picture_tag_aa32d8bfcd831aa218b0de6d6af92dc08}} 
+\index{OpusPictureTag@{OpusPictureTag}!description@{description}}
+\index{description@{description}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{description}{description}}
+{\footnotesize\ttfamily char$\ast$ Opus\+Picture\+Tag\+::description}
+
+The description of the picture, in U\+T\+F-\/8. 
+
+Definition at line 367 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_aba2d71a09ecf0999cf5faf7c2276fb37}\label{struct_opus_picture_tag_aba2d71a09ecf0999cf5faf7c2276fb37}} 
+\index{OpusPictureTag@{OpusPictureTag}!format@{format}}
+\index{format@{format}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{format}{format}}
+{\footnotesize\ttfamily int Opus\+Picture\+Tag\+::format}
+
+The format of the picture data, if known. One of 
+\begin{DoxyItemize}
+\item \mbox{\hyperlink{group__header__info_gade2f09dce6330529fc3c96d1740df653}{O\+P\+\_\+\+P\+I\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+U\+N\+K\+N\+O\+WN}}, 
+\item \mbox{\hyperlink{group__header__info_gaac4ef30a33caf090b9b1a5ada8f48204}{O\+P\+\_\+\+P\+I\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+U\+RL}}, 
+\item \mbox{\hyperlink{group__header__info_gaf75ae037b78a4a048359261439395450}{O\+P\+\_\+\+P\+I\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+J\+P\+EG}}, 
+\item \mbox{\hyperlink{group__header__info_ga703554b177ae75bd6999bbd30d485d3f}{O\+P\+\_\+\+P\+I\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+P\+NG}}, or 
+\item \mbox{\hyperlink{group__header__info_gaa7d5e8cb675cb2da840f258b761e7781}{O\+P\+\_\+\+P\+I\+C\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+G\+IF}}. 
+\end{DoxyItemize}
+
+Definition at line 391 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_a2de29a7eef41d13031c70786665eb638}\label{struct_opus_picture_tag_a2de29a7eef41d13031c70786665eb638}} 
+\index{OpusPictureTag@{OpusPictureTag}!height@{height}}
+\index{height@{height}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} Opus\+Picture\+Tag\+::height}
+
+The height of the picture in pixels. 
+
+Definition at line 371 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_ace7f4978d815b186f6aebefed938c9e2}\label{struct_opus_picture_tag_ace7f4978d815b186f6aebefed938c9e2}} 
+\index{OpusPictureTag@{OpusPictureTag}!mime\_type@{mime\_type}}
+\index{mime\_type@{mime\_type}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{mime\_type}{mime\_type}}
+{\footnotesize\ttfamily char$\ast$ Opus\+Picture\+Tag\+::mime\+\_\+type}
+
+The M\+I\+ME type of the picture, in printable A\+S\+C\+II characters 0x20-\/0x7E. The M\+I\+ME type may also be {\ttfamily \char`\"{}-\/-\/$>$\char`\"{}} to signify that the data part is a U\+RL pointing to the picture instead of the picture data itself. In this case, a terminating N\+UL is appended to the U\+RL string in \mbox{\hyperlink{struct_opus_picture_tag_a0514cb1431547c8b3042b9f3bc9b694f}{data}}, but \mbox{\hyperlink{struct_opus_picture_tag_aaa458d48cd3c9c86b54614389f5b726d}{data\+\_\+length}} is set to the length of the string excluding that terminating N\+UL. 
+
+Definition at line 365 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_a6e668caeb395b1ec7d438d4a4a9fa845}\label{struct_opus_picture_tag_a6e668caeb395b1ec7d438d4a4a9fa845}} 
+\index{OpusPictureTag@{OpusPictureTag}!type@{type}}
+\index{type@{type}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Opus\+Picture\+Tag\+::type}
+
+The picture type according to the I\+D3v2 A\+P\+IC frame\+: 
+\begin{DoxyEnumerate}
+\item Other 
+\item 32x32 pixels \textquotesingle{}file icon\textquotesingle{} (P\+NG only) 
+\item Other file icon 
+\item Cover (front) 
+\item Cover (back) 
+\item Leaflet page 
+\item Media (e.\+g. label side of CD) 
+\item Lead artist/lead performer/soloist 
+\item Artist/performer 
+\item Conductor 
+\item Band/\+Orchestra 
+\item Composer 
+\item Lyricist/text writer 
+\item Recording Location 
+\item During recording 
+\item During performance 
+\item Movie/video screen capture 
+\item A bright colored fish 
+\item Illustration 
+\item Band/artist logotype 
+\item Publisher/\+Studio logotype 
+\end{DoxyEnumerate}Others are reserved and should not be used. There may only be one each of picture type 1 and 2 in a file. 
+
+Definition at line 358 of file opusfile.\+h.
+
+\mbox{\Hypertarget{struct_opus_picture_tag_a805d4de3372bac983cadbd916350ddd6}\label{struct_opus_picture_tag_a805d4de3372bac983cadbd916350ddd6}} 
+\index{OpusPictureTag@{OpusPictureTag}!width@{width}}
+\index{width@{width}!OpusPictureTag@{OpusPictureTag}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily \mbox{\hyperlink{opus__types_8h_a643eaaadb9ef6cd44308e0299d8cd8ce}{opus\+\_\+uint32}} Opus\+Picture\+Tag\+::width}
+
+The width of the picture in pixels. 
+
+Definition at line 369 of file opusfile.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/\+Opus\+File.\+framework/\+Versions/\+A/\+Headers/\mbox{\hyperlink{opusfile_8h}{opusfile.\+h}}\end{DoxyCompactItemize}

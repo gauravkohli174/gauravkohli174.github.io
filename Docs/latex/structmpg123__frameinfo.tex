@@ -1,0 +1,156 @@
+\hypertarget{structmpg123__frameinfo}{}\section{mpg123\+\_\+frameinfo Struct Reference}
+\label{structmpg123__frameinfo}\index{mpg123\_frameinfo@{mpg123\_frameinfo}}
+
+
+{\ttfamily \#include $<$mpg123.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group__mpg123__status_ga0553c78534d6d130df2d1dc0df675748}{mpg123\+\_\+version}} \mbox{\hyperlink{structmpg123__frameinfo_aa1276e21b0fd007148ac85b6290de057}{version}}
+\item 
+int \mbox{\hyperlink{structmpg123__frameinfo_a23b3cad377729431a601cff6dd227ee2}{layer}}
+\item 
+long \mbox{\hyperlink{structmpg123__frameinfo_ab0e716a76ae87991e4607e5803da6899}{rate}}
+\item 
+enum \mbox{\hyperlink{group__mpg123__status_ga044931724a9a987a86c2eea02f85cc4b}{mpg123\+\_\+mode}} \mbox{\hyperlink{structmpg123__frameinfo_a2d4adb8ca9bd6dc0de36c8dca3fe531d}{mode}}
+\item 
+int \mbox{\hyperlink{structmpg123__frameinfo_ad9c559387cf061d05384b4c204cd0e97}{mode\+\_\+ext}}
+\item 
+int \mbox{\hyperlink{structmpg123__frameinfo_a8846bf9e4d0f9246bf04a4d00254fce9}{framesize}}
+\item 
+enum \mbox{\hyperlink{group__mpg123__status_gaf527c5a99203cb8591b0e0dfb2615303}{mpg123\+\_\+flags}} \mbox{\hyperlink{structmpg123__frameinfo_a9cfdc10a11d1414d28e014f260756525}{flags}}
+\item 
+int \mbox{\hyperlink{structmpg123__frameinfo_a7b3a682d1c80446b4a01b9f6b6f8b470}{emphasis}}
+\item 
+int \mbox{\hyperlink{structmpg123__frameinfo_ac8bfd092c3c98ba1e97111709c036a4e}{bitrate}}
+\item 
+int \mbox{\hyperlink{structmpg123__frameinfo_aefb56c909ed7297d4b78aebdb478995a}{abr\+\_\+rate}}
+\item 
+enum \mbox{\hyperlink{group__mpg123__status_ga8253714e77705037271f377f33858876}{mpg123\+\_\+vbr}} \mbox{\hyperlink{structmpg123__frameinfo_a48708817882f58b0a32c1e9db6e9fd74}{vbr}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Data structure for storing information about a frame of M\+P\+EG Audio 
+
+Definition at line 893 of file mpg123.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{structmpg123__frameinfo_aefb56c909ed7297d4b78aebdb478995a}\label{structmpg123__frameinfo_aefb56c909ed7297d4b78aebdb478995a}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!abr\_rate@{abr\_rate}}
+\index{abr\_rate@{abr\_rate}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{abr\_rate}{abr\_rate}}
+{\footnotesize\ttfamily int mpg123\+\_\+frameinfo\+::abr\+\_\+rate}
+
+The target average bitrate. 
+
+Definition at line 904 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_ac8bfd092c3c98ba1e97111709c036a4e}\label{structmpg123__frameinfo_ac8bfd092c3c98ba1e97111709c036a4e}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!bitrate@{bitrate}}
+\index{bitrate@{bitrate}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{bitrate}{bitrate}}
+{\footnotesize\ttfamily int mpg123\+\_\+frameinfo\+::bitrate}
+
+Bitrate of the frame (kbps). 
+
+Definition at line 903 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_a7b3a682d1c80446b4a01b9f6b6f8b470}\label{structmpg123__frameinfo_a7b3a682d1c80446b4a01b9f6b6f8b470}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!emphasis@{emphasis}}
+\index{emphasis@{emphasis}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{emphasis}{emphasis}}
+{\footnotesize\ttfamily int mpg123\+\_\+frameinfo\+::emphasis}
+
+The emphasis type. 
+
+Definition at line 902 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_a9cfdc10a11d1414d28e014f260756525}\label{structmpg123__frameinfo_a9cfdc10a11d1414d28e014f260756525}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!flags@{flags}}
+\index{flags@{flags}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__mpg123__status_gaf527c5a99203cb8591b0e0dfb2615303}{mpg123\+\_\+flags}} mpg123\+\_\+frameinfo\+::flags}
+
+M\+P\+EG Audio flag bits. Just now I realize that it should be declared as int, not enum. It\textquotesingle{}s a bitwise combination of the enum values. 
+
+Definition at line 901 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_a8846bf9e4d0f9246bf04a4d00254fce9}\label{structmpg123__frameinfo_a8846bf9e4d0f9246bf04a4d00254fce9}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!framesize@{framesize}}
+\index{framesize@{framesize}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{framesize}{framesize}}
+{\footnotesize\ttfamily int mpg123\+\_\+frameinfo\+::framesize}
+
+The size of the frame (in bytes, including header). 
+
+Definition at line 900 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_a23b3cad377729431a601cff6dd227ee2}\label{structmpg123__frameinfo_a23b3cad377729431a601cff6dd227ee2}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!layer@{layer}}
+\index{layer@{layer}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{layer}{layer}}
+{\footnotesize\ttfamily int mpg123\+\_\+frameinfo\+::layer}
+
+The M\+P\+EG Audio Layer (M\+P1/\+M\+P2/\+M\+P3). 
+
+Definition at line 896 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_a2d4adb8ca9bd6dc0de36c8dca3fe531d}\label{structmpg123__frameinfo_a2d4adb8ca9bd6dc0de36c8dca3fe531d}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!mode@{mode}}
+\index{mode@{mode}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__mpg123__status_ga044931724a9a987a86c2eea02f85cc4b}{mpg123\+\_\+mode}} mpg123\+\_\+frameinfo\+::mode}
+
+The audio mode (Mono, Stereo, Joint-\/stero, Dual Channel). 
+
+Definition at line 898 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_ad9c559387cf061d05384b4c204cd0e97}\label{structmpg123__frameinfo_ad9c559387cf061d05384b4c204cd0e97}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!mode\_ext@{mode\_ext}}
+\index{mode\_ext@{mode\_ext}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{mode\_ext}{mode\_ext}}
+{\footnotesize\ttfamily int mpg123\+\_\+frameinfo\+::mode\+\_\+ext}
+
+The mode extension bit flag. 
+
+Definition at line 899 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_ab0e716a76ae87991e4607e5803da6899}\label{structmpg123__frameinfo_ab0e716a76ae87991e4607e5803da6899}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!rate@{rate}}
+\index{rate@{rate}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{rate}{rate}}
+{\footnotesize\ttfamily long mpg123\+\_\+frameinfo\+::rate}
+
+The sampling rate in Hz. 
+
+Definition at line 897 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_a48708817882f58b0a32c1e9db6e9fd74}\label{structmpg123__frameinfo_a48708817882f58b0a32c1e9db6e9fd74}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!vbr@{vbr}}
+\index{vbr@{vbr}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{vbr}{vbr}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__mpg123__status_ga8253714e77705037271f377f33858876}{mpg123\+\_\+vbr}} mpg123\+\_\+frameinfo\+::vbr}
+
+The V\+BR mode. 
+
+Definition at line 905 of file mpg123.\+h.
+
+\mbox{\Hypertarget{structmpg123__frameinfo_aa1276e21b0fd007148ac85b6290de057}\label{structmpg123__frameinfo_aa1276e21b0fd007148ac85b6290de057}} 
+\index{mpg123\_frameinfo@{mpg123\_frameinfo}!version@{version}}
+\index{version@{version}!mpg123\_frameinfo@{mpg123\_frameinfo}}
+\subsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group__mpg123__status_ga0553c78534d6d130df2d1dc0df675748}{mpg123\+\_\+version}} mpg123\+\_\+frameinfo\+::version}
+
+The M\+P\+EG version (1.\+0/2.0/2.\+5). 
+
+Definition at line 895 of file mpg123.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/mpg123.\+framework/\+Versions/\+A/\+Headers/\mbox{\hyperlink{mpg123_8h}{mpg123.\+h}}\end{DoxyCompactItemize}

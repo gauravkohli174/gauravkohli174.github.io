@@ -1,0 +1,60 @@
+\hypertarget{struct_f_l_a_c_____stream_metadata___seek_table}{}\section{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Seek\+Table Struct Reference}
+\label{struct_f_l_a_c_____stream_metadata___seek_table}\index{FLAC\_\_StreamMetadata\_SeekTable@{FLAC\_\_StreamMetadata\_SeekTable}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___seek_table_a12dcdb596297c199fe6cffa27a64e69f}{num\+\_\+points}}
+\item 
+\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___seek_point}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Seek\+Point}} $\ast$ \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___seek_table_a0bf04ada03ea708dba9d31cd6c6159b8}{points}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+L\+AC S\+E\+E\+K\+T\+A\+B\+LE structure. (c.\+f. \href{../format.html\#metadata_block_seektable}{\texttt{ format specification}})
+
+\begin{DoxyNote}{Note}
+From the format specification\+:
+\begin{DoxyItemize}
+\item The seek points must be sorted by ascending sample number.
+\item Each seek point\textquotesingle{}s sample number must be the first sample of the target frame.
+\item Each seek point\textquotesingle{}s sample number must be unique within the table.
+\item Existence of a S\+E\+E\+K\+T\+A\+B\+LE block implies a correct setting of total\+\_\+samples in the stream\+\_\+info block.
+\item Behavior is undefined when more than one S\+E\+E\+K\+T\+A\+B\+LE block is present in a stream. 
+\end{DoxyItemize}
+\end{DoxyNote}
+
+
+Definition at line 612 of file format.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___seek_table_a12dcdb596297c199fe6cffa27a64e69f}\label{struct_f_l_a_c_____stream_metadata___seek_table_a12dcdb596297c199fe6cffa27a64e69f}} 
+\index{FLAC\_\_StreamMetadata\_SeekTable@{FLAC\_\_StreamMetadata\_SeekTable}!num\_points@{num\_points}}
+\index{num\_points@{num\_points}!FLAC\_\_StreamMetadata\_SeekTable@{FLAC\_\_StreamMetadata\_SeekTable}}
+\subsubsection{\texorpdfstring{num\_points}{num\_points}}
+{\footnotesize\ttfamily unsigned F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Seek\+Table\+::num\+\_\+points}
+
+
+
+Definition at line 613 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata___seek_table_a0bf04ada03ea708dba9d31cd6c6159b8}\label{struct_f_l_a_c_____stream_metadata___seek_table_a0bf04ada03ea708dba9d31cd6c6159b8}} 
+\index{FLAC\_\_StreamMetadata\_SeekTable@{FLAC\_\_StreamMetadata\_SeekTable}!points@{points}}
+\index{points@{points}!FLAC\_\_StreamMetadata\_SeekTable@{FLAC\_\_StreamMetadata\_SeekTable}}
+\subsubsection{\texorpdfstring{points}{points}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___seek_point}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Seek\+Point}}$\ast$ F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Seek\+Table\+::points}
+
+
+
+Definition at line 614 of file format.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/\+F\+L\+A\+C.\+framework/\+Versions/\+A/\+Headers/\+F\+L\+A\+C/\mbox{\hyperlink{format_8h}{format.\+h}}\end{DoxyCompactItemize}

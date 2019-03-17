@@ -1,0 +1,160 @@
+\hypertarget{struct_f_l_a_c_____stream_metadata}{}\section{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata Struct Reference}
+\label{struct_f_l_a_c_____stream_metadata}\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+
+
+{\ttfamily \#include $<$format.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{group__flac__format_gac71714ba8ddbbd66d26bb78a427fac01}{F\+L\+A\+C\+\_\+\+\_\+\+Metadata\+Type}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a39fd0655464f2cc7c9c37ae715088aec}{type}}
+\item 
+\mbox{\hyperlink{ordinals_8h_a95103469f1cbd78b8cf250194985b34e}{F\+L\+A\+C\+\_\+\+\_\+bool}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_aef40bbf85abe12e035f66f2d54ed316c}{is\+\_\+last}}
+\item 
+unsigned \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a3fd615e41609837a5672f9081d9d2183}{length}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___stream_info}{FLAC\_\_StreamMetadata\_StreamInfo}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a827c8671721b01ed3007adbe81ae0c6b}{stream\_info}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___padding}{FLAC\_\_StreamMetadata\_Padding}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a202f0ed2fa1dae32893be6025838f651}{padding}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___application}{FLAC\_\_StreamMetadata\_Application}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_af16b029d4a476aeb46f9a215e2cce462}{application}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___seek_table}{FLAC\_\_StreamMetadata\_SeekTable}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a3d27e525001843d173f8c97987663aa7}{seek\_table}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___vorbis_comment}{FLAC\_\_StreamMetadata\_VorbisComment}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a02662cb0ff19e8229dcd2384f708bae0}{vorbis\_comment}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet}{FLAC\_\_StreamMetadata\_CueSheet}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a68e7d388eeb7e35076e016370a74e0ec}{cue\_sheet}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___picture}{FLAC\_\_StreamMetadata\_Picture}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_a203cf5cce24097ef96efd5dd3bb7c8e7}{picture}}\\
+\>\mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___unknown}{FLAC\_\_StreamMetadata\_Unknown}} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_ac29528515ea884b108a813a6609515bd}{unknown}}\\
+\} \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata_aae397640681a6d19beba008d40410644}{data}}\\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+F\+L\+AC metadata block structure. (c.\+f. \href{../format.html\#metadata_block}{\texttt{ format specification}}) 
+
+Definition at line 834 of file format.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_af16b029d4a476aeb46f9a215e2cce462}\label{struct_f_l_a_c_____stream_metadata_af16b029d4a476aeb46f9a215e2cce462}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!application@{application}}
+\index{application@{application}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{application}{application}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___application}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Application}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::application}
+
+
+
+Definition at line 849 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a68e7d388eeb7e35076e016370a74e0ec}\label{struct_f_l_a_c_____stream_metadata_a68e7d388eeb7e35076e016370a74e0ec}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!cue\_sheet@{cue\_sheet}}
+\index{cue\_sheet@{cue\_sheet}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{cue\_sheet}{cue\_sheet}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___cue_sheet}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Cue\+Sheet}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::cue\+\_\+sheet}
+
+
+
+Definition at line 852 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_aae397640681a6d19beba008d40410644}\label{struct_f_l_a_c_____stream_metadata_aae397640681a6d19beba008d40410644}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!data@{data}}
+\index{data@{data}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily union \{ ... \}   F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::data}
+
+Polymorphic block data; use the {\itshape type} value to determine which to use. \mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_aef40bbf85abe12e035f66f2d54ed316c}\label{struct_f_l_a_c_____stream_metadata_aef40bbf85abe12e035f66f2d54ed316c}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!is\_last@{is\_last}}
+\index{is\_last@{is\_last}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{is\_last}{is\_last}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ordinals_8h_a95103469f1cbd78b8cf250194985b34e}{F\+L\+A\+C\+\_\+\+\_\+bool}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::is\+\_\+last}
+
+{\ttfamily true} if this metadata block is the last, else {\itshape false} 
+
+Definition at line 840 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a3fd615e41609837a5672f9081d9d2183}\label{struct_f_l_a_c_____stream_metadata_a3fd615e41609837a5672f9081d9d2183}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!length@{length}}
+\index{length@{length}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily unsigned F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::length}
+
+Length, in bytes, of the block data as it appears in the stream. 
+
+Definition at line 843 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a202f0ed2fa1dae32893be6025838f651}\label{struct_f_l_a_c_____stream_metadata_a202f0ed2fa1dae32893be6025838f651}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!padding@{padding}}
+\index{padding@{padding}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{padding}{padding}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___padding}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Padding}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::padding}
+
+
+
+Definition at line 848 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a203cf5cce24097ef96efd5dd3bb7c8e7}\label{struct_f_l_a_c_____stream_metadata_a203cf5cce24097ef96efd5dd3bb7c8e7}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!picture@{picture}}
+\index{picture@{picture}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{picture}{picture}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___picture}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Picture}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::picture}
+
+
+
+Definition at line 853 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a3d27e525001843d173f8c97987663aa7}\label{struct_f_l_a_c_____stream_metadata_a3d27e525001843d173f8c97987663aa7}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!seek\_table@{seek\_table}}
+\index{seek\_table@{seek\_table}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{seek\_table}{seek\_table}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___seek_table}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Seek\+Table}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::seek\+\_\+table}
+
+
+
+Definition at line 850 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a827c8671721b01ed3007adbe81ae0c6b}\label{struct_f_l_a_c_____stream_metadata_a827c8671721b01ed3007adbe81ae0c6b}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!stream\_info@{stream\_info}}
+\index{stream\_info@{stream\_info}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{stream\_info}{stream\_info}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___stream_info}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Stream\+Info}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::stream\+\_\+info}
+
+
+
+Definition at line 847 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a39fd0655464f2cc7c9c37ae715088aec}\label{struct_f_l_a_c_____stream_metadata_a39fd0655464f2cc7c9c37ae715088aec}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!type@{type}}
+\index{type@{type}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{group__flac__format_gac71714ba8ddbbd66d26bb78a427fac01}{F\+L\+A\+C\+\_\+\+\_\+\+Metadata\+Type}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::type}
+
+The type of the metadata block; used determine which member of the {\itshape data} union to dereference. If type $>$= F\+L\+A\+C\+\_\+\+\_\+\+M\+E\+T\+A\+D\+A\+T\+A\+\_\+\+T\+Y\+P\+E\+\_\+\+U\+N\+D\+E\+F\+I\+N\+ED then {\itshape data.\+unknown} must be used. 
+
+Definition at line 835 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_ac29528515ea884b108a813a6609515bd}\label{struct_f_l_a_c_____stream_metadata_ac29528515ea884b108a813a6609515bd}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!unknown@{unknown}}
+\index{unknown@{unknown}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{unknown}{unknown}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___unknown}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Unknown}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::unknown}
+
+
+
+Definition at line 854 of file format.\+h.
+
+\mbox{\Hypertarget{struct_f_l_a_c_____stream_metadata_a02662cb0ff19e8229dcd2384f708bae0}\label{struct_f_l_a_c_____stream_metadata_a02662cb0ff19e8229dcd2384f708bae0}} 
+\index{FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}!vorbis\_comment@{vorbis\_comment}}
+\index{vorbis\_comment@{vorbis\_comment}!FLAC\_\_StreamMetadata@{FLAC\_\_StreamMetadata}}
+\subsubsection{\texorpdfstring{vorbis\_comment}{vorbis\_comment}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_f_l_a_c_____stream_metadata___vorbis_comment}{F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+\_\+\+Vorbis\+Comment}} F\+L\+A\+C\+\_\+\+\_\+\+Stream\+Metadata\+::vorbis\+\_\+comment}
+
+
+
+Definition at line 851 of file format.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+mixer.\+framework/\+Versions/\+A/\+Frameworks/\+F\+L\+A\+C.\+framework/\+Versions/\+A/\+Headers/\+F\+L\+A\+C/\mbox{\hyperlink{format_8h}{format.\+h}}\end{DoxyCompactItemize}

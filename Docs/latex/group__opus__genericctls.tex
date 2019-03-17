@@ -1,0 +1,119 @@
+\hypertarget{group__opus__genericctls}{}\section{Generic C\+T\+Ls}
+\label{group__opus__genericctls}\index{Generic CTLs@{Generic CTLs}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__opus__genericctls_gadc74e4fa8bcdf9994187d52d92207337}{O\+P\+U\+S\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+T\+A\+TE}}
+\item 
+\#define \mbox{\hyperlink{group__opus__genericctls_ga1108a508aa475f964d247c1b04d26d89}{O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+F\+I\+N\+A\+L\+\_\+\+R\+A\+N\+GE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{group__opus__genericctls_gaa89fc25eb35fc31a02b508562dd83820}{O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+P\+I\+T\+CH}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\item 
+\#define \mbox{\hyperlink{group__opus__genericctls_ga29db1d9b5e670debec54d1163ad2ec62}{O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+B\+A\+N\+D\+W\+I\+D\+TH}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These macros are used with the {\ttfamily opus\+\_\+decoder\+\_\+ctl} and {\ttfamily opus\+\_\+encoder\+\_\+ctl} calls to generate a particular request.
+
+When called on an {\ttfamily Opus\+Decoder} they apply to that particular decoder instance. When called on an {\ttfamily Opus\+Encoder} they apply to the corresponding setting on that encoder instance, if present.
+
+Some usage examples\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{int} ret;}
+\DoxyCodeLine{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\_int32}} pitch;}
+\DoxyCodeLine{ret = \mbox{\hyperlink{group__opus__decoder_gae70051dd19b78e25241bb6ca9a222f12}{opus\_decoder\_ctl}}(dec\_ctx, \mbox{\hyperlink{group__opus__genericctls_gaa89fc25eb35fc31a02b508562dd83820}{OPUS\_GET\_PITCH}}(\&pitch));}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (ret == \mbox{\hyperlink{group__opus__errorcodes_gaa44cf8a185e1b5cb940ef63eb4f02d21}{OPUS\_OK}}) \textcolor{keywordflow}{return} ret;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{group__opus__encoder_ga88cb327d8f7d6a96c7d2d0b8461512e6}{opus\_encoder\_ctl}}(enc\_ctx, \mbox{\hyperlink{group__opus__genericctls_gadc74e4fa8bcdf9994187d52d92207337}{OPUS\_RESET\_STATE}});}
+\DoxyCodeLine{\mbox{\hyperlink{group__opus__decoder_gae70051dd19b78e25241bb6ca9a222f12}{opus\_decoder\_ctl}}(dec\_ctx, \mbox{\hyperlink{group__opus__genericctls_gadc74e4fa8bcdf9994187d52d92207337}{OPUS\_RESET\_STATE}});}
+\DoxyCodeLine{}
+\DoxyCodeLine{\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\_int32}} enc\_bw, dec\_bw;}
+\DoxyCodeLine{\mbox{\hyperlink{group__opus__encoder_ga88cb327d8f7d6a96c7d2d0b8461512e6}{opus\_encoder\_ctl}}(enc\_ctx, \mbox{\hyperlink{group__opus__genericctls_ga29db1d9b5e670debec54d1163ad2ec62}{OPUS\_GET\_BANDWIDTH}}(\&enc\_bw));}
+\DoxyCodeLine{\mbox{\hyperlink{group__opus__decoder_gae70051dd19b78e25241bb6ca9a222f12}{opus\_decoder\_ctl}}(dec\_ctx, \mbox{\hyperlink{group__opus__genericctls_ga29db1d9b5e670debec54d1163ad2ec62}{OPUS\_GET\_BANDWIDTH}}(\&dec\_bw));}
+\DoxyCodeLine{\textcolor{keywordflow}{if} (enc\_bw != dec\_bw) \{}
+\DoxyCodeLine{  printf(\textcolor{stringliteral}{"packet bandwidth mismatch!\(\backslash\)n"});}
+\DoxyCodeLine{\}}
+\end{DoxyCode}
+
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__opus__encoder}{Opus Encoder}}, \mbox{\hyperlink{group__opus__decoder_gae70051dd19b78e25241bb6ca9a222f12}{opus\+\_\+decoder\+\_\+ctl}}, \mbox{\hyperlink{group__opus__encoder_ga88cb327d8f7d6a96c7d2d0b8461512e6}{opus\+\_\+encoder\+\_\+ctl}}, \mbox{\hyperlink{group__opus__decoderctls}{Decoder related C\+T\+Ls}}, \mbox{\hyperlink{group__opus__encoderctls}{Encoder related C\+T\+Ls}} 
+\end{DoxySeeAlso}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__opus__genericctls_ga29db1d9b5e670debec54d1163ad2ec62}\label{group__opus__genericctls_ga29db1d9b5e670debec54d1163ad2ec62}} 
+\index{Generic CTLs@{Generic CTLs}!OPUS\_GET\_BANDWIDTH@{OPUS\_GET\_BANDWIDTH}}
+\index{OPUS\_GET\_BANDWIDTH@{OPUS\_GET\_BANDWIDTH}!Generic CTLs@{Generic CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_GET\_BANDWIDTH}{OPUS\_GET\_BANDWIDTH}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+B\+A\+N\+D\+W\+I\+D\+TH(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+Gets the encoder\textquotesingle{}s configured bandpass or the decoder\textquotesingle{}s last bandpass. \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{group__opus__encoderctls_ga0178dabe5526d5b0667d81489cc93791}{O\+P\+U\+S\+\_\+\+S\+E\+T\+\_\+\+B\+A\+N\+D\+W\+I\+D\+TH}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em x} & {\ttfamily opus\+\_\+int32 $\ast$}\+: Returns one of the following values\+: 
+\begin{DoxyDescription}
+\item[\mbox{\hyperlink{group__opus__ctlvalues_ga1c5b3244b018ff4548d2d6bffa418472}{O\+P\+U\+S\+\_\+\+A\+U\+TO}} ](default) 
+\item[\mbox{\hyperlink{group__opus__ctlvalues_ga607dd310958b9c7d545d005e4572d47f}{O\+P\+U\+S\+\_\+\+B\+A\+N\+D\+W\+I\+D\+T\+H\+\_\+\+N\+A\+R\+R\+O\+W\+B\+A\+ND}} ]4 k\+Hz passband 
+\item[\mbox{\hyperlink{group__opus__ctlvalues_ga53a2aff4dc0ee23682927ca568c422a3}{O\+P\+U\+S\+\_\+\+B\+A\+N\+D\+W\+I\+D\+T\+H\+\_\+\+M\+E\+D\+I\+U\+M\+B\+A\+ND}} ]6 k\+Hz passband 
+\item[\mbox{\hyperlink{group__opus__ctlvalues_gac698e5d1281a3632251d2a4ead48afb9}{O\+P\+U\+S\+\_\+\+B\+A\+N\+D\+W\+I\+D\+T\+H\+\_\+\+W\+I\+D\+E\+B\+A\+ND}} ]8 k\+Hz passband 
+\item[\mbox{\hyperlink{group__opus__ctlvalues_ga41f86df35af0033a7361895da88671c1}{O\+P\+U\+S\+\_\+\+B\+A\+N\+D\+W\+I\+D\+T\+H\+\_\+\+S\+U\+P\+E\+R\+W\+I\+D\+E\+B\+A\+ND}}]12 k\+Hz passband 
+\item[\mbox{\hyperlink{group__opus__ctlvalues_ga74cb052d8ec36cbcc9708c417558ebdd}{O\+P\+U\+S\+\_\+\+B\+A\+N\+D\+W\+I\+D\+T\+H\+\_\+\+F\+U\+L\+L\+B\+A\+ND}} ]20 k\+Hz passband 
+\end{DoxyDescription}\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 605 of file opus\+\_\+defines.\+h.
+
+\mbox{\Hypertarget{group__opus__genericctls_ga1108a508aa475f964d247c1b04d26d89}\label{group__opus__genericctls_ga1108a508aa475f964d247c1b04d26d89}} 
+\index{Generic CTLs@{Generic CTLs}!OPUS\_GET\_FINAL\_RANGE@{OPUS\_GET\_FINAL\_RANGE}}
+\index{OPUS\_GET\_FINAL\_RANGE@{OPUS\_GET\_FINAL\_RANGE}!Generic CTLs@{Generic CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_GET\_FINAL\_RANGE}{OPUS\_GET\_FINAL\_RANGE}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+F\+I\+N\+A\+L\+\_\+\+R\+A\+N\+GE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+Gets the final state of the codec\textquotesingle{}s entropy coder. This is used for testing purposes, The encoder and decoder state should be identical after coding a payload (assuming no data corruption or software bugs)
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em x} & {\ttfamily opus\+\_\+uint32 $\ast$}\+: Entropy coder state \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 579 of file opus\+\_\+defines.\+h.
+
+\mbox{\Hypertarget{group__opus__genericctls_gaa89fc25eb35fc31a02b508562dd83820}\label{group__opus__genericctls_gaa89fc25eb35fc31a02b508562dd83820}} 
+\index{Generic CTLs@{Generic CTLs}!OPUS\_GET\_PITCH@{OPUS\_GET\_PITCH}}
+\index{OPUS\_GET\_PITCH@{OPUS\_GET\_PITCH}!Generic CTLs@{Generic CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_GET\_PITCH}{OPUS\_GET\_PITCH}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+G\+E\+T\+\_\+\+P\+I\+T\+CH(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}} }\end{DoxyParamCaption})}
+
+Gets the pitch of the last decoded frame, if available. This can be used for any post-\/processing algorithm requiring the use of pitch, e.\+g. time stretching/shortening. If the last frame was not voiced, or if the pitch was not coded in the frame, then zero is returned.
+
+This C\+TL is only implemented for decoder instances.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em x} & {\ttfamily opus\+\_\+int32 $\ast$}\+: pitch period at 48 k\+Hz (or 0 if not available) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 591 of file opus\+\_\+defines.\+h.
+
+\mbox{\Hypertarget{group__opus__genericctls_gadc74e4fa8bcdf9994187d52d92207337}\label{group__opus__genericctls_gadc74e4fa8bcdf9994187d52d92207337}} 
+\index{Generic CTLs@{Generic CTLs}!OPUS\_RESET\_STATE@{OPUS\_RESET\_STATE}}
+\index{OPUS\_RESET\_STATE@{OPUS\_RESET\_STATE}!Generic CTLs@{Generic CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_RESET\_STATE}{OPUS\_RESET\_STATE}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+R\+E\+S\+E\+T\+\_\+\+S\+T\+A\+TE}
+
+Resets the codec state to be equivalent to a freshly initialized state. This should be called when switching streams in order to prevent the back to back decoding from giving different results from one at a time decoding. 
+
+Definition at line 569 of file opus\+\_\+defines.\+h.
+

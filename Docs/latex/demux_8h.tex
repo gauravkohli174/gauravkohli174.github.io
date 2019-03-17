@@ -1,0 +1,379 @@
+\hypertarget{demux_8h}{}\section{lib/\+S\+D\+L2\+\_\+image.framework/\+Versions/\+A/\+Frameworks/webp.framework/\+Versions/\+A/\+Headers/webp/demux.h File Reference}
+\label{demux_8h}\index{lib/SDL2\_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/demux.h@{lib/SDL2\_image.framework/Versions/A/Frameworks/webp.framework/Versions/A/Headers/webp/demux.h}}
+{\ttfamily \#include \char`\"{}./decode.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}./mux\+\_\+types.\+h\char`\"{}}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}}
+\item 
+struct \mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}}
+\item 
+struct \mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}}
+\item 
+struct \mbox{\hyperlink{struct_web_p_anim_info}{Web\+P\+Anim\+Info}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{demux_8h_a2c397ee6b0421325ce2821aaef9fe5ef}{W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+A\+B\+I\+\_\+\+V\+E\+R\+S\+I\+ON}}~0x0107
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}}
+\item 
+typedef struct \mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} \mbox{\hyperlink{demux_8h_a99e4d1a2886efb5f5b25ee3630e913e9}{Web\+P\+Iterator}}
+\item 
+typedef struct \mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} \mbox{\hyperlink{demux_8h_a225c56f738de2a272be49cbd260fc406}{Web\+P\+Chunk\+Iterator}}
+\item 
+typedef struct \mbox{\hyperlink{struct_web_p_anim_info}{Web\+P\+Anim\+Info}} \mbox{\hyperlink{demux_8h_a26de4a8bbc6b8ee20786af54bc9ee11d}{Web\+P\+Anim\+Info}}
+\item 
+typedef struct \mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}} \mbox{\hyperlink{demux_8h_a53e29937d9bf0c8f5314959eff2bd63f}{Web\+P\+Anim\+Decoder\+Options}}
+\item 
+typedef enum \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}} \mbox{\hyperlink{demux_8h_a70ecaf8c036cae1c0208f43f3627482f}{Web\+P\+Demux\+State}}
+\item 
+typedef enum \mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}} \mbox{\hyperlink{demux_8h_a5a527f452420cf8debd2c34cda6cd90a}{Web\+P\+Format\+Feature}}
+\item 
+typedef struct \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}} \{ \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a164428a78826bb8f0c47c7cd2aac86cc}{W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR}} = -\/1, 
+\mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a3e31354d807028c12a9af8b4a3b2bbdd}{W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+P\+A\+R\+S\+I\+N\+G\+\_\+\+H\+E\+A\+D\+ER}} = 0, 
+\mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a7e0e7778a25f9443de9d609abbd099e8}{W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+P\+A\+R\+S\+E\+D\+\_\+\+H\+E\+A\+D\+ER}} = 1, 
+\mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a5a90bf8f9aab2dab738527f4492a3e0e}{W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+D\+O\+NE}} = 2
+ \}
+\item 
+enum \mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}} \{ \newline
+\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbeaf998aaf2aae0b11c15a79e64b196dc29}{W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+F\+L\+A\+GS}}, 
+\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbea35d9669c93fc047ecf90002e93a60beb}{W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+C\+A\+N\+V\+A\+S\+\_\+\+W\+I\+D\+TH}}, 
+\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbea6259b5e9910ae393984ad996b5912ec1}{W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+C\+A\+N\+V\+A\+S\+\_\+\+H\+E\+I\+G\+HT}}, 
+\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbeae67ea38f1e66cf656134fd4012515fb6}{W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+L\+O\+O\+P\+\_\+\+C\+O\+U\+NT}}, 
+\newline
+\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbea12c7d93377ea95156b00b5265201baa5}{W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR}}, 
+\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbeab65a5f74c0c8d6b429f237f730099421}{W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+O\+U\+NT}}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a700a492acd051a5c7d23b5cb57a85d81}{Web\+P\+Get\+Demux\+Version}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$ \mbox{\hyperlink{demux_8h_a627d2a60f20ef74c12adecaf83006949}{Web\+P\+Demux\+Internal}} (const \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}} $\ast$, int, \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}} $\ast$, int)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{demux_8h_a9bbea37b6e2283d0446c82a3dfb87bfb}{Web\+P\+Demux\+Delete}} (\mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$dmux)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} uint32\+\_\+t \mbox{\hyperlink{demux_8h_a1fd4f454611e0e0518f633a31402dd9a}{Web\+P\+Demux\+GetI}} (const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$dmux, \mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}} feature)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a5be1ee7ad2ca66ac8dc16abf8e1b9aad}{Web\+P\+Demux\+Get\+Frame}} (const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$dmux, int frame\+\_\+number, \mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a8f702e09cce5a28267967f02ee77d1b7}{Web\+P\+Demux\+Next\+Frame}} (\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a4e9ceae24484b885383bc7be3fb09906}{Web\+P\+Demux\+Prev\+Frame}} (\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{demux_8h_ad1d91f1e4ac59f48d16048af129d062b}{Web\+P\+Demux\+Release\+Iterator}} (\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a455fdce06c157bfa01471cd668d6d938}{Web\+P\+Demux\+Get\+Chunk}} (const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$dmux, const char fourcc\mbox{[}4\mbox{]}, int chunk\+\_\+number, \mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a553c30d9f3d85c36e23172a82dcd47f2}{Web\+P\+Demux\+Next\+Chunk}} (\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_ac705d75cdaf7345e0698224c2f304489}{Web\+P\+Demux\+Prev\+Chunk}} (\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{demux_8h_a69a35270adbfa860f6546ad711bd5fb8}{Web\+P\+Demux\+Release\+Chunk\+Iterator}} (\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$iter)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a4c7dd4fa6990e17f9eef07d43c38e6a9}{Web\+P\+Anim\+Decoder\+Options\+Init\+Internal}} (\mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}} $\ast$, int)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$ \mbox{\hyperlink{demux_8h_abe2091ab9ab58a514afce7b4a1468fe3}{Web\+P\+Anim\+Decoder\+New\+Internal}} (const \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}} $\ast$, const \mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}} $\ast$, int)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a2c60ac4e573ccf23173f3c2793e877f4}{Web\+P\+Anim\+Decoder\+Get\+Info}} (const \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$dec, \mbox{\hyperlink{struct_web_p_anim_info}{Web\+P\+Anim\+Info}} $\ast$info)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a57c15cbf0bc980277428758263416917}{Web\+P\+Anim\+Decoder\+Get\+Next}} (\mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$dec, uint8\+\_\+t $\ast$$\ast$\mbox{\hyperlink{_s_d_l__opengl__glext_8h_aa3b73d9ca9f2e2396cbeae1ce6ce14be}{buf}}, int $\ast$timestamp)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int \mbox{\hyperlink{demux_8h_a39ba02e255383e41a66095c0e6ac79ac}{Web\+P\+Anim\+Decoder\+Has\+More\+Frames}} (const \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$dec)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{demux_8h_a3cb9ba3202ae63357a69d3e36a587c2f}{Web\+P\+Anim\+Decoder\+Reset}} (\mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$dec)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$ \mbox{\hyperlink{demux_8h_a332a46856834c953fdd67423de2e1538}{Web\+P\+Anim\+Decoder\+Get\+Demuxer}} (const \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$dec)
+\item 
+\mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{demux_8h_aee4e26b5ebd3154ab391a1128c022504}{Web\+P\+Anim\+Decoder\+Delete}} (\mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$dec)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{demux_8h_a2c397ee6b0421325ce2821aaef9fe5ef}\label{demux_8h_a2c397ee6b0421325ce2821aaef9fe5ef}} 
+\index{demux.h@{demux.h}!WEBP\_DEMUX\_ABI\_VERSION@{WEBP\_DEMUX\_ABI\_VERSION}}
+\index{WEBP\_DEMUX\_ABI\_VERSION@{WEBP\_DEMUX\_ABI\_VERSION}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WEBP\_DEMUX\_ABI\_VERSION}{WEBP\_DEMUX\_ABI\_VERSION}}
+{\footnotesize\ttfamily \#define W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+A\+B\+I\+\_\+\+V\+E\+R\+S\+I\+ON~0x0107}
+
+
+
+Definition at line 58 of file demux.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{demux_8h_a117b64d278304481b705d847ea0a4315}\label{demux_8h_a117b64d278304481b705d847ea0a4315}} 
+\index{demux.h@{demux.h}!WebPAnimDecoder@{WebPAnimDecoder}}
+\index{WebPAnimDecoder@{WebPAnimDecoder}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoder}{WebPAnimDecoder}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}}}
+
+
+
+Definition at line 248 of file demux.\+h.
+
+\mbox{\Hypertarget{demux_8h_a53e29937d9bf0c8f5314959eff2bd63f}\label{demux_8h_a53e29937d9bf0c8f5314959eff2bd63f}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderOptions@{WebPAnimDecoderOptions}}
+\index{WebPAnimDecoderOptions@{WebPAnimDecoderOptions}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderOptions}{WebPAnimDecoderOptions}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}} \mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}}}
+
+
+
+Definition at line 68 of file demux.\+h.
+
+\mbox{\Hypertarget{demux_8h_a26de4a8bbc6b8ee20786af54bc9ee11d}\label{demux_8h_a26de4a8bbc6b8ee20786af54bc9ee11d}} 
+\index{demux.h@{demux.h}!WebPAnimInfo@{WebPAnimInfo}}
+\index{WebPAnimInfo@{WebPAnimInfo}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimInfo}{WebPAnimInfo}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_web_p_anim_info}{Web\+P\+Anim\+Info}} \mbox{\hyperlink{struct_web_p_anim_info}{Web\+P\+Anim\+Info}}}
+
+
+
+Definition at line 67 of file demux.\+h.
+
+\mbox{\Hypertarget{demux_8h_a225c56f738de2a272be49cbd260fc406}\label{demux_8h_a225c56f738de2a272be49cbd260fc406}} 
+\index{demux.h@{demux.h}!WebPChunkIterator@{WebPChunkIterator}}
+\index{WebPChunkIterator@{WebPChunkIterator}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPChunkIterator}{WebPChunkIterator}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} \mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}}}
+
+
+
+Definition at line 66 of file demux.\+h.
+
+\mbox{\Hypertarget{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}\label{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}} 
+\index{demux.h@{demux.h}!WebPDemuxer@{WebPDemuxer}}
+\index{WebPDemuxer@{WebPDemuxer}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxer}{WebPDemuxer}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}}}
+
+
+
+Definition at line 64 of file demux.\+h.
+
+\mbox{\Hypertarget{demux_8h_a70ecaf8c036cae1c0208f43f3627482f}\label{demux_8h_a70ecaf8c036cae1c0208f43f3627482f}} 
+\index{demux.h@{demux.h}!WebPDemuxState@{WebPDemuxState}}
+\index{WebPDemuxState@{WebPDemuxState}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxState}{WebPDemuxState}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}}  \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}}}
+
+\mbox{\Hypertarget{demux_8h_a5a527f452420cf8debd2c34cda6cd90a}\label{demux_8h_a5a527f452420cf8debd2c34cda6cd90a}} 
+\index{demux.h@{demux.h}!WebPFormatFeature@{WebPFormatFeature}}
+\index{WebPFormatFeature@{WebPFormatFeature}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPFormatFeature}{WebPFormatFeature}}
+{\footnotesize\ttfamily typedef enum \mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}}  \mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}}}
+
+\mbox{\Hypertarget{demux_8h_a99e4d1a2886efb5f5b25ee3630e913e9}\label{demux_8h_a99e4d1a2886efb5f5b25ee3630e913e9}} 
+\index{demux.h@{demux.h}!WebPIterator@{WebPIterator}}
+\index{WebPIterator@{WebPIterator}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPIterator}{WebPIterator}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} \mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}}}
+
+
+
+Definition at line 65 of file demux.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}\label{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}} 
+\index{demux.h@{demux.h}!WebPDemuxState@{WebPDemuxState}}
+\index{WebPDemuxState@{WebPDemuxState}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxState}{WebPDemuxState}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_DEMUX\_PARSE\_ERROR@{WEBP\_DEMUX\_PARSE\_ERROR}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_DEMUX\_PARSE\_ERROR@{WEBP\_DEMUX\_PARSE\_ERROR}}}\mbox{\Hypertarget{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a164428a78826bb8f0c47c7cd2aac86cc}\label{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a164428a78826bb8f0c47c7cd2aac86cc}} 
+W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+P\+A\+R\+S\+E\+\_\+\+E\+R\+R\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_DEMUX\_PARSING\_HEADER@{WEBP\_DEMUX\_PARSING\_HEADER}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_DEMUX\_PARSING\_HEADER@{WEBP\_DEMUX\_PARSING\_HEADER}}}\mbox{\Hypertarget{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a3e31354d807028c12a9af8b4a3b2bbdd}\label{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a3e31354d807028c12a9af8b4a3b2bbdd}} 
+W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+P\+A\+R\+S\+I\+N\+G\+\_\+\+H\+E\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_DEMUX\_PARSED\_HEADER@{WEBP\_DEMUX\_PARSED\_HEADER}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_DEMUX\_PARSED\_HEADER@{WEBP\_DEMUX\_PARSED\_HEADER}}}\mbox{\Hypertarget{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a7e0e7778a25f9443de9d609abbd099e8}\label{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a7e0e7778a25f9443de9d609abbd099e8}} 
+W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+P\+A\+R\+S\+E\+D\+\_\+\+H\+E\+A\+D\+ER&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_DEMUX\_DONE@{WEBP\_DEMUX\_DONE}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_DEMUX\_DONE@{WEBP\_DEMUX\_DONE}}}\mbox{\Hypertarget{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a5a90bf8f9aab2dab738527f4492a3e0e}\label{demux_8h_a68bc4ebe465114f44f3416f2c7b75435a5a90bf8f9aab2dab738527f4492a3e0e}} 
+W\+E\+B\+P\+\_\+\+D\+E\+M\+U\+X\+\_\+\+D\+O\+NE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 79 of file demux.\+h.
+
+\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbe}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbe}} 
+\index{demux.h@{demux.h}!WebPFormatFeature@{WebPFormatFeature}}
+\index{WebPFormatFeature@{WebPFormatFeature}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPFormatFeature}{WebPFormatFeature}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_FF\_FORMAT\_FLAGS@{WEBP\_FF\_FORMAT\_FLAGS}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_FF\_FORMAT\_FLAGS@{WEBP\_FF\_FORMAT\_FLAGS}}}\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbeaf998aaf2aae0b11c15a79e64b196dc29}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbeaf998aaf2aae0b11c15a79e64b196dc29}} 
+W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+F\+O\+R\+M\+A\+T\+\_\+\+F\+L\+A\+GS&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_FF\_CANVAS\_WIDTH@{WEBP\_FF\_CANVAS\_WIDTH}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_FF\_CANVAS\_WIDTH@{WEBP\_FF\_CANVAS\_WIDTH}}}\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbea35d9669c93fc047ecf90002e93a60beb}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbea35d9669c93fc047ecf90002e93a60beb}} 
+W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+C\+A\+N\+V\+A\+S\+\_\+\+W\+I\+D\+TH&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_FF\_CANVAS\_HEIGHT@{WEBP\_FF\_CANVAS\_HEIGHT}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_FF\_CANVAS\_HEIGHT@{WEBP\_FF\_CANVAS\_HEIGHT}}}\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbea6259b5e9910ae393984ad996b5912ec1}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbea6259b5e9910ae393984ad996b5912ec1}} 
+W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+C\+A\+N\+V\+A\+S\+\_\+\+H\+E\+I\+G\+HT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_FF\_LOOP\_COUNT@{WEBP\_FF\_LOOP\_COUNT}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_FF\_LOOP\_COUNT@{WEBP\_FF\_LOOP\_COUNT}}}\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbeae67ea38f1e66cf656134fd4012515fb6}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbeae67ea38f1e66cf656134fd4012515fb6}} 
+W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+L\+O\+O\+P\+\_\+\+C\+O\+U\+NT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_FF\_BACKGROUND\_COLOR@{WEBP\_FF\_BACKGROUND\_COLOR}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_FF\_BACKGROUND\_COLOR@{WEBP\_FF\_BACKGROUND\_COLOR}}}\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbea12c7d93377ea95156b00b5265201baa5}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbea12c7d93377ea95156b00b5265201baa5}} 
+W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+B\+A\+C\+K\+G\+R\+O\+U\+N\+D\+\_\+\+C\+O\+L\+OR&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WEBP\_FF\_FRAME\_COUNT@{WEBP\_FF\_FRAME\_COUNT}!demux.h@{demux.h}}\index{demux.h@{demux.h}!WEBP\_FF\_FRAME\_COUNT@{WEBP\_FF\_FRAME\_COUNT}}}\mbox{\Hypertarget{demux_8h_a08a795d5595de4d0c848f804dd875fbeab65a5f74c0c8d6b429f237f730099421}\label{demux_8h_a08a795d5595de4d0c848f804dd875fbeab65a5f74c0c8d6b429f237f730099421}} 
+W\+E\+B\+P\+\_\+\+F\+F\+\_\+\+F\+R\+A\+M\+E\+\_\+\+C\+O\+U\+NT&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 117 of file demux.\+h.
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{demux_8h_aee4e26b5ebd3154ab391a1128c022504}\label{demux_8h_aee4e26b5ebd3154ab391a1128c022504}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderDelete@{WebPAnimDecoderDelete}}
+\index{WebPAnimDecoderDelete@{WebPAnimDecoderDelete}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderDelete()}{WebPAnimDecoderDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Web\+P\+Anim\+Decoder\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$}]{dec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a332a46856834c953fdd67423de2e1538}\label{demux_8h_a332a46856834c953fdd67423de2e1538}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderGetDemuxer@{WebPAnimDecoderGetDemuxer}}
+\index{WebPAnimDecoderGetDemuxer@{WebPAnimDecoderGetDemuxer}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderGetDemuxer()}{WebPAnimDecoderGetDemuxer()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}}$\ast$ Web\+P\+Anim\+Decoder\+Get\+Demuxer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$}]{dec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a2c60ac4e573ccf23173f3c2793e877f4}\label{demux_8h_a2c60ac4e573ccf23173f3c2793e877f4}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderGetInfo@{WebPAnimDecoderGetInfo}}
+\index{WebPAnimDecoderGetInfo@{WebPAnimDecoderGetInfo}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderGetInfo()}{WebPAnimDecoderGetInfo()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Anim\+Decoder\+Get\+Info (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$}]{dec,  }\item[{\mbox{\hyperlink{struct_web_p_anim_info}{Web\+P\+Anim\+Info}} $\ast$}]{info }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a57c15cbf0bc980277428758263416917}\label{demux_8h_a57c15cbf0bc980277428758263416917}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderGetNext@{WebPAnimDecoderGetNext}}
+\index{WebPAnimDecoderGetNext@{WebPAnimDecoderGetNext}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderGetNext()}{WebPAnimDecoderGetNext()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Anim\+Decoder\+Get\+Next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$}]{dec,  }\item[{uint8\+\_\+t $\ast$$\ast$}]{buf,  }\item[{int $\ast$}]{timestamp }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a39ba02e255383e41a66095c0e6ac79ac}\label{demux_8h_a39ba02e255383e41a66095c0e6ac79ac}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderHasMoreFrames@{WebPAnimDecoderHasMoreFrames}}
+\index{WebPAnimDecoderHasMoreFrames@{WebPAnimDecoderHasMoreFrames}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderHasMoreFrames()}{WebPAnimDecoderHasMoreFrames()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Anim\+Decoder\+Has\+More\+Frames (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$}]{dec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_abe2091ab9ab58a514afce7b4a1468fe3}\label{demux_8h_abe2091ab9ab58a514afce7b4a1468fe3}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderNewInternal@{WebPAnimDecoderNewInternal}}
+\index{WebPAnimDecoderNewInternal@{WebPAnimDecoderNewInternal}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderNewInternal()}{WebPAnimDecoderNewInternal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}}$\ast$ Web\+P\+Anim\+Decoder\+New\+Internal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}} $\ast$}]{,  }\item[{const \mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a4c7dd4fa6990e17f9eef07d43c38e6a9}\label{demux_8h_a4c7dd4fa6990e17f9eef07d43c38e6a9}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderOptionsInitInternal@{WebPAnimDecoderOptionsInitInternal}}
+\index{WebPAnimDecoderOptionsInitInternal@{WebPAnimDecoderOptionsInitInternal}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderOptionsInitInternal()}{WebPAnimDecoderOptionsInitInternal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Anim\+Decoder\+Options\+Init\+Internal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_anim_decoder_options}{Web\+P\+Anim\+Decoder\+Options}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a3cb9ba3202ae63357a69d3e36a587c2f}\label{demux_8h_a3cb9ba3202ae63357a69d3e36a587c2f}} 
+\index{demux.h@{demux.h}!WebPAnimDecoderReset@{WebPAnimDecoderReset}}
+\index{WebPAnimDecoderReset@{WebPAnimDecoderReset}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPAnimDecoderReset()}{WebPAnimDecoderReset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Web\+P\+Anim\+Decoder\+Reset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{demux_8h_a117b64d278304481b705d847ea0a4315}{Web\+P\+Anim\+Decoder}} $\ast$}]{dec }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a9bbea37b6e2283d0446c82a3dfb87bfb}\label{demux_8h_a9bbea37b6e2283d0446c82a3dfb87bfb}} 
+\index{demux.h@{demux.h}!WebPDemuxDelete@{WebPDemuxDelete}}
+\index{WebPDemuxDelete@{WebPDemuxDelete}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxDelete()}{WebPDemuxDelete()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Web\+P\+Demux\+Delete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$}]{dmux }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a455fdce06c157bfa01471cd668d6d938}\label{demux_8h_a455fdce06c157bfa01471cd668d6d938}} 
+\index{demux.h@{demux.h}!WebPDemuxGetChunk@{WebPDemuxGetChunk}}
+\index{WebPDemuxGetChunk@{WebPDemuxGetChunk}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxGetChunk()}{WebPDemuxGetChunk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Demux\+Get\+Chunk (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$}]{dmux,  }\item[{const char}]{fourcc\mbox{[}4\mbox{]},  }\item[{int}]{chunk\+\_\+number,  }\item[{\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a5be1ee7ad2ca66ac8dc16abf8e1b9aad}\label{demux_8h_a5be1ee7ad2ca66ac8dc16abf8e1b9aad}} 
+\index{demux.h@{demux.h}!WebPDemuxGetFrame@{WebPDemuxGetFrame}}
+\index{WebPDemuxGetFrame@{WebPDemuxGetFrame}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxGetFrame()}{WebPDemuxGetFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Demux\+Get\+Frame (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$}]{dmux,  }\item[{int}]{frame\+\_\+number,  }\item[{\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a1fd4f454611e0e0518f633a31402dd9a}\label{demux_8h_a1fd4f454611e0e0518f633a31402dd9a}} 
+\index{demux.h@{demux.h}!WebPDemuxGetI@{WebPDemuxGetI}}
+\index{WebPDemuxGetI@{WebPDemuxGetI}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxGetI()}{WebPDemuxGetI()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} uint32\+\_\+t Web\+P\+Demux\+GetI (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}} $\ast$}]{dmux,  }\item[{\mbox{\hyperlink{demux_8h_a08a795d5595de4d0c848f804dd875fbe}{Web\+P\+Format\+Feature}}}]{feature }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a627d2a60f20ef74c12adecaf83006949}\label{demux_8h_a627d2a60f20ef74c12adecaf83006949}} 
+\index{demux.h@{demux.h}!WebPDemuxInternal@{WebPDemuxInternal}}
+\index{WebPDemuxInternal@{WebPDemuxInternal}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxInternal()}{WebPDemuxInternal()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{demux_8h_a3915448f9f9f87d577b9e26eabb40d72}{Web\+P\+Demuxer}}$\ast$ Web\+P\+Demux\+Internal (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_web_p_data}{Web\+P\+Data}} $\ast$}]{,  }\item[{int}]{,  }\item[{\mbox{\hyperlink{demux_8h_a68bc4ebe465114f44f3416f2c7b75435}{Web\+P\+Demux\+State}} $\ast$}]{,  }\item[{int}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a553c30d9f3d85c36e23172a82dcd47f2}\label{demux_8h_a553c30d9f3d85c36e23172a82dcd47f2}} 
+\index{demux.h@{demux.h}!WebPDemuxNextChunk@{WebPDemuxNextChunk}}
+\index{WebPDemuxNextChunk@{WebPDemuxNextChunk}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxNextChunk()}{WebPDemuxNextChunk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Demux\+Next\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a8f702e09cce5a28267967f02ee77d1b7}\label{demux_8h_a8f702e09cce5a28267967f02ee77d1b7}} 
+\index{demux.h@{demux.h}!WebPDemuxNextFrame@{WebPDemuxNextFrame}}
+\index{WebPDemuxNextFrame@{WebPDemuxNextFrame}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxNextFrame()}{WebPDemuxNextFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Demux\+Next\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_ac705d75cdaf7345e0698224c2f304489}\label{demux_8h_ac705d75cdaf7345e0698224c2f304489}} 
+\index{demux.h@{demux.h}!WebPDemuxPrevChunk@{WebPDemuxPrevChunk}}
+\index{WebPDemuxPrevChunk@{WebPDemuxPrevChunk}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxPrevChunk()}{WebPDemuxPrevChunk()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Demux\+Prev\+Chunk (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a4e9ceae24484b885383bc7be3fb09906}\label{demux_8h_a4e9ceae24484b885383bc7be3fb09906}} 
+\index{demux.h@{demux.h}!WebPDemuxPrevFrame@{WebPDemuxPrevFrame}}
+\index{WebPDemuxPrevFrame@{WebPDemuxPrevFrame}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxPrevFrame()}{WebPDemuxPrevFrame()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Demux\+Prev\+Frame (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a69a35270adbfa860f6546ad711bd5fb8}\label{demux_8h_a69a35270adbfa860f6546ad711bd5fb8}} 
+\index{demux.h@{demux.h}!WebPDemuxReleaseChunkIterator@{WebPDemuxReleaseChunkIterator}}
+\index{WebPDemuxReleaseChunkIterator@{WebPDemuxReleaseChunkIterator}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxReleaseChunkIterator()}{WebPDemuxReleaseChunkIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Web\+P\+Demux\+Release\+Chunk\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_chunk_iterator}{Web\+P\+Chunk\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_ad1d91f1e4ac59f48d16048af129d062b}\label{demux_8h_ad1d91f1e4ac59f48d16048af129d062b}} 
+\index{demux.h@{demux.h}!WebPDemuxReleaseIterator@{WebPDemuxReleaseIterator}}
+\index{WebPDemuxReleaseIterator@{WebPDemuxReleaseIterator}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPDemuxReleaseIterator()}{WebPDemuxReleaseIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} Web\+P\+Demux\+Release\+Iterator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_web_p_iterator}{Web\+P\+Iterator}} $\ast$}]{iter }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{demux_8h_a700a492acd051a5c7d23b5cb57a85d81}\label{demux_8h_a700a492acd051a5c7d23b5cb57a85d81}} 
+\index{demux.h@{demux.h}!WebPGetDemuxVersion@{WebPGetDemuxVersion}}
+\index{WebPGetDemuxVersion@{WebPGetDemuxVersion}!demux.h@{demux.h}}
+\subsubsection{\texorpdfstring{WebPGetDemuxVersion()}{WebPGetDemuxVersion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{types_8h_a17d8949179284dfa72d7b5ca9cc022e8}{W\+E\+B\+P\+\_\+\+E\+X\+T\+E\+RN}} int Web\+P\+Get\+Demux\+Version (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}}}]{ }\end{DoxyParamCaption})}
+

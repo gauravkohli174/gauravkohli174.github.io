@@ -1,0 +1,36 @@
+\hypertarget{index_intro}{}\section{Introduction}\label{index_intro}
+This is the documentation for the F\+L\+AC C and C++ A\+P\+Is. It is highly interconnected; this introduction should give you a top level idea of the structure and how to find the information you need. As a prerequisite you should have at least a basic knowledge of the F\+L\+AC format, documented \href{../format.html}{\texttt{ here}}.\hypertarget{index_c_api}{}\section{F\+L\+A\+C C A\+PI}\label{index_c_api}
+The F\+L\+AC C A\+PI is the interface to lib\+F\+L\+AC, a set of structures describing the components of F\+L\+AC streams, and functions for encoding and decoding streams, as well as manipulating F\+L\+AC metadata in files. The public include files will be installed in your include area (for example /usr/include/\+F\+L\+A\+C/...).
+
+By writing a little code and linking against lib\+F\+L\+AC, it is relatively easy to add F\+L\+AC support to another program. The library is licensed under \href{../license.html}{\texttt{ Xiph\textquotesingle{}s B\+SD license}}. Complete source code of lib\+F\+L\+AC as well as the command-\/line encoder and plugins is available and is a useful source of examples.
+
+Aside from encoders and decoders, lib\+F\+L\+AC provides a powerful metadata interface for manipulating metadata in F\+L\+AC files. It allows the user to add, delete, and modify F\+L\+AC metadata blocks and it can automatically take advantage of P\+A\+D\+D\+I\+NG blocks to avoid rewriting the entire F\+L\+AC file when changing the size of the metadata.
+
+lib\+F\+L\+AC usually only requires the standard C library and C math library. In particular, threading is not used so there is no dependency on a thread library. However, lib\+F\+L\+AC does not use global variables and should be thread-\/safe.
+
+lib\+F\+L\+AC also supports encoding to and decoding from Ogg F\+L\+AC. However the metadata editing interfaces currently have limited read-\/only support for Ogg F\+L\+AC files.\hypertarget{index_cpp_api}{}\section{F\+L\+A\+C C++ A\+PI}\label{index_cpp_api}
+The F\+L\+AC C++ A\+PI is a set of classes that encapsulate the structures and functions in lib\+F\+L\+AC. They provide slightly more functionality with respect to metadata but are otherwise equivalent. For the most part, they share the same usage as their counterparts in lib\+F\+L\+AC, and the F\+L\+AC C A\+PI documentation can be used as a supplement. The public include files for the C++ A\+PI will be installed in your include area (for example /usr/include/\+F\+L\+A\+C++/...).
+
+lib\+F\+L\+A\+C++ is also licensed under \href{../license.html}{\texttt{ Xiph\textquotesingle{}s B\+SD license}}.\hypertarget{index_getting_started}{}\section{Getting Started}\label{index_getting_started}
+A good starting point for learning the A\+PI is to browse through the \href{modules.html}{\texttt{ modules}}. Modules are logical groupings of related functions or classes, which correspond roughly to header files or sections of header files. Each module includes a detailed description of the general usage of its functions or classes.
+
+From there you can go on to look at the documentation of individual functions. You can see different views of the individual functions through the links in top bar across this page.
+
+If you prefer a more hands-\/on approach, you can jump right to some \href{../documentation_example_code.html}{\texttt{ example code}}.\hypertarget{index_porting_guide}{}\section{Porting Guide}\label{index_porting_guide}
+Starting with F\+L\+AC 1.\+1.\+3 a \mbox{\hyperlink{group__porting}{Porting Guide }} has been introduced which gives detailed instructions on how to port your code to newer versions of F\+L\+AC.\hypertarget{index_embedded_developers}{}\section{Embedded Developers}\label{index_embedded_developers}
+lib\+F\+L\+AC has grown larger over time as more functionality has been included, but much of it may be unnecessary for a particular embedded implementation. Unused parts may be pruned by some simple editing of src/lib\+F\+L\+A\+C/\+Makefile.\+am. In general, the decoders, encoders, and metadata interface are all independent from each other.
+
+It is easiest to just describe the dependencies\+:
+
+
+\begin{DoxyItemize}
+\item All modules depend on the \mbox{\hyperlink{group__flac__format}{Format }} module.
+\item The decoders and encoders depend on the bitbuffer.
+\item The decoder is independent of the encoder. The encoder uses the decoder because of the verify feature, but this can be removed if not needed.
+\item Parts of the metadata interface require the stream decoder (but not the encoder).
+\item Ogg support is selectable through the compile time macro {\ttfamily F\+L\+A\+C\+\_\+\+\_\+\+H\+A\+S\+\_\+\+O\+GG}.
+\end{DoxyItemize}
+
+For example, if your application only requires the stream decoder, no encoder, and no metadata interface, you can remove the stream encoder and the metadata interface, which will greatly reduce the size of the library.
+
+Also, there are several places in the lib\+F\+L\+AC code with comments marked with \char`\"{}\+O\+P\+T\+:\char`\"{} where a \#define can be changed to enable code that might be faster on a specific platform. Experimenting with these can yield faster binaries. 

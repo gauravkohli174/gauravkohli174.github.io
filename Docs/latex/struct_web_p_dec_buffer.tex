@@ -1,0 +1,130 @@
+\hypertarget{struct_web_p_dec_buffer}{}\section{Web\+P\+Dec\+Buffer Struct Reference}
+\label{struct_web_p_dec_buffer}\index{WebPDecBuffer@{WebPDecBuffer}}
+
+
+{\ttfamily \#include $<$decode.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{decode_8h_aa2b2301594d9da5ecc3e8890ac023e79}{W\+E\+B\+P\+\_\+\+C\+S\+P\+\_\+\+M\+O\+DE}} \mbox{\hyperlink{struct_web_p_dec_buffer_aefebde52238f0298e98c4581caf09bdc}{colorspace}}
+\item 
+int \mbox{\hyperlink{struct_web_p_dec_buffer_ad60ebb8cce8580d92351c7aefd594e67}{width}}
+\item 
+int \mbox{\hyperlink{struct_web_p_dec_buffer_aa939892accab65f2b973554742163821}{height}}
+\item 
+int \mbox{\hyperlink{struct_web_p_dec_buffer_a635d2008c693ed5a8d09b855e08d89d0}{is\+\_\+external\+\_\+memory}}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>\mbox{\hyperlink{struct_web_p_r_g_b_a_buffer}{WebPRGBABuffer}} \mbox{\hyperlink{struct_web_p_dec_buffer_a0cd31e68b50359e5211607af23c7b7bd}{RGBA}}\\
+\>\mbox{\hyperlink{struct_web_p_y_u_v_a_buffer}{WebPYUVABuffer}} \mbox{\hyperlink{struct_web_p_dec_buffer_ac1d34dcf712341af78858ae5f5d16260}{YUVA}}\\
+\} \mbox{\hyperlink{struct_web_p_dec_buffer_accaf4797c55b049a912bcad5514d0193}{u}}\\
+
+\end{tabbing}\item 
+uint32\+\_\+t \mbox{\hyperlink{struct_web_p_dec_buffer_a615322dcfbc7017966448b7cb99b09ac}{pad}} \mbox{[}4\mbox{]}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{struct_web_p_dec_buffer_af4e2b7e48b272356f4856d2b33d5afc7}{private\+\_\+memory}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 197 of file decode.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{struct_web_p_dec_buffer_aefebde52238f0298e98c4581caf09bdc}\label{struct_web_p_dec_buffer_aefebde52238f0298e98c4581caf09bdc}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!colorspace@{colorspace}}
+\index{colorspace@{colorspace}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{colorspace}{colorspace}}
+{\footnotesize\ttfamily \mbox{\hyperlink{decode_8h_aa2b2301594d9da5ecc3e8890ac023e79}{W\+E\+B\+P\+\_\+\+C\+S\+P\+\_\+\+M\+O\+DE}} Web\+P\+Dec\+Buffer\+::colorspace}
+
+
+
+Definition at line 198 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_aa939892accab65f2b973554742163821}\label{struct_web_p_dec_buffer_aa939892accab65f2b973554742163821}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!height@{height}}
+\index{height@{height}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily int Web\+P\+Dec\+Buffer\+::height}
+
+
+
+Definition at line 199 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_a635d2008c693ed5a8d09b855e08d89d0}\label{struct_web_p_dec_buffer_a635d2008c693ed5a8d09b855e08d89d0}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!is\_external\_memory@{is\_external\_memory}}
+\index{is\_external\_memory@{is\_external\_memory}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{is\_external\_memory}{is\_external\_memory}}
+{\footnotesize\ttfamily int Web\+P\+Dec\+Buffer\+::is\+\_\+external\+\_\+memory}
+
+
+
+Definition at line 200 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_a615322dcfbc7017966448b7cb99b09ac}\label{struct_web_p_dec_buffer_a615322dcfbc7017966448b7cb99b09ac}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!pad@{pad}}
+\index{pad@{pad}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{pad}{pad}}
+{\footnotesize\ttfamily uint32\+\_\+t Web\+P\+Dec\+Buffer\+::pad\mbox{[}4\mbox{]}}
+
+
+
+Definition at line 208 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_af4e2b7e48b272356f4856d2b33d5afc7}\label{struct_web_p_dec_buffer_af4e2b7e48b272356f4856d2b33d5afc7}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!private\_memory@{private\_memory}}
+\index{private\_memory@{private\_memory}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{private\_memory}{private\_memory}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ Web\+P\+Dec\+Buffer\+::private\+\_\+memory}
+
+
+
+Definition at line 210 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_a0cd31e68b50359e5211607af23c7b7bd}\label{struct_web_p_dec_buffer_a0cd31e68b50359e5211607af23c7b7bd}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!RGBA@{RGBA}}
+\index{RGBA@{RGBA}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{RGBA}{RGBA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_web_p_r_g_b_a_buffer}{Web\+P\+R\+G\+B\+A\+Buffer}} Web\+P\+Dec\+Buffer\+::\+R\+G\+BA}
+
+
+
+Definition at line 205 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_accaf4797c55b049a912bcad5514d0193}\label{struct_web_p_dec_buffer_accaf4797c55b049a912bcad5514d0193}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!u@{u}}
+\index{u@{u}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{u}{u}}
+{\footnotesize\ttfamily union \{ ... \}   Web\+P\+Dec\+Buffer\+::u}
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_ad60ebb8cce8580d92351c7aefd594e67}\label{struct_web_p_dec_buffer_ad60ebb8cce8580d92351c7aefd594e67}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!width@{width}}
+\index{width@{width}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily int Web\+P\+Dec\+Buffer\+::width}
+
+
+
+Definition at line 199 of file decode.\+h.
+
+\mbox{\Hypertarget{struct_web_p_dec_buffer_ac1d34dcf712341af78858ae5f5d16260}\label{struct_web_p_dec_buffer_ac1d34dcf712341af78858ae5f5d16260}} 
+\index{WebPDecBuffer@{WebPDecBuffer}!YUVA@{YUVA}}
+\index{YUVA@{YUVA}!WebPDecBuffer@{WebPDecBuffer}}
+\subsubsection{\texorpdfstring{YUVA}{YUVA}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_web_p_y_u_v_a_buffer}{Web\+P\+Y\+U\+V\+A\+Buffer}} Web\+P\+Dec\+Buffer\+::\+Y\+U\+VA}
+
+
+
+Definition at line 206 of file decode.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+lib/\+S\+D\+L2\+\_\+image.\+framework/\+Versions/\+A/\+Frameworks/webp.\+framework/\+Versions/\+A/\+Headers/webp/\mbox{\hyperlink{decode_8h}{decode.\+h}}\end{DoxyCompactItemize}

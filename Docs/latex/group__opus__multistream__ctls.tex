@@ -1,0 +1,59 @@
+\hypertarget{group__opus__multistream__ctls}{}\section{Multistream specific encoder and decoder C\+T\+Ls}
+\label{group__opus__multistream__ctls}\index{Multistream specific encoder and decoder CTLs@{Multistream specific encoder and decoder CTLs}}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__opus__multistream__ctls_ga4e67607eb691c4314a5de90d8c58aff0}{O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})
+\item 
+\#define \mbox{\hyperlink{group__opus__multistream__ctls_gaf0843831519b4d9b9d73391afef04a53}{O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+D\+E\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE}}(\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  \mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}})
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+These are convenience macros that are specific to the \mbox{\hyperlink{group__opus__multistream_ga0f8756c84c7c62a38f99fb5cd6ed68af}{opus\+\_\+multistream\+\_\+encoder\+\_\+ctl()}} and \mbox{\hyperlink{group__opus__multistream_ga3c6402c3bb276d7a152d9934ce948431}{opus\+\_\+multistream\+\_\+decoder\+\_\+ctl()}} interface. The C\+T\+Ls from \mbox{\hyperlink{group__opus__genericctls}{Generic C\+T\+Ls}}, \mbox{\hyperlink{group__opus__encoderctls}{Encoder related C\+T\+Ls}}, and \mbox{\hyperlink{group__opus__decoderctls}{Decoder related C\+T\+Ls}} may be applied to a multistream encoder or decoder as well. In addition, you may retrieve the encoder or decoder state for an specific stream via \mbox{\hyperlink{group__opus__multistream__ctls_ga4e67607eb691c4314a5de90d8c58aff0}{O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE}} or \mbox{\hyperlink{group__opus__multistream__ctls_gaf0843831519b4d9b9d73391afef04a53}{O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+D\+E\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE}} and apply C\+T\+Ls to it individually. 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__opus__multistream__ctls_gaf0843831519b4d9b9d73391afef04a53}\label{group__opus__multistream__ctls_gaf0843831519b4d9b9d73391afef04a53}} 
+\index{Multistream specific encoder and decoder CTLs@{Multistream specific encoder and decoder CTLs}!OPUS\_MULTISTREAM\_GET\_DECODER\_STATE@{OPUS\_MULTISTREAM\_GET\_DECODER\_STATE}}
+\index{OPUS\_MULTISTREAM\_GET\_DECODER\_STATE@{OPUS\_MULTISTREAM\_GET\_DECODER\_STATE}!Multistream specific encoder and decoder CTLs@{Multistream specific encoder and decoder CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_MULTISTREAM\_GET\_DECODER\_STATE}{OPUS\_MULTISTREAM\_GET\_DECODER\_STATE}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+D\+E\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}} }\end{DoxyParamCaption})}
+
+Gets the decoder state for an individual stream of a multistream decoder. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & {\ttfamily opus\+\_\+int32}\+: The index of the stream whose decoder you wish to retrieve. This must be non-\/negative and less than the {\ttfamily streams} parameter used to initialize the decoder. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & {\ttfamily Opus\+Decoder$\ast$$\ast$}\+: Returns a pointer to the given decoder state. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em O\+P\+U\+S\+\_\+\+B\+A\+D\+\_\+\+A\+RG} & The index of the requested stream was out of range. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 99 of file opus\+\_\+multistream.\+h.
+
+\mbox{\Hypertarget{group__opus__multistream__ctls_ga4e67607eb691c4314a5de90d8c58aff0}\label{group__opus__multistream__ctls_ga4e67607eb691c4314a5de90d8c58aff0}} 
+\index{Multistream specific encoder and decoder CTLs@{Multistream specific encoder and decoder CTLs}!OPUS\_MULTISTREAM\_GET\_ENCODER\_STATE@{OPUS\_MULTISTREAM\_GET\_ENCODER\_STATE}}
+\index{OPUS\_MULTISTREAM\_GET\_ENCODER\_STATE@{OPUS\_MULTISTREAM\_GET\_ENCODER\_STATE}!Multistream specific encoder and decoder CTLs@{Multistream specific encoder and decoder CTLs}}
+\subsubsection{\texorpdfstring{OPUS\_MULTISTREAM\_GET\_ENCODER\_STATE}{OPUS\_MULTISTREAM\_GET\_ENCODER\_STATE}}
+{\footnotesize\ttfamily \#define O\+P\+U\+S\+\_\+\+M\+U\+L\+T\+I\+S\+T\+R\+E\+A\+M\+\_\+\+G\+E\+T\+\_\+\+E\+N\+C\+O\+D\+E\+R\+\_\+\+S\+T\+A\+TE(\begin{DoxyParamCaption}\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_ad0e63d0edcdbd3d79554076bf309fd47}{x}},  }\item[{}]{\mbox{\hyperlink{_s_d_l__opengl_8h_a1675d9d7bb68e1657ff028643b4037e3}{y}} }\end{DoxyParamCaption})}
+
+Gets the encoder state for an individual stream of a multistream encoder. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & {\ttfamily opus\+\_\+int32}\+: The index of the stream whose encoder you wish to retrieve. This must be non-\/negative and less than the {\ttfamily streams} parameter used to initialize the encoder. \\
+\hline
+\mbox{\texttt{ out}}  & {\em y} & {\ttfamily Opus\+Encoder$\ast$$\ast$}\+: Returns a pointer to the given encoder state. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyRetVals}{Return values}
+{\em O\+P\+U\+S\+\_\+\+B\+A\+D\+\_\+\+A\+RG} & The index of the requested stream was out of range. \\
+\hline
+\end{DoxyRetVals}
+
+
+Definition at line 86 of file opus\+\_\+multistream.\+h.
+

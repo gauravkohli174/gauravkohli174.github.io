@@ -1,0 +1,84 @@
+\hypertarget{opus_8h}{}\section{lib/\+S\+D\+L2\+\_\+mixer.framework/\+Versions/\+A/\+Frameworks/\+Opus.framework/\+Versions/\+A/\+Headers/opus.h File Reference}
+\label{opus_8h}\index{lib/SDL2\_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus.h@{lib/SDL2\_mixer.framework/Versions/A/Frameworks/Opus.framework/Versions/A/Headers/opus.h}}
+
+
+Opus reference implementation A\+PI.  
+
+
+{\ttfamily \#include \char`\"{}opus\+\_\+types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}opus\+\_\+defines.\+h\char`\"{}}\newline
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} \mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}}
+\item 
+typedef struct \mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} \mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}}
+\item 
+typedef struct \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__encoder_ga9ac72d062eca0c77711f5b04b9dcc645}{opus\+\_\+encoder\+\_\+get\+\_\+size}} (int channels)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} $\ast$ \mbox{\hyperlink{group__opus__encoder_ga8a145618886fed2d6fbc79a4071a939d}{opus\+\_\+encoder\+\_\+create}} (\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int application, int $\ast$error)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__encoder_ga363e90db0f434b2d8fde7dcf989270b1}{opus\+\_\+encoder\+\_\+init}} (\mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} $\ast$st, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int application) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__encoder_gabbb51305050b64614329637d6eff777c}{opus\+\_\+encode}} (\mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} $\ast$st, const \mbox{\hyperlink{opus__types_8h_acc9ed7cf60479eb81f9648c6ec27dc26}{opus\+\_\+int16}} $\ast$pcm, int frame\+\_\+size, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} max\+\_\+data\+\_\+bytes) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__encoder_ga4d7243152a1bc6bf4953d1d5c1e530c6}{opus\+\_\+encode\+\_\+float}} (\mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} $\ast$st, const float $\ast$pcm, int frame\+\_\+size, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} max\+\_\+data\+\_\+bytes) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{group__opus__encoder_ga899c69582a1cad2a168aedc99cab7be0}{opus\+\_\+encoder\+\_\+destroy}} (\mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} $\ast$st)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__encoder_ga88cb327d8f7d6a96c7d2d0b8461512e6}{opus\+\_\+encoder\+\_\+ctl}} (\mbox{\hyperlink{group__opus__encoder_gaf461a3ef2f10c2fe8b994a176f06c9bd}{Opus\+Encoder}} $\ast$st, int request,...) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_gaee52cd75f7160fda7a0916d72363940b}{opus\+\_\+decoder\+\_\+get\+\_\+size}} (int channels)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$ \mbox{\hyperlink{group__opus__decoder_ga6a06f16309dee5883c27223d127c4300}{opus\+\_\+decoder\+\_\+create}} (\mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels, int $\ast$error)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__decoder_ga40746b48a7b1653987a3a6db2ce3a40b}{opus\+\_\+decoder\+\_\+init}} (\mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$st, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs, int channels) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_ga3df1ea406cd9d23a63aed181903d3e5e}{opus\+\_\+decode}} (\mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$st, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, \mbox{\hyperlink{opus__types_8h_acc9ed7cf60479eb81f9648c6ec27dc26}{opus\+\_\+int16}} $\ast$pcm, int frame\+\_\+size, int decode\+\_\+fec) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_gafe994758c0d6fa49cd38d63331d47bd4}{opus\+\_\+decode\+\_\+float}} (\mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$st, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, float $\ast$pcm, int frame\+\_\+size, int decode\+\_\+fec) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__decoder_gae70051dd19b78e25241bb6ca9a222f12}{opus\+\_\+decoder\+\_\+ctl}} (\mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$st, int request,...) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{group__opus__decoder_gae8cba5f0f579a37e09b5fdc6267bf8ed}{opus\+\_\+decoder\+\_\+destroy}} (\mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$st)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__decoder_gaa48fa0479919163df306d13a6aa58546}{opus\+\_\+packet\+\_\+parse}} (const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, unsigned char $\ast$out\+\_\+toc, const unsigned char $\ast$frames\mbox{[}48\mbox{]}, \mbox{\hyperlink{opus__types_8h_acc9ed7cf60479eb81f9648c6ec27dc26}{opus\+\_\+int16}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a3d1e3edfcf61ca2d831883e1afbad89e}{size}}\mbox{[}48\mbox{]}, int $\ast$payload\+\_\+offset) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_ga01a86c22c369f60a458443b397b710d8}{opus\+\_\+packet\+\_\+get\+\_\+bandwidth}} (const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_ga885564fa670e308100dfda89d3cdea10}{opus\+\_\+packet\+\_\+get\+\_\+samples\+\_\+per\+\_\+frame}} (const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_gae272ae9645edae1a6da1d1337709fa3b}{opus\+\_\+packet\+\_\+get\+\_\+nb\+\_\+channels}} (const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_ga932edb5fbae85cf452650ef390f52849}{opus\+\_\+packet\+\_\+get\+\_\+nb\+\_\+frames}} (const unsigned char packet\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_gacfb7a57368d5453a8a9c03460d9789b5}{opus\+\_\+packet\+\_\+get\+\_\+nb\+\_\+samples}} (const unsigned char packet\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} Fs) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__decoder_ga34c90825f85af209160d459bafaa21c5}{opus\+\_\+decoder\+\_\+get\+\_\+nb\+\_\+samples}} (const \mbox{\hyperlink{group__opus__decoder_ga401d8579958d36094715a6b90cd159a6}{Opus\+Decoder}} $\ast$dec, const unsigned char packet\mbox{[}$\,$\mbox{]}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__repacketizer_ga833b745bf92317e9ac26797a56eba6fd}{opus\+\_\+repacketizer\+\_\+get\+\_\+size}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$ \mbox{\hyperlink{group__opus__repacketizer_gadef533688e80dcc96a32b955657aaf28}{opus\+\_\+repacketizer\+\_\+init}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$ \mbox{\hyperlink{group__opus__repacketizer_gaa70e9708619188f673b5dc3f494c46ea}{opus\+\_\+repacketizer\+\_\+create}} (\mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}})
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT \mbox{\hyperlink{_s_d_l__opengles2__gl2ext_8h_ae5d8fa23ad07c48bb609509eae494c95}{void}} \mbox{\hyperlink{group__opus__repacketizer_gab03f22d1139a42e450761ad99ca3d882}{opus\+\_\+repacketizer\+\_\+destroy}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT int \mbox{\hyperlink{group__opus__repacketizer_gaa739f0bbc0ad09ad159ffb6455a6bb55}{opus\+\_\+repacketizer\+\_\+cat}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp, const unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{_s_d_l__opengl__glext_8h_a652168017ea9a8bbcead03d5c16269fb}{len}}) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(2)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__repacketizer_gad06762a8f4032823f6b64b63e8416efc}{opus\+\_\+repacketizer\+\_\+out\+\_\+range}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp, int begin, int \mbox{\hyperlink{_s_d_l__opengl_8h_a432111147038972f06e049e18a837002}{end}}, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} maxlen) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(4)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT int \mbox{\hyperlink{group__opus__repacketizer_ga0abed93ad18e8b2bd8b5bd10189c3e97}{opus\+\_\+repacketizer\+\_\+get\+\_\+nb\+\_\+frames}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\item 
+O\+P\+U\+S\+\_\+\+E\+X\+P\+O\+RT O\+P\+U\+S\+\_\+\+W\+A\+R\+N\+\_\+\+U\+N\+U\+S\+E\+D\+\_\+\+R\+E\+S\+U\+LT \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} \mbox{\hyperlink{group__opus__repacketizer_gaa1b5f68279829dcbaf31d374b2f3eac4}{opus\+\_\+repacketizer\+\_\+out}} (\mbox{\hyperlink{group__opus__repacketizer_ga1f85070a64bcbf5bf24f5ccb80323e7b}{Opus\+Repacketizer}} $\ast$rp, unsigned char $\ast$\mbox{\hyperlink{_s_d_l__opengl_8h_a2e335d56e2846b0fea47eed068b2d34a}{data}}, \mbox{\hyperlink{opus__types_8h_aa4d309d6f80b99dbabebc8f98879ab9a}{opus\+\_\+int32}} maxlen) O\+P\+U\+S\+\_\+\+A\+R\+G\+\_\+\+N\+O\+N\+N\+U\+LL(1)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Opus reference implementation A\+PI. 
+
