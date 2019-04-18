@@ -34,8 +34,8 @@
 							<li><a href="#third">Game using BT Code</a></li>
 							<li><a href="#fourth">Ogre Challenges</a></li>
 							<li><a href="#fifth">Audio Library</a></li>
-							<li><a href="#sixth">Game Analytics</a></li>
-							<li><a href="#seventh">Post Mortem Review</a></li>
+
+							<li><a href="#sixth">Post Mortem Review</a></li>
 
 							<li><a href="./Docs/html/index.html" target="_blank">CLICK HERE FOR CODE DOCUMENTATION</a></li>
 						</ul>
@@ -108,10 +108,11 @@
 									<h4>To generate code for creating Game Behaviour</h4>
 								</header>
 								<p>
-									The character moves left and right using the arrow keys.</br>
-									The character can jump using the UP key.</br>
-									The character kicks enemies using the Spacebar.</br>
-									CHEAT: Pressing Tab button 6 times replaces the kick with a newspaper whack.</br>
+									Removes the overhead of programmer to write complex code for behaviour tree by automating the generation entire boiler plate code of behaviour trees with logic.</br>
+									Visualizes Behaviour tree by generating tree diagram in the output/ as a pdf which is easy for interpretation.</br>
+									The code could intelligently detect Selector(red circle) and Sequence(green square)</br>
+									Also, the code could identify the leaf nodes which could be actions or conditions</br>
+									The input for the model can be easily modified</br>
 									</p>
 							</section>
 
@@ -125,12 +126,7 @@
 
 									Better graphics and animations.</br>
 									Slower and controller animations to make the look clearer.</br>
-									More special moves for the main character.</br>
-									More types of enemies.</br>
-									More modular rendering of enemies.</br>
-									Better jumps of the character.</br>
-									Better collision detections.</br>
-									Different sounds for moving or kicking or dying.</br>
+
 									</p>
 							</section>
 
@@ -140,6 +136,24 @@
 									<h4>Including Audio framework deprecations</h4>
 								</header>
 								<p>
+
+									Problems we faced:
+1. Error 404: no website, no documentation. Half the links were broken or too old to be used.</br>
+2. We couldn't get Ogre3D to build on Windows and ran into a lot of issues with Visual Studio.</br>
+3. On Mac, first we couldn't get cmake running. After a lot of messing around, we got cmake working by using Xcode as the compiler which we changed by using the "-G Xcode" flag. Then by default a 32-bit build was being generated.
+ Unfortunately, Mojave doesn't allow the execution of 32-bit files, and it didn't even give any error message except an Abort trap. Again after a lot of messing around, we changed the cmake file to force it to create it a 64-bit build that could finally be opened in Xcode and built for execution.
+ This alone took around 2 days. We even consulted TAs Trevor and got his valuable suggestions on time.</br>
+4. Even after getting the build working on 1 machine, when we tried running it on another machine, all we got was a black screen. Even after repeating the same steps, all we got was a black screen. This issue is still unresolved as we couldn't find the reason for this.
+We tried updating the SDL libraries as that was the most common reason for this, but even that didn't work. This took another day.</br>
+5. Half of the libraries and frameworks have been deprecated. ALut was a framework used in conjunction with OpenAL for easy loading of files that was deprecated by Apple and we couldn't find any alternative for it.
+Other option was to write a function to open the wav file loading at the low-level manually and we ran into a lot of issues with that.</br>
+6. We tried building on top of OgreAL, but that again didn't have any documentation and half the links were broken. So we tried tinkering around and make it using cmake.
+ But it came with a lot of dependencies including Boost, OIS, Ogre3d itself and a couple of others for which we couldn't get cmake to pick up the correct source folders correctly.
+ We spend around 2 days getting this to work.</br>
+7. Even after integrating all our header files in with the Ogre3d source code, we couldn't get the sound, because Ogre SampleBrowser demands the Plugin to be compiled and built into a framework file.
+Due to the above reasons, we couldn't get that to work, so at runtime, we started getting errors which were all linked to this library issue. In theory, this meant our code was correct, just it couldn't be called due to lack of proper headers.</br>
+8. PyOgre and Python-Ogre have been discontinued. Ogre1.10 "Xalafu" provides Python bindings directly as a component but the information there is mentioned outdated.</br>
+
 									The character moves left and right using the arrow keys.</br>
 									The character can jump using the UP key.</br>
 									The character kicks enemies using the Spacebar.</br>
@@ -156,40 +170,45 @@
 								<p>
 									<span><img width="500" height="250" src="./images/AudioEnum.png"></span>
 
+									PyOgre and Python-Ogre have been discontinued. Ogre1.10 "Xalafu" provides Python bindings directly as a component but the information there is mentioned outdated.</br>
+									To integrate with OpenAL without python bindings was a big challenge.
 									The character moves left and right using the arrow keys.</br>
 									The character can jump using the UP key.</br>
 									The character kicks enemies using the Spacebar.</br>
 									CHEAT: Pressing Tab button 6 times replaces the kick with a newspaper whack.</br>
 									</p>
 							</section>
+
+
+
+
 
 
 							<section id="sixth" class="main special">
 								<header class="major">
-									<h2>Game Analytics</h2>
-									<h4>To analyze the game actions in the entire play time</h4>
-								</header>
-								<p>
-									The character moves left and right using the arrow keys.</br>
-									The character can jump using the UP key.</br>
-									The character kicks enemies using the Spacebar.</br>
-									CHEAT: Pressing Tab button 6 times replaces the kick with a newspaper whack.</br>
-									</p>
-							</section>
-
-
-
-							<section id="seventh" class="main special">
-								<header class="major">
 									<h2>Post Mortem Review</h2>
-									<h4>A guide on how to play the game</h4>
+									<h4>Behaviour Tree and OGRE game</h4>
 								</header>
 								<p>
-									The character moves left and right using the arrow keys.</br>
-									The character can jump using the UP key.</br>
-									The character kicks enemies using the Spacebar.</br>
-									CHEAT: Pressing Tab button 6 times replaces the kick with a newspaper whack.</br>
+									Support for OGG files: we were trying to provide support for ogg audio files as well, but we couldn't get the library working properly. With a little additional effort and some tweaking, we could incorporate the ogg codec in the plugin and the ogg audio files should work as well.
+									We could provide options to modify the sound clips, like trim, normalize etc and provide special effects like reverb, phaser, etc. This would require little code as they are mathematical calculations peformed on the sound clip which are freely available.
+									We could further create a fancy GUI for the developer to select sounds, assign these sounds to different characters and their different actions, and also to apply various effects as mentioned above.
+
 									</p>
+
+									<p>
+										How To Use </br>
+Copy the Audio folder into $ogre_source_code$/Samples and run cmake to compile.</br>
+For mac:</br>
+1. Open terminal and create a new directory, and run the following command:
+    cmake -G Xcode <ogre_source_code_path></br>
+2. Open the xcodeproj file generated using Xcode.</br>
+3. You might need to include OpenAL framework in the project settings.</br>
+4. Change the target to "SampleBrowser" and run the project.</br>
+5. The SampleBrowser will open and the Audio plugin will be available to test.</br>
+									</p>
+
+
 							</section>
 
 					</div>
