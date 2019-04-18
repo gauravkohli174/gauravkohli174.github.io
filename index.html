@@ -167,8 +167,12 @@ Due to the above reasons, we couldn't get that to work, so at runtime, we starte
 								<p>
 
 									PyOgre and Python-Ogre have been discontinued. Ogre1.10 "Xalafu" provides Python bindings directly as a component but the information there is mentioned outdated.</br>
-									To integrate with OpenAL without python bindings was a big challenge.
-									
+									To integrate with OpenAL without python bindings was a big challenge.</br>
+									Tried OpenAL Was able to play wav file using PlaySound API for Windows.</br>
+									Was able to display the list of audio devices on Windows.</br>
+									Tried Choosing audio devices based on Service Locator Design pattern which is a bonus point for Audio Engines.</br>
+									Was able to confirm enumeration is supported.</br>
+
 									</p>
 							</section>
 
@@ -190,7 +194,7 @@ Due to the above reasons, we couldn't get that to work, so at runtime, we starte
 									</p>
 
 									<p>
-										How To Use </br>
+										<b>How To Use Ogre</b></br>
 Copy the Audio folder into $ogre_source_code$/Samples and run cmake to compile.</br>
 For mac:</br>
 1. Open terminal and create a new directory, and run the following command:
@@ -199,6 +203,23 @@ For mac:</br>
 3. You might need to include OpenAL framework in the project settings.</br>
 4. Change the target to "SampleBrowser" and run the project.</br>
 5. The SampleBrowser will open and the Audio plugin will be available to test.</br>
+</p>
+
+									<p>
+										<b>How to Use BT Code Generator</b></br>
+										1. To run the application just execute all the blocks in the Jupyter Notebook. OR just run the python file.</br>
+										2. Input relative file path for behavior tree input in the entry box</br>
+										3. Click on "Add Behavior" button to generate the visual display of the behaviour tree.</br>
+										Note: This step also parses the input. So its pre-requisite for the Code Generation Step</br>
+										4. The output pdf will be generated in the outout folder.</br>
+										5. To generate the code, click on the respective buttons of the language.</br>
+										6. Code is generated again the output folder. </br>
+</br>
+										Filenaming conventions:</br>
+										Behavior Tree PDF: BTroot_node_name_in_lower_case_behavior_tree.pdf</br>
+										C++ Generated Code: BTroot_node_name_in_lower_case.cpp</br>
+										Python Generated Code: BTroot_node_name_in_lower_case.py</br>
+</br>
 									</p>
 
 
