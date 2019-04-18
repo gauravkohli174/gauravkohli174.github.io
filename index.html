@@ -137,7 +137,7 @@
 								</header>
 								<p>
 
-									Problems we faced:
+									<b>Problems we faced</b></br>
 1. Error 404: no website, no documentation. Half the links were broken or too old to be used.</br>
 2. We couldn't get Ogre3D to build on Windows and ran into a lot of issues with Visual Studio.</br>
 3. On Mac, first we couldn't get cmake running. After a lot of messing around, we got cmake working by using Xcode as the compiler which we changed by using the "-G Xcode" flag. Then by default a 32-bit build was being generated.
@@ -152,23 +152,19 @@ Other option was to write a function to open the wav file loading at the low-lev
  We spend around 2 days getting this to work.</br>
 7. Even after integrating all our header files in with the Ogre3d source code, we couldn't get the sound, because Ogre SampleBrowser demands the Plugin to be compiled and built into a framework file.
 Due to the above reasons, we couldn't get that to work, so at runtime, we started getting errors which were all linked to this library issue. In theory, this meant our code was correct, just it couldn't be called due to lack of proper headers.</br>
-8. PyOgre and Python-Ogre have been discontinued. Ogre1.10 "Xalafu" provides Python bindings directly as a component but the information there is mentioned outdated.</br>
-
-									The character moves left and right using the arrow keys.</br>
-									The character can jump using the UP key.</br>
-									The character kicks enemies using the Spacebar.</br>
-									CHEAT: Pressing Tab button 6 times replaces the kick with a newspaper whack.</br>
-									</p>
+			</p>
 							</section>
 
 							<section id="fifth" class="main special">
 								<header class="major">
 									<h2>Audio Library</h2>
 									<h4>using OpenAL</h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/N_E8WH1qpj4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<span><img width="500" height="250" src="./images/AudioEnum.png"></span>
 
 								</header>
 								<p>
-									<span><img width="500" height="250" src="./images/AudioEnum.png"></span>
 
 									PyOgre and Python-Ogre have been discontinued. Ogre1.10 "Xalafu" provides Python bindings directly as a component but the information there is mentioned outdated.</br>
 									To integrate with OpenAL without python bindings was a big challenge.
