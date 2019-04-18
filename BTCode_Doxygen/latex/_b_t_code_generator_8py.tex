@@ -1,0 +1,49 @@
+\hypertarget{_b_t_code_generator_8py}{}\section{B\+T\+Code\+Generator.\+py File Reference}
+\label{_b_t_code_generator_8py}\index{BTCodeGenerator.py@{BTCodeGenerator.py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespace_b_t_code_generator}{B\+T\+Code\+Generator}}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a548841053dca7d0b9bb401d8a71259aa}{B\+T\+Code\+Generator.\+read\+\_\+input\+\_\+file}} (filename)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}read\+\_\+input\+\_\+file\textquotesingle{} function reads the user input for BT These inputs are scanned line-\/by-\/line \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_ae52de22cf4520aa14434a2df5bba24e7}{B\+T\+Code\+Generator.\+parse\+\_\+input\+\_\+line}} (line)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}parse\+\_\+input\+\_\+line\textquotesingle{} function scans user input text for BT deatols It will try to identify selector and sequence and various nodes (actions + conditions) involved \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_afa9a33478ecf1013272426bffb04e651}{B\+T\+Code\+Generator.\+parse\+\_\+input}} (lines\+\_\+input)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}parse\+\_\+input\textquotesingle{} will parse all user input line It will also generate the BT graph and populate various variables used for code generation \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_af05eb4fb1b13c0354cdda3e602e1f3f7}{B\+T\+Code\+Generator.\+add\+\_\+behavior}} (filename)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}add\+\_\+behavior\textquotesingle{} will take user file input for BT generation It will call function to generate the BT graph and populate various variables used for code generation \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a66ace159dbed0899e297cc547dbc66b8}{B\+T\+Code\+Generator.\+generate\+\_\+task\+\_\+code\+\_\+cpp}} (task\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+task\+\_\+code\+\_\+cpp\textquotesingle{} will generate code snippet for all the Tasks classes in C++ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a09267bf563df55b448e406996022b3b1}{B\+T\+Code\+Generator.\+generate\+\_\+node\+\_\+code\+\_\+cpp}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+node\+\_\+code\+\_\+cpp\textquotesingle{} will generate code snippet for all the Tasks declarations in C++ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_ae2b1a20feb20638408a088323dedb2d2}{B\+T\+Code\+Generator.\+generate\+\_\+tree\+\_\+code\+\_\+cpp}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+node\+\_\+code\+\_\+cpp\textquotesingle{} will generate code snippet for behavior tree in C++ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a30d522de4346ccb225624302e9f8759f}{B\+T\+Code\+Generator.\+generate\+\_\+cpp\+\_\+code}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+cpp\+\_\+code\textquotesingle{} will generate C++ boiler plate code in \textquotesingle{}B\+T.\+cpp\textquotesingle{} file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_ab9d9b9738c0d565484f12231bc202158}{B\+T\+Code\+Generator.\+generate\+\_\+task\+\_\+code\+\_\+python}} (task\+\_\+name)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+task\+\_\+code\+\_\+python\textquotesingle{} will generate code snippet for all the Tasks classes in Python \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a7bea8f87522fb1e2ea09694dd1eae7eb}{B\+T\+Code\+Generator.\+generate\+\_\+node\+\_\+code\+\_\+python}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+node\+\_\+code\+\_\+python\textquotesingle{} will generate code snippet for all the Tasks declarations in Python \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a523762833b2b5d5518009ec1b8532622}{B\+T\+Code\+Generator.\+generate\+\_\+tree\+\_\+code\+\_\+python}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+tree\+\_\+code\+\_\+python\textquotesingle{} will generate code snippet for behavior tree in Python \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_af49b1d39052f0122b97e331871bdbd79}{B\+T\+Code\+Generator.\+generate\+\_\+python\+\_\+code}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}generate\+\_\+python\+\_\+code\textquotesingle{} will generate Python boiler plate code in \textquotesingle{}B\+T.\+py\textquotesingle{} file \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a10876a9127f1dad77758153042f26dc9}{B\+T\+Code\+Generator.\+gui}} ()
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}gui\textquotesingle{} will generate the G\+UI for the application/code \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{namespace_b_t_code_generator_a6f3ec802a945edfd8094611d24abeb16}{B\+T\+Code\+Generator.\+main}} ()
+\begin{DoxyCompactList}\small\item\em Main Function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespace_b_t_code_generator_a32980cdc2e7047f834b5988eea9426a1}{B\+T\+Code\+Generator.\+tasks}} = list()
+\begin{DoxyCompactList}\small\item\em The global variables. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespace_b_t_code_generator_a3c9566f03efe132c7c0f4ff5f918950e}{B\+T\+Code\+Generator.\+child\+\_\+map}} = dict()
+\item 
+\mbox{\hyperlink{namespace_b_t_code_generator_a254de4b3426d1304e8507f7817f3a7ad}{B\+T\+Code\+Generator.\+sel\+\_\+list}} = list()
+\item 
+\mbox{\hyperlink{namespace_b_t_code_generator_a966464d740a003b5d0487229396d3c86}{B\+T\+Code\+Generator.\+seq\+\_\+list}} = list()
+\end{DoxyCompactItemize}
